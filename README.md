@@ -4,8 +4,8 @@ Completed tasks:
 - [x] Connect to AWS.
 - [x] Create Lambda function.
 - [x] Create in Lambda - BSP rooms & BSP corridors algorithm.
-- [x] Connect to Lambda with Unity.
-- [x] Get String matrix representing of BSP rooms & BSP corridors algorithm board.
+- [x] Connect to Lambda with Unity. [Here](https://github.com/ChenOst/Final-Project/blob/main/Assets/Scripts/ConnectToLambda.cs) 
+- [x] Get String matrix representing of BSP rooms & BSP corridors algorithm board. [Here](https://github.com/ChenOst/Final-Project/blob/main/Assets/Scripts/BSPRoomsBSPCorridors.cs) 
 
 To do:
 
