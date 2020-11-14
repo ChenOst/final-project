@@ -10,11 +10,11 @@ using UnityEngine.UI;
 
 public class ConnectToLambda : MonoBehaviour
 {
-    private JArray _Algo1MatrixBoard; // BSP_rooms&BSP_corridors
-    private JArray _Algo2MatrixBoard;
-    private JArray _Algo3MatrixBoard;
-    private JArray _Algo4MatrixBoard;
-    private JArray _Algo5MatrixBoard;
+    private JArray _algo1JsonBoard; // BSP_rooms&BSP_corridors
+    private JArray _algo2JsonBoard;
+    private JArray _algo3JsonBoard;
+    private JArray _algo4JsonBoard;
+    private JArray _algo5JsonBoard;
 
     // Awake is called before Start - RestCalls() function need to run first
     void Awake()
@@ -48,7 +48,8 @@ public class ConnectToLambda : MonoBehaviour
                 Debug.Log("RestCalls, HttpWebResponse response: " + json); //Can do json.GetValue("value")
 
                 // Boards of all the algorithms
-                _Algo1MatrixBoard = (JArray)json.GetValue("BSP_rooms&BSP_corridors"); // Newtonsoft.Json.Linq.JArray
+                _algo1JsonBoard = (JArray)json.GetValue("BSP_rooms&BSP_corridors"); // Newtonsoft.Json.Linq.JArray
+
             }
             response.Close();
         }
@@ -69,5 +70,6 @@ public class ConnectToLambda : MonoBehaviour
         }
     }
 
-    public JArray getAlgo1MatrixBoard { get { return _Algo1MatrixBoard; } }
+    public JArray getAlgo1JsonBoard { get { return _algo1JsonBoard; } }
+    // Add all getters
 }

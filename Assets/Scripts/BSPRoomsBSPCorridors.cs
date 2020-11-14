@@ -6,31 +6,25 @@ using UnityEngine.UI;
 
 public class BSPRoomsBSPCorridors : MonoBehaviour
 {
+    [SerializeField]
+    GameObject _lambdaObject;
     ConnectToLambda _lambda;
     ConvertJArrayToMatrix _converter;
-    JArray _jsonBoard;
-    string[,] _algo1matrix;
+    JArray _algo1JsonBoard;
+    string[,] _board;
 
     // Start is called before the first frame update
     void Start()
-    {/*
-        _jsonBoard = _lambda.getAlgo1MatrixBoard;
-        Debug.Log(_jsonBoard);
-        
-        _algo1matrix = _converter.Convert(_jsonBoard);
-        
-for (int i = 0; i < _algo1matrix.GetLength(0); i++)
-{
-    for (int j = 0; j < _algo1matrix.GetLength(1); j++)
     {
-        Debug.Log(_algo1matrix[i, j]);
-    }
-}*/
+        _lambda = _lambdaObject.GetComponent<ConnectToLambda>();
+        _converter = this.GetComponent<ConvertJArrayToMatrix>();
+        _algo1JsonBoard = _lambda.getAlgo1JsonBoard;
+        _board = _converter.Convert(_algo1JsonBoard);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
