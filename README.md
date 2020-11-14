@@ -8,6 +8,7 @@ Completed tasks:
 -[x] Get String matrix representing of BSP rooms & BSP corridors algorithm board.
 
 To do:
+
 -[ ] Create in Lambda - BSP rooms & RPC algorithm.
 -[ ] Create in Lambda - BSP rooms & DW algorithm.
 -[ ] Create in Lambda - RRP & RPC algorithm.
