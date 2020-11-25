@@ -9,7 +9,7 @@ Completed tasks:
 
 To do:
 
-- [ ] Create in Lambda - BSP rooms & RPC algorithm.
-- [ ] Create in Lambda - BSP rooms & DW algorithm.
-- [ ] Create in Lambda - RRP & RPC algorithm.
-- [ ] Create in Lambda - RRP rooms & DW algorithm.
+- [ ] Create Vision statement and upload it to Github.
+- [ ] Connect other private Github to Lambda.
+- [ ] Put all Unity project in one folder.
+- [ ] Create new folder for future Documents.
