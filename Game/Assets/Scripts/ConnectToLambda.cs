@@ -28,9 +28,10 @@ public class ConnectToLambda : MonoBehaviour
     {
         try
         {
-            string url = "https://c3lwvoy7j0.execute-api.eu-west-2.amazonaws.com/default/calcGame";
+            string url = "https://a9hhrixjaa.execute-api.eu-west-2.amazonaws.com/default/createGameLevel";
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "GET";
+            request.Headers.Add("x-api-key", "PJ720kVG8v5yCZxXLafyt59AyJrRX4Dt8q6nFC9e");
             // Need to add token 
 
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
@@ -44,11 +45,11 @@ public class ConnectToLambda : MonoBehaviour
                 Stream dataStream = response.GetResponseStream();
                 StreamReader reader = new StreamReader(dataStream);
                 string strResponse = reader.ReadToEnd();
-                JObject json = JObject.Parse(strResponse);
-                Debug.Log("RestCalls, HttpWebResponse response: " + json); //Can do json.GetValue("value")
+                //JObject json = JObject.Parse(strResponse);
+                Debug.Log($"RestCalls, HttpWebResponse response: {strResponse}"); //Can do json.GetValue("value")
 
                 // Boards of all the algorithms
-                _algo1JsonBoard = (JArray)json.GetValue("BSP_rooms&BSP_corridors"); // Newtonsoft.Json.Linq.JArray
+               // _algo1JsonBoard = (JArray)json.GetValue("BSP_rooms&BSP_corridors"); // Newtonsoft.Json.Linq.JArray
 
             }
             response.Close();
