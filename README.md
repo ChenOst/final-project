@@ -1,15 +1,13 @@
 # Final-Project
+
 Completed tasks:
 
-- [x] Connect to AWS.
-- [x] Create Lambda function.
-- [x] Create in Lambda - BSP rooms & BSP corridors algorithm.
-- [x] Connect to Lambda with Unity. [Here](https://github.com/ChenOst/Final-Project/blob/main/Assets/Scripts/ConnectToLambda.cs) 
-- [x] Get String matrix representing of BSP rooms & BSP corridors algorithm board. [Here](https://github.com/ChenOst/Final-Project/blob/main/Assets/Scripts/BSPRoomsBSPCorridors.cs) 
+- [x] Create Vision statement and upload it to Github. [here](/main/docs/vision-statement.pdf)
+- [x] Connect other private repository to Lambda. [here](https://github.com/ChenOst/procedural-generation-backend)
+- [x] Put all Unity project in one folder.
+- [x] Create new folder for future Documents.
+- [x] AWS-Unity guide (Optional - we need to talk about this)
 
 To do:
 
-- [ ] Create Vision statement and upload it to Github.
-- [ ] Connect other private Github to Lambda.
-- [ ] Put all Unity project in one folder.
-- [ ] Create new folder for future Documents.
+- [ ] Find all the other algorithms and upload it to the other repository.
