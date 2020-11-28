@@ -2,7 +2,7 @@
 
 Completed tasks:
 
-- [x] Create Vision statement and upload it to Github. [here](/main/docs/vision-statement.pdf)
+- [x] Create Vision statement and upload it to Github. [here](https://github.com/ChenOst/final-project/blob/main/docs/vision-statement.pdf)
 - [x] Connect other private repository to Lambda. [here](https://github.com/ChenOst/procedural-generation-backend)
 - [x] Put all Unity project in one folder.
 - [x] Create new folder for future Documents.
