@@ -1,20 +1,17 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ConnectToLambda : MonoBehaviour
 {
-    private JArray _algo1JsonBoard; // BSP_rooms&BSP_corridors
-    private JArray _algo2JsonBoard;
-    private JArray _algo3JsonBoard;
-    private JArray _algo4JsonBoard;
-    private JArray _algo5JsonBoard;
+    public JArray Algo1JsonBoard { get; set; }
+    public JArray Algo2JsonBoard { get; set; }
+    public JArray Algo3JsonBoard { get; set; }
+    public JArray Algo4JsonBoard { get; set; }
+    public JArray Algo5JsonBoard { get; set; }
 
     // Awake is called before Start - RestCalls() function need to run first
     void Awake()
@@ -23,7 +20,6 @@ public class ConnectToLambda : MonoBehaviour
     }
 
     // Get info from the AWS Lambda function
-    // name (?)
     void RestCalls()
     {
         try
@@ -32,8 +28,7 @@ public class ConnectToLambda : MonoBehaviour
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "GET";
             request.Headers.Add("x-api-key", "PJ720kVG8v5yCZxXLafyt59AyJrRX4Dt8q6nFC9e");
-            // Need to add token 
-
+            
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 
             if (response.StatusCode != HttpStatusCode.OK)
@@ -45,12 +40,14 @@ public class ConnectToLambda : MonoBehaviour
                 Stream dataStream = response.GetResponseStream();
                 StreamReader reader = new StreamReader(dataStream);
                 string strResponse = reader.ReadToEnd();
-                //JObject json = JObject.Parse(strResponse);
-                Debug.Log($"RestCalls, HttpWebResponse response: {strResponse}"); //Can do json.GetValue("value")
+                JObject json = JObject.Parse(strResponse);
 
                 // Boards of all the algorithms
-               // _algo1JsonBoard = (JArray)json.GetValue("BSP_rooms&BSP_corridors"); // Newtonsoft.Json.Linq.JArray
-
+                Algo1JsonBoard = (JArray)json.GetValue("BSP Rooms and BSP Corridors");
+                Algo2JsonBoard = (JArray)json.GetValue("BSP Rooms and RPC");
+                Algo3JsonBoard = (JArray)json.GetValue("BSP Rooms and DW");
+                Algo4JsonBoard = (JArray)json.GetValue("RRP and RPC");
+                Algo5JsonBoard = (JArray)json.GetValue("RRP and DW");
             }
             response.Close();
         }
@@ -70,7 +67,4 @@ public class ConnectToLambda : MonoBehaviour
             Debug.Log("RestCalls, HttpWebRequest error: " + e.Message);
         }
     }
-
-    public JArray getAlgo1JsonBoard { get { return _algo1JsonBoard; } }
-    // Add all getters
 }
