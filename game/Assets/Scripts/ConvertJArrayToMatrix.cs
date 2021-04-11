@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ConvertJArrayToMatrix : MonoBehaviour
+public class ConvertJArrayToMatrix
 {
     // This function convert JArray object received from AWS lambda to string[,]
-    public string[,] Convert(JArray json)
+    public static string[,] Convert(JArray json)
     {
         string[,] mat = json.ToObject<string[,]>();
         return mat;

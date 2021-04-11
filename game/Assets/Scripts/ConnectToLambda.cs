@@ -7,16 +7,24 @@ using UnityEngine;
 
 public class ConnectToLambda : MonoBehaviour
 {
-    public JArray Algo1JsonBoard { get; set; }
-    public JArray Algo2JsonBoard { get; set; }
-    public JArray Algo3JsonBoard { get; set; }
-    public JArray Algo4JsonBoard { get; set; }
-    public JArray Algo5JsonBoard { get; set; }
+    public JArray Algo1JsonBoard { get; private set; }
+    public JArray Algo2JsonBoard { get; private set; }
+    public JArray Algo3JsonBoard { get; private set; }
+    public JArray Algo4JsonBoard { get; private set; }
+    public JArray Algo5JsonBoard { get; private set; }
+
+    public static ConnectToLambda Instance { get; private set; }
+
 
     // Awake is called before Start - RestCalls() function need to run first
-    void Awake()
+    void Start()
     {
-        RestCalls();
+        
+        if(Instance == null)
+        {
+            RestCalls();
+            this.GetComponent<InstantiateTiles>().Instantiate(ConvertJArrayToMatrix.Convert(Algo1JsonBoard));
+        }
     }
 
     // Get info from the AWS Lambda function
@@ -67,4 +75,5 @@ public class ConnectToLambda : MonoBehaviour
             Debug.Log("RestCalls, HttpWebRequest error: " + e.Message);
         }
     }
+
 }
