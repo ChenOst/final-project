@@ -5,25 +5,21 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public CharacterBase selectedCharacter;
+    private CharacterBase selectedCharacter;
 
-    public Texture2D tex_white;
-
-    public List<int> itemList = new List<int>();
+    private List<int> itemList;
 
     Vector2 scrollView;
-
-    public int itemsCount = 205;
 
     bool showInventory = false;
 
     // Use this for initialization
     void Start()
     {
-        selectedCharacter.EquipItem(37);
-        selectedCharacter.EquipItem(38);
-        selectedCharacter.EquipItem(1);
+        selectedCharacter = this.GetComponent<CharacterBase>();
+        itemList = this.GetComponent<Player>().ItemsId;
     }
+
     void Update()
     {
         if (Input.GetKey(KeyCode.I))
@@ -43,9 +39,9 @@ public class Inventory : MonoBehaviour
     {
         if (showInventory)
         {
-            scrollView = GUI.BeginScrollView(new Rect(5, 5, 110, Screen.height - 10), scrollView, new Rect(0, 0, 90, 100 + itemsCount * 65));
+            scrollView = GUI.BeginScrollView(new Rect(5, 5, 110, Screen.height - 10), scrollView, new Rect(0, 0, 90, 100 + itemList.Count * 65));
             int counter = 1;
-            for (int i = 1; i <= itemsCount; i++)
+            foreach (int i in itemList)
             {
                 if (GUI.Button(new Rect(5, counter * 65, 64, 64), ""))
                 {
@@ -55,7 +51,7 @@ public class Inventory : MonoBehaviour
                 if (IconLoader.GetInstance().GetIcon(i) != null)
                 {
                     GUI.DrawTexture(new Rect(5, counter * 65, 64, 64), IconLoader.GetInstance().GetIcon(i));
-                    GUI.Label(new Rect(5, counter * 65, 64, 64), "" + i);
+                    GUI.Label(new Rect(5, counter * 65, 64, 64), ""); // optional to add i
                 }
 
                 else
