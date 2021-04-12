@@ -15,10 +15,7 @@ public class BSPRoomsBSPCorridors : MonoBehaviour
 
     public void OnTriggerEnter(Collider other) 
     {
-        Debug.Log(other.name);
-        //other.transform.position = new Vector3(0, 10, 0);
-       // DontDestroyOnLoad(other.gameObject);
-        //SceneManager.LoadScene(index);
+
     }
 
 }

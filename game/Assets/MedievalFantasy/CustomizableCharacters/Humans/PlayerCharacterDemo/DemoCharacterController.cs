@@ -19,16 +19,6 @@ public class DemoCharacterController : MonoBehaviour {
     public float runSpeed = 4;
     public float rotationSpeed = 10;
 
-    [SerializeField]
-    private Transform _groundCheck;
-    [SerializeField]
-    private LayerMask _groundMask;
-
-    private float _gravity = -9.81f;
-    private float _groundDistance = 0.4f;
-    private Vector3 _velovity;
-    private bool _isGrounded;
-
     public void PickupItem(int itemId) {
         player.EquipItem(itemId);
     }
@@ -59,15 +49,6 @@ public class DemoCharacterController : MonoBehaviour {
         }
         anim.SetFloat("MovementSpeed", cc.velocity.magnitude); // play idle/walk/run animation
 
-        // Make sure that the player will stay on ground
-        _isGrounded = Physics.CheckSphere(_groundCheck.position, _groundDistance, _groundMask);
-        if (_isGrounded && _velovity.y < 0)
-        {
-            _velovity.y = -2f;
-        }
-
-        _velovity.y += _gravity * Time.deltaTime;
-        cc.Move(_velovity * Time.deltaTime);
     }
 
 
@@ -93,7 +74,6 @@ public class DemoCharacterController : MonoBehaviour {
         }
         return movementDirection;
     }
-
 
 
 }
