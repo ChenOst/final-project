@@ -7,7 +7,8 @@ public class Inventory : MonoBehaviour
 {
     private CharacterBase selectedCharacter;
 
-    private List<int> itemList;
+    // Contains all items id's 
+    public List<int> ItemsList { get; private set; }
 
     Vector2 scrollView;
 
@@ -17,11 +18,13 @@ public class Inventory : MonoBehaviour
     void Start()
     {
         selectedCharacter = this.GetComponent<CharacterBase>();
-        itemList = this.GetComponent<Player>().ItemsId;
+        ItemsList = new List<int>();
+        DressPlayerDefault();
     }
 
     void Update()
     {
+        // I key open/close the Inventory GUI
         if (Input.GetKey(KeyCode.I))
         {
             if (showInventory)
@@ -38,10 +41,10 @@ public class Inventory : MonoBehaviour
     private void OnGUI()
     {
         if (showInventory)
-        {
-            scrollView = GUI.BeginScrollView(new Rect(5, 5, 110, Screen.height - 10), scrollView, new Rect(0, 0, 90, 100 + itemList.Count * 65));
+       {
+            scrollView = GUI.BeginScrollView(new Rect(5, 5, 110, Screen.height - 10), scrollView, new Rect(0, 0, 90, 100 + ItemsList.Count * 65));
             int counter = 1;
-            foreach (int i in itemList)
+            foreach (int i in ItemsList)
             {
                 if (GUI.Button(new Rect(5, counter * 65, 64, 64), ""))
                 {
@@ -97,5 +100,16 @@ public class Inventory : MonoBehaviour
         {
             GUI.Box(new Rect(x, y, size, size), "" + s.slot.ToString());
         }
+    }
+
+    private void DressPlayerDefault()
+    {
+        ItemsList.Add(37);
+        ItemsList.Add(38);
+        ItemsList.Add(1);
+
+        selectedCharacter.EquipItem(37);
+        selectedCharacter.EquipItem(38);
+        selectedCharacter.EquipItem(1);
     }
 }
