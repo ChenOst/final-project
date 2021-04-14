@@ -17,14 +17,10 @@ public class ConnectToLambda : MonoBehaviour
 
 
     // Awake is called before Start - RestCalls() function need to run first
-    void Start()
+    void Awake()
     {
-        
-        if(Instance == null)
-        {
-            RestCalls();
-            this.GetComponent<InstantiateTiles>().Instantiate(ConvertJArrayToMatrix.Convert(Algo1JsonBoard));
-        }
+        RestCalls();
+        this.GetComponent<InstantiateTiles>().Instantiate(ConvertJArrayToMatrix.Convert(Algo1JsonBoard));
     }
 
     // Get info from the AWS Lambda function
