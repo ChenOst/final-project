@@ -11,10 +11,12 @@ public class DetectCollisions : MonoBehaviour
     private bool _active;
 
     [SerializeField]
+    [Tooltip("Number of Scene you would like to move to")]
     [Range(0,9)]
     private int _sceneNumber;
 
     [SerializeField]
+    [Tooltip("Number of Controller you want to use")]
     [Range(0, 9)]
     private int _controllerNumber;
 
@@ -27,13 +29,19 @@ public class DetectCollisions : MonoBehaviour
         _manager = GameObject.Find(_managerName);
     }
 
-    public void OnTriggerEnter(Collider other)
+    public void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && Input.GetKey(KeyCode.E))
         {
-            DontDestroyOnLoad(_manager);
-            _manager.transform.GetChild(_controllerNumber).gameObject.SetActive(_active);
-            SceneManager.LoadScene(_sceneNumber);
+            GameObject sceneController = _manager.transform.GetChild(_controllerNumber).gameObject;
+            sceneController.SetActive(_active);
+
+            // Move Object to the another scenes
+
+                DontDestroyOnLoad(_manager);
+                DontDestroyOnLoad(GameObject.Find("Main Camera"));
+                DontDestroyOnLoad(GameObject.Find("Prefab_PlayerCharacter"));
+                SceneManager.LoadScene(_sceneNumber);
         }
     }
 

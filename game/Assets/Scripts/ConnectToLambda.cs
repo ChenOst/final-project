@@ -7,20 +7,15 @@ using UnityEngine;
 
 public class ConnectToLambda : MonoBehaviour
 {
-    public JArray Algo1JsonBoard { get; private set; }
-    public JArray Algo2JsonBoard { get; private set; }
-    public JArray Algo3JsonBoard { get; private set; }
-    public JArray Algo4JsonBoard { get; private set; }
-    public JArray Algo5JsonBoard { get; private set; }
-
-    public static ConnectToLambda Instance { get; private set; }
-
+    [SerializeField]
+    private string _algorithmName;
+    public JArray JsonBoard { get; private set; }
 
     // Awake is called before Start - RestCalls() function need to run first
     void Awake()
     {
         RestCalls();
-        this.GetComponent<InstantiateTiles>().Instantiate(ConvertJArrayToMatrix.Convert(Algo1JsonBoard));
+        this.GetComponent<InstantiateTiles>().Instantiate(ConvertJArrayToMatrix.Convert(JsonBoard));
     }
 
     // Get info from the AWS Lambda function
@@ -47,11 +42,8 @@ public class ConnectToLambda : MonoBehaviour
                 JObject json = JObject.Parse(strResponse);
 
                 // Boards of all the algorithms
-                Algo1JsonBoard = (JArray)json.GetValue("BSP Rooms and BSP Corridors");
-                Algo2JsonBoard = (JArray)json.GetValue("BSP Rooms and RPC");
-                Algo3JsonBoard = (JArray)json.GetValue("BSP Rooms and DW");
-                Algo4JsonBoard = (JArray)json.GetValue("RRP and RPC");
-                Algo5JsonBoard = (JArray)json.GetValue("RRP and DW");
+                JsonBoard = (JArray)json.GetValue(_algorithmName);
+
             }
             response.Close();
         }

@@ -7,7 +7,6 @@ public class MoveCamera : MonoBehaviour
     [SerializeField]
     private Transform _playerTransform;
 
-    [SerializeField]
     private Vector3 _cameraoffset;
 
     void Start()

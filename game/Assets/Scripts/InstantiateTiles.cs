@@ -11,6 +11,12 @@ public class InstantiateTiles : MonoBehaviour
 
     [SerializeField] private GameObject _boardController;
 
+    public Vector3 StartPosition { get; private set; }
+
+    public Vector3 EndPosition { get; private set; }
+
+    private static bool once = true;
+
     public void Instantiate(string[,] board)
     {
         for (int k = 0; k < board.GetLength(0); k++)
@@ -21,8 +27,15 @@ public class InstantiateTiles : MonoBehaviour
                 {
                     int index = (int)Random.Range(0, _floorToSpawn.Length);
                     var posToSpawn = new Vector3(k * 2, 0, l * 2);
+                    if (once)
+                    {
+                        StartPosition = new Vector3(k * 2, 0, l * 2);
+                        SetPlayerLocation(k * 2, 0, l * 2);
+                        once = false;
+                    }
                     GameObject newTile = Instantiate(_floorToSpawn[index], posToSpawn, Quaternion.identity);
                     newTile.transform.parent = _boardController.transform;
+                    EndPosition = new Vector3(k * 2, 0, l * 2);
                 }
                 else
                 {
@@ -35,4 +48,11 @@ public class InstantiateTiles : MonoBehaviour
             }
         }
     }
+
+    private void SetPlayerLocation(float x, float y, float z)
+    {
+        GameObject player = GameObject.Find("Prefab_PlayerCharacter");
+        player.transform.position = new Vector3(x, y + 1, z);
+    }
+
 }
