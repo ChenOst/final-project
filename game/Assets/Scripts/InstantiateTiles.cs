@@ -15,7 +15,7 @@ public class InstantiateTiles : MonoBehaviour
 
     public Vector3 EndPosition { get; private set; }
 
-    private static bool once = true;
+    private static bool startPositionIsSet = false;
 
     public void Instantiate(string[,] board)
     {
@@ -27,11 +27,11 @@ public class InstantiateTiles : MonoBehaviour
                 {
                     int index = (int)Random.Range(0, _floorToSpawn.Length);
                     var posToSpawn = new Vector3(k * 2, 0, l * 2);
-                    if (once)
+                    if (!startPositionIsSet)
                     {
                         StartPosition = new Vector3(k * 2, 0, l * 2);
                         SetPlayerLocation(k * 2, 0, l * 2);
-                        once = false;
+                        startPositionIsSet = true;
                     }
                     GameObject newTile = Instantiate(_floorToSpawn[index], posToSpawn, Quaternion.identity);
                     newTile.transform.parent = _boardController.transform;
