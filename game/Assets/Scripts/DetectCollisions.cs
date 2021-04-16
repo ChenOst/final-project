@@ -10,12 +10,6 @@ public class DetectCollisions : MonoBehaviour
     [SerializeField]
     private bool _active;
 
-    private GameObject _canvas;
-
-    private GameObject _manager;
-
-    private GameObject _ePanel;
-
     [SerializeField]
     [Tooltip("Number of Scene you would like to move to")]
     [Range(0,9)]
@@ -26,17 +20,14 @@ public class DetectCollisions : MonoBehaviour
     [Range(0, 9)]
     private int _controllerNumber;
 
-    private const string _managerName = "Game Manager";
-
-    private const string _canvasName = "Canvas";
+    private GameObject _manager, _ePanel;
 
     private bool _showPanel = false;
 
     void Start()
     {
-        _manager = GameObject.Find(_managerName);
-        _canvas = GameObject.Find(_canvasName);
-        _ePanel = _canvas.transform.FindChild("Press E Panel").gameObject;
+        _manager = GameObject.Find("Game Manager");
+        _ePanel = GameObject.Find("Canvas").transform.Find("Press E Panel").gameObject;
     }
 
     void Update()
@@ -45,18 +36,12 @@ public class DetectCollisions : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.E))
             {
-                GameObject sceneController = _manager.transform.GetChild(_controllerNumber).gameObject;
-                sceneController.SetActive(_active);
-
-                // Move Objects to the another scenes
-                DontDestroyOnLoad(_manager);
-                DontDestroyOnLoad(_canvas);
-                DontDestroyOnLoad(GameObject.Find("Main Camera"));
-                DontDestroyOnLoad(GameObject.Find("Prefab_PlayerCharacter"));
-                SceneManager.LoadScene(_sceneNumber);
-
                 _showPanel = false;
                 _ePanel.SetActive(false);
+
+                GameObject sceneController = _manager.transform.GetChild(_controllerNumber).gameObject;
+                sceneController.SetActive(_active);
+                SceneManager.LoadScene(_sceneNumber);
             }
         }
 
