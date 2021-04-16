@@ -7,9 +7,10 @@ using UnityEngine;
 
 public class ConnectToLambda : MonoBehaviour
 {
-    [SerializeField]
-    private string _algorithmName;
     public JArray JsonBoard { get; private set; }
+
+    [SerializeField]
+    private AlgorithmName _algorithmName;
 
     // Awake is called before Start - RestCalls() function need to run first
     void Awake()
@@ -42,7 +43,7 @@ public class ConnectToLambda : MonoBehaviour
                 JObject json = JObject.Parse(strResponse);
 
                 // Boards of all the algorithms
-                JsonBoard = (JArray)json.GetValue(_algorithmName);
+                JsonBoard = (JArray)json.GetValue(_algorithmName.ToString());
 
             }
             response.Close();
@@ -65,3 +66,5 @@ public class ConnectToLambda : MonoBehaviour
     }
 
 }
+public enum AlgorithmName { BSPRoomsAndRPC, BSPRoomsAndBSPCorridors, BSPRoomsAndDW, RRPAndRPC, RRPAndDW }
+
