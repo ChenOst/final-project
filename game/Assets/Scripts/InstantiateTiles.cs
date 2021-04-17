@@ -39,7 +39,7 @@ public class InstantiateTiles : MonoBehaviour
                 else
                 {
                     int index = (int)Random.Range(0, _wallToSpawn.Length);
-                    var posToSpawn = new Vector3(k * 2, 3.7f, l * 2);
+                    var posToSpawn = new Vector3(k * 2, 2.2f, l * 2);
                     GameObject newTile =  Instantiate(_wallToSpawn[index], posToSpawn, Quaternion.identity);
                     newTile.transform.parent = _boardController.transform;
                 }
