@@ -12,7 +12,6 @@ public class InstantiateTiles : MonoBehaviour
     [SerializeField] private GameObject _boardController;
 
     public Vector3 StartPosition { get; private set; }
-
     public Vector3 EndPosition { get; private set; }
 
     private static bool startPositionIsSet = false;

@@ -7,10 +7,11 @@ using UnityEngine;
 
 public class ConnectToLambda : MonoBehaviour
 {
-    public JArray JsonBoard { get; private set; }
 
     [SerializeField]
     private AlgorithmName _algorithmName;
+
+    public JArray JsonBoard { get; private set; }
 
     // Awake is called before Start - RestCalls() function need to run first
     void Awake()
