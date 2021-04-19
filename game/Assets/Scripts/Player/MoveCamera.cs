@@ -32,7 +32,7 @@ public class MoveCamera : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, _playerTransform.position - transform.position, out hit, 4.5f))
         {
-            if (hit.collider.gameObject.tag == ObjectNameHelper.WallTag)
+            if (hit.collider.gameObject.tag == Constants.WallTag)
             {
                 _obstruction = hit.transform;
 
@@ -56,7 +56,7 @@ public class MoveCamera : MonoBehaviour
                 }
                 
             }
-            else if (hit.collider.gameObject.tag == ObjectNameHelper.PlayerTag)
+            else if (hit.collider.gameObject.tag == Constants.PlayerTag)
             {
                 if (_tempObstruction != null)
                 {
