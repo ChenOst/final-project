@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenuScene.unity
+    guid: 43d5340356035d54caf27c42cbc3d275
+  - enabled: 1
     path: Assets/Scenes/TownScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/TempScene.unity
-    guid: fa57535f4aa4779498d9715cddbfa729
+    path: Assets/Scenes/BSP Rooms And RPC - Level 1.unity
+    guid: 06f5a0fac8536084eb7216646ca2f18d
   m_configObjects: {}

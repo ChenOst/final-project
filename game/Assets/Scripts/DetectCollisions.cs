@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.ConstrainedExecution;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class DetectCollisions : MonoBehaviour
 {
@@ -22,12 +24,17 @@ public class DetectCollisions : MonoBehaviour
 
     private GameObject _manager, _ePanel;
 
+    private TextMeshProUGUI _sceneName;
+
     private bool _showPanel = false;
 
     void Start()
     {
         _manager = GameObject.Find("Game Manager");
         _ePanel = GameObject.Find("Canvas").transform.Find("Press E Panel").gameObject;
+        _sceneName = _ePanel.transform.Find("Scene Name (TMP)").GetComponent<TextMeshProUGUI>();
+        string name = SceneUtility.GetScenePathByBuildIndex(_sceneNumber).Replace("Assets/Scenes/", "").Replace(".unity","");
+        _sceneName.text = name;
     }
 
     void Update()
@@ -52,7 +59,7 @@ public class DetectCollisions : MonoBehaviour
         if (other.tag == "Player")
         {
             _showPanel = true;
-            _ePanel.SetActive(true);
+            _ePanel.SetActive(true);    
         }
     }
 
