@@ -7,9 +7,9 @@ public class DontDestroyObjects : MonoBehaviour
 
     void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
-        DontDestroyOnLoad(GameObject.Find("Canvas"));
-        DontDestroyOnLoad(GameObject.Find("Main Camera"));
-        DontDestroyOnLoad(GameObject.Find("Prefab_PlayerCharacter"));
+        DontDestroyOnLoad(GameObject.Find(ObjectNameHelper.GameManager));
+        DontDestroyOnLoad(GameObject.Find(ObjectNameHelper.Canvas));
+        DontDestroyOnLoad(GameObject.Find(ObjectNameHelper.MainCamera));
+        DontDestroyOnLoad(GameObject.Find(ObjectNameHelper.Player));
     }
 }

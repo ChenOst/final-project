@@ -30,9 +30,9 @@ public class DetectCollisions : MonoBehaviour
 
     void Start()
     {
-        _manager = GameObject.Find("Game Manager");
-        _ePanel = GameObject.Find("Canvas").transform.Find("Press E Panel").gameObject;
-        _sceneName = _ePanel.transform.Find("Scene Name (TMP)").GetComponent<TextMeshProUGUI>();
+        _manager = GameObject.Find(ObjectNameHelper.GameManager);
+        _ePanel = GameObject.Find(ObjectNameHelper.Canvas).transform.Find(ObjectNameHelper.PressEPanel).gameObject;
+        _sceneName = _ePanel.transform.Find(ObjectNameHelper.SceneNameTMP).GetComponent<TextMeshProUGUI>();
         string name = SceneUtility.GetScenePathByBuildIndex(_sceneNumber).Replace("Assets/Scenes/", "").Replace(".unity","");
         _sceneName.text = name;
     }
@@ -56,7 +56,7 @@ public class DetectCollisions : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == ObjectNameHelper.PlayerTag)
         {
             _showPanel = true;
             _ePanel.SetActive(true);    
@@ -65,7 +65,7 @@ public class DetectCollisions : MonoBehaviour
 
     public void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == ObjectNameHelper.PlayerTag)
         {
             _showPanel = false;
             _ePanel.SetActive(false);

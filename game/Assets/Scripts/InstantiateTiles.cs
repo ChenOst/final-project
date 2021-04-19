@@ -50,7 +50,7 @@ public class InstantiateTiles : MonoBehaviour
 
     private void SetPlayerLocation(float x, float y, float z)
     {
-        GameObject player = GameObject.Find("Prefab_PlayerCharacter");
+        GameObject player = GameObject.Find(ObjectNameHelper.Player);
         player.transform.position = new Vector3(x, y + 1, z);
     }
 
