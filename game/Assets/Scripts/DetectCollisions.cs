@@ -14,12 +14,12 @@ public class DetectCollisions : MonoBehaviour
 
     [SerializeField]
     [Tooltip("Number of Scene you would like to move to")]
-    [Range(0,9)]
+    [Range(1,15)]
     private int _sceneNumber;
 
     [SerializeField]
     [Tooltip("Number of Controller you want to use")]
-    [Range(0, 9)]
+    [Range(0, 14)]
     private int _controllerNumber;
 
     private GameObject _manager, _ePanel;

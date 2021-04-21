@@ -8,7 +8,7 @@ public class Inventory : MonoBehaviour
     private CharacterBase selectedCharacter;
 
     // Contains all items id's 
-    public List<int> ItemsList { get; private set; }
+    public List<int> Items { get; private set; }
 
     Vector2 scrollView;
 
@@ -18,7 +18,7 @@ public class Inventory : MonoBehaviour
     void Start()
     {
         selectedCharacter = this.GetComponent<CharacterBase>();
-        ItemsList = new List<int>();
+        Items = new List<int>();
         DressPlayerDefault();
     }
 
@@ -42,9 +42,9 @@ public class Inventory : MonoBehaviour
     {
         if (showInventory)
        {
-            scrollView = GUI.BeginScrollView(new Rect(5, 5, 110, Screen.height - 10), scrollView, new Rect(0, 0, 90, 100 + ItemsList.Count * 65));
+            scrollView = GUI.BeginScrollView(new Rect(5, 5, 110, Screen.height - 10), scrollView, new Rect(0, 0, 90, 100 + Items.Count * 65));
             int counter = 1;
-            foreach (int i in ItemsList)
+            foreach (int i in Items)
             {
                 if (GUI.Button(new Rect(5, counter * 65, 64, 64), ""))
                 {
@@ -104,9 +104,9 @@ public class Inventory : MonoBehaviour
 
     private void DressPlayerDefault()
     {
-        ItemsList.Add(37);
-        ItemsList.Add(38);
-        ItemsList.Add(1);
+        Items.Add(37);
+        Items.Add(38);
+        Items.Add(1);
 
         selectedCharacter.EquipItem(37);
         selectedCharacter.EquipItem(38);
