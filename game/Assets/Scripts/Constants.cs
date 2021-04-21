@@ -18,6 +18,8 @@ public static class Constants
 
     public const string SceneNameTMP = "Scene Name (TMP)";
 
+    public const string ItemMessage = "New Item Message";
+
     // ***** Game Objects Tags *****
 
     public const string PlayerTag = "Player";
