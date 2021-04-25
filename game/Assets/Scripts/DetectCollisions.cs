@@ -8,31 +8,35 @@ using UnityEngine.UI;
 
 public class DetectCollisions : MonoBehaviour
 {
-
-    [SerializeField]
-    private bool _active;
-
     [SerializeField]
     [Tooltip("Number of Scene you would like to move to")]
-    [Range(1,15)]
+    [Range(1, 15)]
     private int _sceneNumber;
+
+    [SerializeField]
+    [Tooltip("Where the player character start in the scene")]
+    private bool _takeToStartPosition;
 
     [SerializeField]
     [Tooltip("Number of Controller you want to use")]
     [Range(0, 14)]
     private int _controllerNumber;
 
-    private GameObject _manager, _ePanel;
+    [SerializeField]
+    [Tooltip("Active or deactivate the chosen controller")]
+    private bool _active;
 
-    private TextMeshProUGUI _sceneName;
+    private GameObject _ePanel;
 
     private bool _showPanel = false;
 
     void Start()
     {
-        _manager = GameObject.Find(Constants.GameManager);
-        _ePanel = GameObject.Find(Constants.Canvas).transform.Find(Constants.PressEPanel).gameObject;
-        _sceneName = _ePanel.transform.Find(Constants.SceneNameTMP).GetComponent<TextMeshProUGUI>();
+        _ePanel = GameObject.Find(Constants.Canvas)
+                    .transform.Find(Constants.PressEPanel).gameObject;
+
+        // Add text with scene name to the panel
+        TextMeshProUGUI _sceneName = _ePanel.transform.Find(Constants.SceneNameTMP).GetComponent<TextMeshProUGUI>();
         string name = SceneUtility.GetScenePathByBuildIndex(_sceneNumber).Replace("Assets/Scenes/", "").Replace(".unity","");
         _sceneName.text = name;
     }
@@ -46,14 +50,10 @@ public class DetectCollisions : MonoBehaviour
                 _showPanel = false;
                 _ePanel.SetActive(false);
 
-                GameObject sceneController = _manager.transform.GetChild(_controllerNumber).gameObject;
+                GameObject sceneController = GameObject.Find(Constants.GameManager)
+                                               .transform.GetChild(_controllerNumber).gameObject;
                 sceneController.SetActive(_active);
-                Debug.Log(sceneController);
-
-                GameObject go1 = new GameObject("JUSTCHECCKING");
-                go1.AddComponent<test>().Index = _sceneNumber;
-                DontDestroyOnLoad(go1);
-
+                SpawnPlayerAtPosition();
                 SceneManager.LoadScene(_sceneNumber);
             }
         }
@@ -78,4 +78,11 @@ public class DetectCollisions : MonoBehaviour
         }
     }
 
+    private void SpawnPlayerAtPosition()
+    {
+        GameObject playersNewPosition = new GameObject();
+        playersNewPosition.AddComponent<ChangePlayerPosition>().Index = _sceneNumber;
+        playersNewPosition.GetComponent<ChangePlayerPosition>().StartPos = _takeToStartPosition;
+        DontDestroyOnLoad(playersNewPosition);
+    }
 }

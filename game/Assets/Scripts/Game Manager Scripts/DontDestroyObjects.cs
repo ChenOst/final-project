@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DontDestroyObjects : MonoBehaviour
 {
-
     void Start()
     {
         DontDestroyOnLoad(GameObject.Find(Constants.GameManager));

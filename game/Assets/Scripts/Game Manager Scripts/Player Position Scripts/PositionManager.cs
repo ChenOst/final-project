@@ -14,6 +14,15 @@ public class PositionManager : MonoBehaviour
     // Set only once
     private static Dictionary<int, Vector3> _startPositions = new Dictionary<int, Vector3>();
 
+    private GameObject _player;
+
+    void Start()
+    {
+        _player = GameObject.Find(Constants.Player);
+        _startPositions.Add(1, new Vector3(12, 1.08f, 15));
+        _savedPositions.Add(1, new Vector3(12, 1.08f, 15));
+    }
+
     public void AddSavedPosition(int sceneIndex, float x, float y, float z)
     {
         if (_savedPositions.ContainsKey(sceneIndex))
@@ -41,13 +50,11 @@ public class PositionManager : MonoBehaviour
 
     public void SetSavedPosition(int sceneIndex)
     {
-        GameObject _player = GameObject.Find(Constants.Player);
         _player.transform.position = _savedPositions[sceneIndex];
     }
 
     public void SetStartPosition(int sceneIndex)
     {
-        GameObject _player = GameObject.Find(Constants.Player);
         _player.transform.position = _startPositions[sceneIndex];
     }
 

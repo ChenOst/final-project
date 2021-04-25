@@ -3061,7 +3061,7 @@ GameObject:
   m_Component:
   - component: {fileID: 97966416}
   m_Layer: 0
-  m_Name: Scene 1 Controller
+  m_Name: Controller - Number 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20737,6 +20737,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5093322173054418456, guid: 85e0321603a50374c830390505ab122e, type: 3}
+      propertyPath: _takeToStartPosition
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5945158911329824470, guid: 85e0321603a50374c830390505ab122e, type: 3}
       propertyPath: m_Name
       value: StairsUp
@@ -37878,9 +37882,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f94c9e7e5b021ff4a96426c3af1c8caf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _active: 1
   _sceneNumber: 2
+  _takeToStartPosition: 1
   _controllerNumber: 0
+  _active: 1
 --- !u!1001 &1457133687
 PrefabInstance:
   m_ObjectHideFlags: 0
