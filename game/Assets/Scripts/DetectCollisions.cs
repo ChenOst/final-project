@@ -48,6 +48,12 @@ public class DetectCollisions : MonoBehaviour
 
                 GameObject sceneController = _manager.transform.GetChild(_controllerNumber).gameObject;
                 sceneController.SetActive(_active);
+                Debug.Log(sceneController);
+
+                GameObject go1 = new GameObject("JUSTCHECCKING");
+                go1.AddComponent<test>().Index = _sceneNumber;
+                DontDestroyOnLoad(go1);
+
                 SceneManager.LoadScene(_sceneNumber);
             }
         }
