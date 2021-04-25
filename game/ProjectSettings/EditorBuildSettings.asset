@@ -14,4 +14,46 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BSP Rooms And RPC - Level 1.unity
     guid: 06f5a0fac8536084eb7216646ca2f18d
+  - enabled: 1
+    path: Assets/Scenes/BSP Rooms And RPC - Level 2.unity
+    guid: 8af9f72e664dc4c4fbdfbe9679fb501d
+  - enabled: 1
+    path: Assets/Scenes/BSP Rooms And RPC - Level 3.unity
+    guid: 4146e2574fd54684cb01bcbb69df5bc4
+  - enabled: 1
+    path: Assets/Scenes/BSP Rooms And BSP Corridors -  Level 1.unity
+    guid: 2d37a627f34011746b794ce23d934a02
+  - enabled: 1
+    path: Assets/Scenes/BSP Rooms And BSP Corridors -  Level 2.unity
+    guid: ca72bd0cba60cac4681212e7f12a0359
+  - enabled: 1
+    path: Assets/Scenes/BSP Rooms And BSP Corridors -  Level 3.unity
+    guid: 96db608ddcaabc2428dcd1994f626fef
+  - enabled: 1
+    path: Assets/Scenes/BSP Rooms And DW - Level 1.unity
+    guid: cdf7660dcaba5cb48b4c4d7e44aa6417
+  - enabled: 1
+    path: Assets/Scenes/BSP Rooms And DW - Level 2.unity
+    guid: ccabd1f5daaeb04429a98f1c4aa15dc7
+  - enabled: 1
+    path: Assets/Scenes/BSP Rooms And DW - Level 3.unity
+    guid: 1fddeb18ee06ac64ca80a5e1aefaebd8
+  - enabled: 1
+    path: Assets/Scenes/RRP And RPC - Level 1.unity
+    guid: c5fe7710d88de8944ab3db8554755d8d
+  - enabled: 1
+    path: Assets/Scenes/RRP And RPC - Level 2.unity
+    guid: 32ef805d0b6504a4ba793783a94f26fd
+  - enabled: 1
+    path: Assets/Scenes/RRP And RPC - Level 3.unity
+    guid: 3da4c2c60d562984b96a1d16e73324a5
+  - enabled: 1
+    path: Assets/Scenes/RRP And DW - Level 1.unity
+    guid: a3478e9df9ec25846b21ac361435f9de
+  - enabled: 1
+    path: Assets/Scenes/RRP And DW - Level 2.unity
+    guid: ed8cf6efe53a3a2459b0c9d8a5e467e8
+  - enabled: 1
+    path: Assets/Scenes/RRP And DW - Level 3.unity
+    guid: e4abbbf904b6138498fbbc27c9d5a552
   m_configObjects: {}
