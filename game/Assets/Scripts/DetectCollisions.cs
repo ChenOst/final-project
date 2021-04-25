@@ -50,9 +50,18 @@ public class DetectCollisions : MonoBehaviour
                 _showPanel = false;
                 _ePanel.SetActive(false);
 
-                GameObject sceneController = GameObject.Find(Constants.GameManager)
-                                               .transform.GetChild(_controllerNumber).gameObject;
-                sceneController.SetActive(_active);
+                foreach (Transform child in GameObject.Find(Constants.GameManager).transform)
+                {
+                    child.gameObject.SetActive(false);
+                }
+
+                if (_active)
+                {
+                    GameObject sceneController = GameObject.Find(Constants.GameManager)
+                                              .transform.GetChild(_controllerNumber).gameObject;
+                    sceneController.SetActive(true);
+                }
+
                 SpawnPlayerAtPosition();
                 SceneManager.LoadScene(_sceneNumber);
             }
