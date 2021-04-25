@@ -4,6 +4,7 @@ using System;
 using System.IO;
 using System.Net;
 using UnityEngine;
+using static EnumNames;
 
 public class ConnectToLambda : MonoBehaviour
 {
@@ -67,5 +68,5 @@ public class ConnectToLambda : MonoBehaviour
     }
 
 }
-public enum AlgorithmName { BSPRoomsAndRPC, BSPRoomsAndBSPCorridors, BSPRoomsAndDW, RRPAndRPC, RRPAndDW }
+
 

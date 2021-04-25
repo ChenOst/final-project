@@ -26,7 +26,16 @@ public class EnumNames
 
     public enum ControllerNames
     {
-        Controller0,
-        Controller1
+        Controller2,
+        Controller3
+    }
+
+    public enum AlgorithmName
+    { 
+        BSPRoomsAndRPC,
+        BSPRoomsAndBSPCorridors,
+        BSPRoomsAndDW,
+        RRPAndRPC,
+        RRPAndDW 
     }
 }
