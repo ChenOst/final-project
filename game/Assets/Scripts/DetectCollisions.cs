@@ -16,7 +16,7 @@ public class DetectCollisions : MonoBehaviour
     private bool _takeToStartPosition;
 
     [SerializeField]
-    [Tooltip("Active or deactivate the chosen controller")]
+    [Tooltip("Active the chosen controller")]
     private bool _activeController;
 
     [ConditionalHide("_activeController", true)]
