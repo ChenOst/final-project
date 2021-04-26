@@ -48,14 +48,20 @@ public class DetectCollisions : MonoBehaviour
 
                 foreach (Transform child in GameObject.Find(Constants.GameManager).transform)
                 {
-                    child.gameObject.SetActive(false);
+                    foreach (Transform grandchild in child)
+                    {
+                        grandchild.gameObject.SetActive(false);
+                    }
                 }
 
                 if (_active)
                 {
-                    GameObject sceneController = GameObject.Find(Constants.GameManager)
-                                              .transform.GetChild((int)controllerNumber).gameObject;
-                    sceneController.SetActive(true);
+                    Transform sceneController = GameObject.Find(Constants.GameManager)
+                                              .transform.GetChild((int)controllerNumber);
+                    foreach (Transform grandchild in sceneController)
+                    {
+                        grandchild.gameObject.SetActive(true);
+                    }
                 }
 
                 SpawnPlayerAtPosition();
@@ -92,4 +98,5 @@ public class DetectCollisions : MonoBehaviour
         playersNewPosition.GetComponent<ChangePlayerPosition>().StartPos = _takeToStartPosition;
         DontDestroyOnLoad(playersNewPosition);
     }
+
 }

@@ -140,7 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: 0
   controllerNumber: 0
-  _takeToStartPosition: 1
+  _takeToStartPosition: 0
   _active: 0
 --- !u!1 &2226468663894452305
 GameObject:

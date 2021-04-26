@@ -11,14 +11,13 @@ public class ConnectToLambda : MonoBehaviour
 
     [SerializeField]
     private AlgorithmName _algorithmName;
-
-    public JArray JsonBoard { get; private set; }
+    public string[,] Board { get; private set; }
 
     // Awake is called before Start - RestCalls() function need to run first
     void Awake()
     {
         RestCalls();
-        this.GetComponent<InstantiateTiles>().Instantiate(ConvertJArrayToMatrix.Convert(JsonBoard));
+        this.GetComponent<ImportantePoints>().SetPoints(Board);
     }
 
     // Get info from the AWS Lambda function
@@ -45,7 +44,8 @@ public class ConnectToLambda : MonoBehaviour
                 JObject json = JObject.Parse(strResponse);
 
                 // Boards of all the algorithms
-                JsonBoard = (JArray)json.GetValue(_algorithmName.ToString());
+                JArray jsonBoard = (JArray)json.GetValue(_algorithmName.ToString());
+                Board = ConvertJArrayToMatrix.Convert(jsonBoard);
 
             }
             response.Close();

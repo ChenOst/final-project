@@ -11,8 +11,6 @@ public class PositionController : MonoBehaviour
     private int _sceneIndex;
 
     [SerializeField]
-    private InstantiateTiles _startPosition;
-
     private PositionManager positionManager;
 
     private GameObject player;
@@ -22,9 +20,6 @@ public class PositionController : MonoBehaviour
     {
         positionManager = GameObject.Find(Constants.GameManager).GetComponent<PositionManager>();
         player = GameObject.Find(Constants.Player);
-
-        Vector3 position = _startPosition.StartPosition;
-        positionManager.AddStartPosition(_sceneIndex, position.x, position.y + 2, position.z);
     }
 
     // Update is called once per frame

@@ -27,7 +27,20 @@ public class EnumNames
     public enum ControllerNames
     {
         Controller2,
-        Controller3
+        Controller3,
+        Controller4,
+        Controller5,
+        Controller6,
+        Controller7,
+        Controller8,
+        Controller9,
+        Controller10,
+        Controller11,
+        Controller12,
+        Controller13,
+        Controller14,
+        Controller15,
+        Controller16
     }
 
     public enum AlgorithmName
