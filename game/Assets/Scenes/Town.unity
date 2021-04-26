@@ -36803,9 +36803,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: 2
-  controllerNumber: 0
   _takeToStartPosition: 1
-  _active: 1
+  _activeController: 1
+  controllerNumber: 0
 --- !u!1001 &1457133687
 PrefabInstance:
   m_ObjectHideFlags: 0
