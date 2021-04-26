@@ -12,15 +12,15 @@ public class DetectCollisions : MonoBehaviour
     private SceneNames sceneName;
 
     [SerializeField]
-    private ControllerNames controllerNumber;
-
-    [SerializeField]
     [Tooltip("Where the player character start in the scene")]
     private bool _takeToStartPosition;
 
     [SerializeField]
     [Tooltip("Active or deactivate the chosen controller")]
-    private bool _active;
+    private bool _activeController;
+
+    [ConditionalHide("_activeController", true)]
+    public ControllerNames controllerNumber;
 
     private GameObject _ePanel;
 
@@ -33,7 +33,6 @@ public class DetectCollisions : MonoBehaviour
         _ePanel = GameObject.Find(Constants.Canvas)
                     .transform.Find(Constants.PressEPanel).gameObject;
 
-        // Add text with scene name to the panel
         _sceneName = _ePanel.transform.Find(Constants.SceneNameTMP).GetComponent<TextMeshProUGUI>();
     }
 
@@ -46,24 +45,7 @@ public class DetectCollisions : MonoBehaviour
                 _showPanel = false;
                 _ePanel.SetActive(false);
 
-                foreach (Transform child in GameObject.Find(Constants.GameManager).transform)
-                {
-                    foreach (Transform grandchild in child)
-                    {
-                        grandchild.gameObject.SetActive(false);
-                    }
-                }
-
-                if (_active)
-                {
-                    Transform sceneController = GameObject.Find(Constants.GameManager)
-                                              .transform.GetChild((int)controllerNumber);
-                    foreach (Transform grandchild in sceneController)
-                    {
-                        grandchild.gameObject.SetActive(true);
-                    }
-                }
-
+                ActiveController();
                 SpawnPlayerAtPosition();
                 SceneManager.LoadScene((int)sceneName);
             }
@@ -77,6 +59,8 @@ public class DetectCollisions : MonoBehaviour
         {
             _showPanel = true;
             _ePanel.SetActive(true);
+
+            // Set the name of the given scene at the panel
             string name = SceneUtility.GetScenePathByBuildIndex((int)sceneName).Replace("Assets/Scenes/", "").Replace(".unity", "");
             _sceneName.text = name;
         }
@@ -93,10 +77,34 @@ public class DetectCollisions : MonoBehaviour
 
     private void SpawnPlayerAtPosition()
     {
+        // Creates spawenr position of the player in the next scene
         GameObject playersNewPosition = new GameObject();
         playersNewPosition.AddComponent<ChangePlayerPosition>().Index = (int)sceneName;
         playersNewPosition.GetComponent<ChangePlayerPosition>().StartPos = _takeToStartPosition;
         DontDestroyOnLoad(playersNewPosition);
+    }
+
+    private void ActiveController()
+    {
+        // Deactivate all controllers childen in the game
+        foreach (Transform child in GameObject.Find(Constants.GameManager).transform)
+        {
+            foreach (Transform grandchild in child)
+            {
+                grandchild.gameObject.SetActive(false);
+            }
+        }
+
+        // If needed active a specific controller
+        if (_activeController)
+        {
+            Transform sceneController = GameObject.Find(Constants.GameManager)
+                                      .transform.GetChild((int)controllerNumber);
+            foreach (Transform grandchild in sceneController)
+            {
+                grandchild.gameObject.SetActive(true);
+            }
+        }
     }
 
 }

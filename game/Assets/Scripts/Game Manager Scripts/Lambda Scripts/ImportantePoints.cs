@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// The purpose of this class is to find and save the first point from the begginning of the board with sign #
+/// and save the last point (first from the end) of the board with sign #.
+/// The points will later use for spawning the doors of each scene.
+/// The start point also helps to set the player position at the begginning of new scene.
+/// </summary>
 public class ImportantePoints : MonoBehaviour
 {
     public Vector3 StartPosition { get; private set; }
@@ -9,8 +15,6 @@ public class ImportantePoints : MonoBehaviour
 
     [SerializeField]
     private int _sceneIndex;
-
-    private PositionManager positionManager;
 
     public void SetPoints(string[,] board)
     {
@@ -46,8 +50,8 @@ public class ImportantePoints : MonoBehaviour
             }
         }
 
-        // Add to the position manager the start point
-        positionManager = GameObject.Find(Constants.GameManager).GetComponent<PositionManager>();
+        // Add to the Position Manager (GameManager GameObject) the start point
+        PositionManager positionManager = GameObject.Find(Constants.GameManager).GetComponent<PositionManager>();
         positionManager.AddStartPosition(_sceneIndex, StartPosition.x, StartPosition.y + 2, StartPosition.z);
     }
 }

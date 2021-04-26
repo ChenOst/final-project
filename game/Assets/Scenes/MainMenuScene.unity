@@ -284,6 +284,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4616193373548908, guid: 90a7b62b74241ca47988288c7cb59210, type: 3}
   m_PrefabInstance: {fileID: 102317341}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &105116866 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8539922105826157555, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
+  m_PrefabInstance: {fileID: 1050577850}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &118987831 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1842240698619929024, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
@@ -349,7 +354,23 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1842240699989882917, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
+      propertyPath: _exitDoor
+      value: 
+      objectReference: {fileID: 1268689583}
+    - target: {fileID: 1842240699989882917, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
+      propertyPath: _entrytDoor
+      value: 
+      objectReference: {fileID: 1766986646}
+    - target: {fileID: 1842240699989882917, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
       propertyPath: _activeEndDoor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842240699989882917, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
+      propertyPath: _activeExitDoor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842240699989882917, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
+      propertyPath: _activeEntryDoor
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1842240699989882917, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
@@ -398,6 +419,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
+--- !u!1 &226714294 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5409252650968844376, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
+  m_PrefabInstance: {fileID: 1050577850}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &258937946
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,6 +999,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1842240699989882917, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
+      propertyPath: _exitDoor
+      value: 
+      objectReference: {fileID: 105116866}
+    - target: {fileID: 1842240699989882917, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
+      propertyPath: _entrytDoor
+      value: 
+      objectReference: {fileID: 226714294}
+    - target: {fileID: 1842240699989882917, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
+      propertyPath: _activeEntryDoor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842240699989882917, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
       propertyPath: _activeStartDoor
       value: 1
       objectReference: {fileID: 0}
@@ -1256,6 +1294,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48aa88ef0118b3e42a202948aaa312f6, type: 3}
+--- !u!1 &1268689583 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8539922105826157555, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
+  m_PrefabInstance: {fileID: 179991052}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1438817193 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1842240698895383984, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
@@ -1375,6 +1418,11 @@ Transform:
   m_Father: {fileID: 2097133641}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1766986646 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5409252650968844376, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
+  m_PrefabInstance: {fileID: 179991052}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1772419681 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5409252650968844376, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
@@ -2126,11 +2174,27 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1485678470}
     - target: {fileID: 1842240699989882917, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
+      propertyPath: _exitDoor
+      value: 
+      objectReference: {fileID: 1485678470}
+    - target: {fileID: 1842240699989882917, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
       propertyPath: _startDoor
       value: 
       objectReference: {fileID: 1772419681}
     - target: {fileID: 1842240699989882917, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
+      propertyPath: _entrytDoor
+      value: 
+      objectReference: {fileID: 1772419681}
+    - target: {fileID: 1842240699989882917, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
       propertyPath: _activeEndDoor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842240699989882917, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
+      propertyPath: _activeExitDoor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842240699989882917, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}
+      propertyPath: _activeEntryDoor
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1842240699989882917, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}

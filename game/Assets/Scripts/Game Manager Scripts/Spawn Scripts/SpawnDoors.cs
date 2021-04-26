@@ -6,16 +6,16 @@ public class SpawnDoors : MonoBehaviour
 {
 
     [SerializeField]
-    private bool _activeStartDoor;
+    private bool _activeEntryDoor;
 
     [SerializeField]
-    private bool _activeEndDoor;
+    private bool _activeExitDoor;
 
     [SerializeField]
-    private GameObject _startDoor;
+    private GameObject _entrytDoor;
 
     [SerializeField]
-    private GameObject _endDoor;
+    private GameObject _exitDoor;
 
     [SerializeField]
     private ImportantePoints _points;
@@ -23,18 +23,19 @@ public class SpawnDoors : MonoBehaviour
     [SerializeField]
     private InstantiateTiles _tiles;
 
-    // Start is called before the first frame update
     void Start()
     {
-        if (_activeStartDoor)
+        // Spwaning the Entry Door
+        if (_activeEntryDoor)
         {
-            _startDoor.SetActive(true);
-            _startDoor.transform.position = new Vector3(0, 1, 0) + _points.StartPosition;
+            _entrytDoor.SetActive(true);
+            _entrytDoor.transform.position = new Vector3(0, 1, 0) + _points.StartPosition;
         }
-        if (_activeEndDoor)
+        // Spwaning the Exit Door
+        if (_activeExitDoor)
         {
-            _endDoor.SetActive(true);
-            _endDoor.transform.position = _points.EndPosition;
+            _exitDoor.SetActive(true);
+            _exitDoor.transform.position = _points.EndPosition;
             Destroy(_tiles.EndTile);
         }
     }

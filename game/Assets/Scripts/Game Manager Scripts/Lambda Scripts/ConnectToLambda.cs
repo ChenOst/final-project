@@ -6,9 +6,13 @@ using System.Net;
 using UnityEngine;
 using static EnumNames;
 
+/// <summary>
+/// The purpose of this class is to access backend algorithms.
+/// It connects with the Lambda and gets a board by the requested algorithm @_algorithmName.
+/// It sends the @Board to another class ImportantePoints in order to save the Entry and Exit points for later use.
+/// </summary>
 public class ConnectToLambda : MonoBehaviour
 {
-
     [SerializeField]
     private AlgorithmName _algorithmName;
     public string[,] Board { get; private set; }

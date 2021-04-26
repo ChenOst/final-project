@@ -3,6 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// The purpose of this class is to instantiate the board.
+/// It instantiate the object accordinly to the signs inside the given board.
+/// '#' - instantiate a floor gameobjects, '.' - instantiate a wall gameobject.
+/// </summary>
 public class InstantiateTiles : MonoBehaviour
 {
     [SerializeField] private GameObject[] _floorToSpawn;
