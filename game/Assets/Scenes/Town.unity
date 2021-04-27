@@ -23776,6 +23776,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8da14224c95248c44be03b8dfef23f43, type: 3}
+--- !u!1 &924101257 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1541883664302794, guid: 8da14224c95248c44be03b8dfef23f43, type: 3}
+  m_PrefabInstance: {fileID: 924101256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &924101258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924101257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f94c9e7e5b021ff4a96426c3af1c8caf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: 14
+  _takeToStartPosition: 1
+  _activeController: 1
+  controllerNumber: 12
+--- !u!65 &924101259
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924101257}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.893201, y: 1.6499271, z: 1.7150218}
+  m_Center: {x: 0.30504224, y: -0.18271983, z: 0.0000009459842}
 --- !u!4 &924218237 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4500112596534122, guid: 3420374d1e21a28448111093d3e0b279, type: 3}
@@ -48814,6 +48848,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8da14224c95248c44be03b8dfef23f43, type: 3}
+--- !u!1 &1889706012 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1541883664302794, guid: 8da14224c95248c44be03b8dfef23f43, type: 3}
+  m_PrefabInstance: {fileID: 1889706011}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1889706013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889706012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f94c9e7e5b021ff4a96426c3af1c8caf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: 11
+  _takeToStartPosition: 1
+  _activeController: 1
+  controllerNumber: 9
+--- !u!65 &1889706014
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889706012}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.893201, y: 1.6499271, z: 1.7150218}
+  m_Center: {x: 0.30504224, y: -0.18271983, z: 0.0000009459842}
 --- !u!1001 &1891181717
 PrefabInstance:
   m_ObjectHideFlags: 0
