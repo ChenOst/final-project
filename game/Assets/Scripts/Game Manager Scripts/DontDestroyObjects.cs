@@ -8,7 +8,7 @@ public class DontDestroyObjects : MonoBehaviour
     {
         DontDestroyOnLoad(GameObject.Find(Constants.GameManager));
         DontDestroyOnLoad(GameObject.Find(Constants.Canvas));
-        DontDestroyOnLoad(GameObject.Find(Constants.MainCamera));
+        DontDestroyOnLoad(GameObject.Find(Constants.Cameras));
         DontDestroyOnLoad(GameObject.Find(Constants.Player));
     }
 }

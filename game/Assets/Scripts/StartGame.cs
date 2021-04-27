@@ -6,11 +6,14 @@ using UnityEngine.SceneManagement;
 public class StartGame : MonoBehaviour
 {
     [SerializeField]
-    private GameObject _panel;
+    private GameObject[] _panels;
 
     public void OnClick()
     {
-        _panel.SetActive(true);
+        foreach(GameObject panel in _panels)
+        {
+            panel.SetActive(true);
+        }
         SceneManager.LoadScene("Town");
     }
 }

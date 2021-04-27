@@ -10,7 +10,7 @@ public static class Constants
 
     public const string Canvas = "Canvas";
 
-    public const string MainCamera = "Main Camera";
+    public const string Cameras = "Cameras";
 
     public const string Player = "Prefab_PlayerCharacter";
 
