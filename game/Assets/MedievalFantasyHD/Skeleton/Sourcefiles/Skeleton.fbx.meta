@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: 20e9b17f688d34e45b406cd94512a20d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Arm.L
+    100002: Arm.R
+    100004: Armature.001
+    100006: Axe
+    100008: Chest
+    100010: Foot.L
+    100012: Foot.L_end
+    100014: Foot.R
+    100016: Foot.R_end
+    100018: ForeArm.L
+    100020: ForeArm.R
+    100022: Hand.L
+    100024: Hand.L_end
+    100026: Hand.R
+    100028: Hand.R_end
+    100030: Head
+    100032: Head_end
+    100034: Helmet1
+    100036: Helmet2
+    100038: Hip
+    100040: Leg.L
+    100042: Leg.R
+    100044: Neck
+    100046: Shield1.001
+    100048: Shield2
+    100050: Shoulder.L
+    100052: Shoulder.R
+    100054: //RootNode
+    100056: Skelli
+    100058: Spine
+    100060: Sword.001
+    100062: Thigh.L
+    100064: Thigh.R
+    400000: Arm.L
+    400002: Arm.R
+    400004: Armature.001
+    400006: Axe
+    400008: Chest
+    400010: Foot.L
+    400012: Foot.L_end
+    400014: Foot.R
+    400016: Foot.R_end
+    400018: ForeArm.L
+    400020: ForeArm.R
+    400022: Hand.L
+    400024: Hand.L_end
+    400026: Hand.R
+    400028: Hand.R_end
+    400030: Head
+    400032: Head_end
+    400034: Helmet1
+    400036: Helmet2
+    400038: Hip
+    400040: Leg.L
+    400042: Leg.R
+    400044: Neck
+    400046: Shield1.001
+    400048: Shield2
+    400050: Shoulder.L
+    400052: Shoulder.R
+    400054: //RootNode
+    400056: Skelli
+    400058: Spine
+    400060: Sword.001
+    400062: Thigh.L
+    400064: Thigh.R
+    2100000: Weapons
+    2100002: Skelleton
+    4300000: Axe
+    4300002: Helmet1
+    4300004: Helmet2
+    4300006: Shield1.001
+    4300008: Shield2
+    4300010: Skelli
+    4300012: Sword.001
+    9500000: //RootNode
+    13700000: Axe
+    13700002: Helmet1
+    13700004: Helmet2
+    13700006: Shield1.001
+    13700008: Shield2
+    13700010: Skelli
+    13700012: Sword.001
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.6
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.006
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 90
+    normalImportMode: 1
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
