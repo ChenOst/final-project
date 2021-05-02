@@ -13,6 +13,6 @@ public class Attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // Use keys 1 2 3 4 for different attacks 
     }
 }

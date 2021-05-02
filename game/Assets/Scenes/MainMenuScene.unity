@@ -3941,6 +3941,10 @@ PrefabInstance:
       value: Prefab_PlayerCharacter
       objectReference: {fileID: 0}
     - target: {fileID: 1753403684605794, guid: bde2ad7b4fa5bdc488ac9fb87d1eb629, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753403684605794, guid: bde2ad7b4fa5bdc488ac9fb87d1eb629, type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
@@ -4007,6 +4011,14 @@ PrefabInstance:
     - target: {fileID: 136669983077966900, guid: bde2ad7b4fa5bdc488ac9fb87d1eb629, type: 3}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831955399062172984, guid: bde2ad7b4fa5bdc488ac9fb87d1eb629, type: 3}
+      propertyPath: _hP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831955399062172984, guid: bde2ad7b4fa5bdc488ac9fb87d1eb629, type: 3}
+      propertyPath: _addHpEverySecond
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bde2ad7b4fa5bdc488ac9fb87d1eb629, type: 3}
