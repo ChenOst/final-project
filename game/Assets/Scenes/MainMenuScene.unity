@@ -2595,7 +2595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.7505449, b: 0.2688679, a: 0.69411767}
+  m_Color: {r: 1, g: 0.82633394, b: 0.495283, a: 0.69411767}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4032,6 +4032,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4406406854943126, guid: bde2ad7b4fa5bdc488ac9fb87d1eb629, type: 3}
   m_PrefabInstance: {fileID: 2097133639}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2097133642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097133640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c45bfec664526b4ea449545aa27918b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _groundCheck: {fileID: 1638332916}
+  _groundMask:
+    serializedVersion: 2
+    m_Bits: 256
+  _walkSpeed: 1.5
+  _runSpeed: 4
+  _rotationSpeed: 10
 --- !u!114 &2097133643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4044,25 +4063,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6d4301306e3cd479dd8df80be1b207, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2097133644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2097133640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c3467d6903f58d49987ba65ef6010b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _groundCheck: {fileID: 1638332916}
-  _groundMask:
-    serializedVersion: 2
-    m_Bits: 256
-  _walkSpeed: 1.5
-  _runSpeed: 4
-  _rotationSpeed: 10
 --- !u!143 &2097133645
 CharacterController:
   m_ObjectHideFlags: 0

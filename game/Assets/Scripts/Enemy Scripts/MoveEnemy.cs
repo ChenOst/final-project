@@ -39,30 +39,31 @@ public class MoveEnemy : MonoBehaviour
             {
                 transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), Time.deltaTime * _rotationSpeed);
             }
-            // Debug.DrawRay(transform.position, direction + new Vector3(0, 1, 0) , Color.green);
-
+          
             if (Physics.Raycast(transform.position, direction + new Vector3(0,1,0), out hit, 4.5f))
             {
                 if (hit.collider.gameObject.tag == Constants.PlayerTag)
                 {
+                    // The enemy is close to the player and can attack
                     if (distance <= 1f)
                     {
-                        // Attack
-                        // Do animation 
-                        // Take hp from player 
                         _anim.SetFloat("MovementSpeed", 0);
+                        _anim.SetBool("CanAttack", true);
                     }
+                    // The enemy need to get closer to the player - walk 
                     else
                     {
                         transform.position = Vector3.MoveTowards(transform.position, target.position, _movementSpeed * Time.deltaTime);
-                        // Play walk
+                        _anim.SetBool("CanAttack", false);
                         _anim.SetFloat("MovementSpeed", 1);
                     }
                 }
             }
         }
+        // run the idle animation if the player is not in look radius
         else
         {
+            _anim.SetBool("CanAttack", false);
             _anim.SetFloat("MovementSpeed", 0);
         }
         

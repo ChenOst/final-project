@@ -2,19 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHP : MonoBehaviour
+public class EnemyHP : CharacterHP
 {
-    [SerializeField]
-    private int _hP;
-    public int HP { get; private set; }
-
-    [SerializeField]
     private Animator _anim;
 
-    // Start is called before the first frame update
     void Start()
     {
         HP = _hP;
+        _anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -24,10 +19,5 @@ public class EnemyHP : MonoBehaviour
         {
             _anim.SetBool("Destroy", true);
         }
-    }
-
-    public void TakeDamage(int damage)
-    {
-        HP = HP - damage;
     }
 }

@@ -2,14 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHP : MonoBehaviour
+public class PlayerHP : CharacterHP
 {
-    [SerializeField]
-    private int _hP;
-    public int HP { get; private set; } 
-
-    [SerializeField]
-    private bool _addHpEverySecond;
 
     private PlayerCharacter _player;
 
@@ -18,7 +12,7 @@ public class PlayerHP : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        HP = _hP;;
+        HP = _hP;
         _player = GetComponent<PlayerCharacter>();
         _anim = _player.animator;
     }
@@ -26,25 +20,22 @@ public class PlayerHP : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_addHpEverySecond && HP < _hP)
-        {
-            StartCoroutine(AddHp());
-        }
+        //if (HP < _hP)
+        //{
+        //    StartCoroutine(RegenHealth());
+        //}
 
         if (HP <= 0)
         {
             _anim.SetBool("Destroy", true);
         }
+
     }
 
-    IEnumerator AddHp()
+    IEnumerator RegenHealth()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1 * Time.deltaTime);
         HP ++;
     }
 
-    public void TakeDamage(int damage)
-    {
-        HP = HP - damage;
-    }
 }

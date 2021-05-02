@@ -1,18 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using UnityEditor.UIElements;
 using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private string targetTag;
 
-    // Update is called once per frame
-    void Update()
+    public void CanAttack(int attackDamage)
     {
-        // Use keys 1 2 3 4 for different attacks 
+        RaycastHit hit;
+
+        // If the target is still close to the attacker attack
+        if (Physics.Raycast(transform.position, transform.forward + new Vector3(0, 1, 0), out hit, 2f))
+        {
+
+            if (hit.collider.gameObject.tag == targetTag)
+            {
+                CharacterHP hp = hit.collider.gameObject.GetComponent<CharacterHP>();
+                hp.TakeDamage(attackDamage);
+                Debug.Log("HP: " + hp.HP);
+            }
+            
+        }
     }
 }
