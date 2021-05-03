@@ -35,6 +35,7 @@ public class MovePlayer : MonoBehaviour
 
     private bool _isGrounded;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,19 +47,22 @@ public class MovePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 movementDirection = UpdateDirection();
-
-        // Move and Rotate the player
-        if (movementDirection != Vector3.zero)
+        if (DisableKeyboard.IsInputEnabled)
         {
-            _cc.Move(movementDirection * _movementSpeed * Time.deltaTime);
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movementDirection), Time.deltaTime * _rotationSpeed); // rotate character to movement direction
-        }
-        else
-        {
-            _cc.Move(Vector3.zero);
-        }
+            Vector3 movementDirection = UpdateDirection();
 
+            // Move and Rotate the player
+            if (movementDirection != Vector3.zero)
+            {
+                _cc.Move(movementDirection * _movementSpeed * Time.deltaTime);
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movementDirection), Time.deltaTime * _rotationSpeed); // rotate character to movement direction
+            }
+            else
+            {
+                _cc.Move(Vector3.zero);
+            }
+           
+        }
         // Play idle/walk/run animation
         _anim.SetFloat("MovementSpeed", _cc.velocity.magnitude);
 

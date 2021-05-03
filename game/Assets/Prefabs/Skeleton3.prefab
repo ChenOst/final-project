@@ -808,7 +808,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.7
   m_Height: 2.8434966
   m_Direction: 1
   m_Center: {x: 0, y: 0.9217482, z: 0}
@@ -824,6 +824,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 064682a6a46aaa64ebfa3c421166fb3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _activeSpawner: 1
+  _spawnItem: {fileID: 911658751589717295, guid: 9096f3fe46ebe374d9a5b49afad374f5, type: 3}
 --- !u!114 &5097283953339707112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -849,7 +851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a806322876a3c439869ac0d7d70efe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lookRadius: 4
+  _lookRadius: 5
   _movementSpeed: 2
   _rotationSpeed: 3
 --- !u!114 &5097283953339707157
@@ -865,6 +867,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTag: Player
+  attackDamage: 20
+  _floatingText: {fileID: 8491673084086762670, guid: 322330b416c89ae4ba263fb63f97f0e2, type: 3}
 --- !u!1 &8132476378770771658
 GameObject:
   m_ObjectHideFlags: 0

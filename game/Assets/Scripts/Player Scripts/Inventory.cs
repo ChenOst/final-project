@@ -24,16 +24,19 @@ public class Inventory : MonoBehaviour
 
     void Update()
     {
-        // I key open/close the Inventory GUI
-        if (Input.GetKey(KeyCode.I))
+        if (DisableKeyboard.IsInputEnabled)
         {
-            if (showInventory)
+            // I key open/close the Inventory GUI
+            if (Input.GetKey(KeyCode.I))
             {
-                showInventory = false;
-            }
-            else
-            {
-                showInventory = true;
+                if (showInventory)
+                {
+                    showInventory = false;
+                }
+                else
+                {
+                    showInventory = true;
+                }
             }
         }
     }
@@ -104,10 +107,12 @@ public class Inventory : MonoBehaviour
 
     private void DressPlayerDefault()
     {
+        Items.Add(40);
         Items.Add(37);
         Items.Add(38);
         Items.Add(1);
 
+        selectedCharacter.EquipItem(40);
         selectedCharacter.EquipItem(37);
         selectedCharacter.EquipItem(38);
         selectedCharacter.EquipItem(1);

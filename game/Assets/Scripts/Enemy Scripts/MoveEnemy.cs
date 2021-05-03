@@ -18,11 +18,14 @@ public class MoveEnemy : MonoBehaviour
 
     private Animator _anim;
 
+    private EnemyHP _hp;
+
     // Start is called before the first frame update
     void Start()
     {
         target = GameObject.Find(Constants.Player).transform;
         _anim = GetComponent<Animator>();
+        _hp = GetComponent<EnemyHP>();
     }
 
     // Update is called once per frame
@@ -32,7 +35,7 @@ public class MoveEnemy : MonoBehaviour
         Vector3 direction = target.position - transform.position;
         RaycastHit hit;
 
-        if (distance <= _lookRadius)
+        if (distance <= _lookRadius && _hp.HP > 0)
         {
             // Rotate enemy body torwards direction 
             if (direction != Vector3.zero)

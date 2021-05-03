@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3589206712602274904}
   - component: {fileID: 2951250324398265717}
   - component: {fileID: 111170811610198136}
+  - component: {fileID: 5459721922624699645}
   m_Layer: 0
   m_Name: Item To PickUp
   m_TagString: Untagged
@@ -27,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3084842656031083917}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 23, y: 2, z: 8}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1597541144500885650
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -109,3 +110,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d09235bdb40f3d4abde323cf339abdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &5459721922624699645
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3084842656031083917}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0e1f311a6829f3d4e8e6a18b6db8170d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

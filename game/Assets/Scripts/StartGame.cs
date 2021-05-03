@@ -14,6 +14,7 @@ public class StartGame : MonoBehaviour
         {
             panel.SetActive(true);
         }
+        DisableKeyboard.IsInputEnabled = true;
         SceneManager.LoadScene("Town");
     }
 }

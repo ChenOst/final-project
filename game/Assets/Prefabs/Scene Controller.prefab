@@ -1,5 +1,56 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &277486427573541562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5126194410127894370}
+  - component: {fileID: 1244353628368548347}
+  m_Layer: 0
+  m_Name: Enemies Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &5126194410127894370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277486427573541562}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1842240698619929024}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1244353628368548347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277486427573541562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e8e4c6f172896e468efbe5b884c0c03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemiesPrefabs:
+  - {fileID: 518015275422233084, guid: 8326b3a0e64fbf240829ec2211c6ee5b, type: 3}
+  - {fileID: 6392414581579677924, guid: f7e34cd1524c53a4e93fc58f12fbe492, type: 3}
+  - {fileID: 8132476378606722443, guid: 58426e3d2b1524d41acd30dfd720cd26, type: 3}
+  _numberOfEnemies: 20
+  _enemiesHp: 50
+  _enemiesAttackDamage: 10
+  points: {fileID: 8298503581169295405}
 --- !u!1 &1842240698619928895
 GameObject:
   m_ObjectHideFlags: 0
@@ -32,6 +83,7 @@ Transform:
   - {fileID: 5719616225775160716}
   - {fileID: 1842240698895383985}
   - {fileID: 1842240699989882916}
+  - {fileID: 5126194410127894370}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -208,6 +260,7 @@ MonoBehaviour:
   _wallToSpawn:
   - {fileID: 7776484797485792752, guid: 1bcfd722cc85ff7429b9a2c3aa55d4f9, type: 3}
   _lambda: {fileID: 7927319058418298581}
+  spawnPoints: []
 --- !u!1 &1842240699989882915
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,10 +306,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396956eb6ac7935459b1693641a6cdfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _activeStartDoor: 0
-  _activeEndDoor: 0
-  _startDoor: {fileID: 5409252650968844376}
-  _endDoor: {fileID: 8539922105826157555}
+  _activeEntryDoor: 0
+  _activeExitDoor: 0
+  _entrytDoor: {fileID: 0}
+  _exitDoor: {fileID: 0}
   _points: {fileID: 7072995576761257988}
   _tiles: {fileID: 8298503581169295405}
 --- !u!1 &4565005004916695468
@@ -389,11 +442,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85e0321603a50374c830390505ab122e, type: 3}
---- !u!1 &5409252650968844376 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5945158911329824470, guid: 85e0321603a50374c830390505ab122e, type: 3}
-  m_PrefabInstance: {fileID: 1842240698524984974}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4637113379962933986 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6470162122012603500, guid: 85e0321603a50374c830390505ab122e, type: 3}
@@ -468,11 +516,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 747f3da6d6246d94abe92e3ad6b5aad9, type: 3}
---- !u!1 &8539922105826157555 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8003760544641728476, guid: 747f3da6d6246d94abe92e3ad6b5aad9, type: 3}
-  m_PrefabInstance: {fileID: 1842240699793021999}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9063552817296734537 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7230741836314731878, guid: 747f3da6d6246d94abe92e3ad6b5aad9, type: 3}

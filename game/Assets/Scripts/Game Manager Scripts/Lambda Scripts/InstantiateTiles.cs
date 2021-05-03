@@ -17,9 +17,11 @@ public class InstantiateTiles : MonoBehaviour
     [SerializeField]
     ConnectToLambda _lambda;
 
+    public List<Vector3> spawnPoints;
+
     public GameObject EndTile { get; private set; }
 
-    void Start()
+    void Awake()
     {
         string[,] board = _lambda.Board;
 
@@ -31,9 +33,12 @@ public class InstantiateTiles : MonoBehaviour
                 {
                     int index = (int)Random.Range(0, _floorToSpawn.Length);
                     var posToSpawn = new Vector3(k * 2, 0, l * 2);
+
                     GameObject newTile = Instantiate(_floorToSpawn[index], posToSpawn, Quaternion.identity);
                     newTile.transform.parent = this.transform;
                     EndTile = newTile;
+
+                    spawnPoints.Add(new Vector3(k * 2, 1.08f, l * 2));
                 }
                 else
                 {

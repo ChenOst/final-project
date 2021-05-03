@@ -15,16 +15,12 @@ public class PlayerHP : CharacterHP
         HP = _hP;
         _player = GetComponent<PlayerCharacter>();
         _anim = _player.animator;
+        InvokeRepeating("RegenHealth", 1.0f, 1.0f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if (HP < _hP)
-        //{
-        //    StartCoroutine(RegenHealth());
-        //}
-
         if (HP <= 0)
         {
             _anim.SetBool("Destroy", true);
@@ -32,10 +28,12 @@ public class PlayerHP : CharacterHP
 
     }
 
-    IEnumerator RegenHealth()
+    private void RegenHealth()
     {
-        yield return new WaitForSeconds(1 * Time.deltaTime);
-        HP ++;
+        if (HP < _hP)
+        {
+            HP++;
+        }
     }
 
 }

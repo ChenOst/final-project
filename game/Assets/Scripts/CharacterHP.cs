@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterHP : MonoBehaviour
 {
     [SerializeField]
-    protected int _hP;
+    public int _hP;
 
     public int HP { get; set; }
 

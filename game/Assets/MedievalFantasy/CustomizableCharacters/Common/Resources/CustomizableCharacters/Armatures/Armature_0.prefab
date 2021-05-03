@@ -352,6 +352,7 @@ GameObject:
   - component: {fileID: 4514657640612090}
   - component: {fileID: 95708972107054168}
   - component: {fileID: 1079787732884045610}
+  - component: {fileID: -5157253467739448486}
   m_Layer: 0
   m_Name: Armature_0
   m_TagString: Untagged
@@ -406,6 +407,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 064682a6a46aaa64ebfa3c421166fb3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _activeSpawner: 0
+  _spawnItem: {fileID: 0}
+--- !u!114 &-5157253467739448486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454150001219150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf00e036f3453f448acc48160ae980d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: Enemy
+  attackDamage: 30
+  _floatingText: {fileID: 8491673084086762670, guid: 322330b416c89ae4ba263fb63f97f0e2, type: 3}
 --- !u!1 &1479887725318068
 GameObject:
   m_ObjectHideFlags: 0
