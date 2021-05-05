@@ -45,19 +45,19 @@ public class Inventory : MonoBehaviour
     {
         if (showInventory)
        {
-            scrollView = GUI.BeginScrollView(new Rect(5, 5, 110, Screen.height - 10), scrollView, new Rect(0, 0, 90, 100 + Items.Count * 65));
+            scrollView = GUI.BeginScrollView(new Rect(5, 5, 110, Screen.height/2 - 10), scrollView, new Rect(0, 0, 90, 100 + Items.Count * 100));
             int counter = 1;
             foreach (int i in Items)
             {
-                if (GUI.Button(new Rect(5, counter * 65, 64, 64), ""))
+                if (GUI.Button(new Rect(5, counter * 100, 100, 100), ""))
                 {
                     selectedCharacter.EquipItem(i);
                 }
 
                 if (IconLoader.GetInstance().GetIcon(i) != null)
                 {
-                    GUI.DrawTexture(new Rect(5, counter * 65, 64, 64), IconLoader.GetInstance().GetIcon(i));
-                    GUI.Label(new Rect(5, counter * 65, 64, 64), ""); // optional to add i
+                    GUI.DrawTexture(new Rect(5, counter * 100, 100,100), IconLoader.GetInstance().GetIcon(i));
+                    GUI.Label(new Rect(5, counter * 100, 100, 100), ""); // optional to add i
                 }
 
                 else
