@@ -9,11 +9,11 @@ public class PlayerAttack : MonoBehaviour
 
     [SerializeField]
     [Range(0,100)]
-    private int _attack1Energy, _attack2Energy, _attack3Energy, _attack4Energy;
+    public int[] _attackEnergy;
 
     [SerializeField]
     [Range(0, 100)]
-    private int _attack1Damage, _attack2Damage, _attack3Damage, _attack4Damage;
+    private int[] _attackDamage;
 
     public int Energy { get; private set; }
 
@@ -41,32 +41,32 @@ public class PlayerAttack : MonoBehaviour
     {
         if (DisableKeyboard.IsInputEnabled )
         {
-            if (Input.GetKeyDown(KeyCode.Alpha1) && (Time.time - lastTime > 3.0f)  && (Energy >= _attack1Energy))
+            if (Input.GetKeyDown(KeyCode.Alpha1) && (Time.time - lastTime > 3.0f)  && (Energy >= _attackEnergy[0]))
             {
-                _attack.attackDamage = _attack1Damage;
-                Energy -= _attack1Energy;
+                _attack.attackDamage = _attackDamage[0];
+                Energy -= _attackEnergy[0];
                 lastTime = Time.time;
                 _anim.SetBool("Attack1", true);
 
             }
-            else if (Input.GetKeyDown(KeyCode.Alpha2) && (Time.time - lastTime > 3.0f)  && (Energy >= _attack2Energy))
+            else if (Input.GetKeyDown(KeyCode.Alpha2) && (Time.time - lastTime > 3.0f)  && (Energy >= _attackEnergy[1]))
             {
-                _attack.attackDamage = _attack2Damage;
-                Energy -= _attack2Energy;
+                _attack.attackDamage = _attackDamage[1];
+                Energy -= _attackEnergy[1];
                 lastTime = Time.time;
                 _anim.SetBool("Attack2", true);
             }
-            else if (Input.GetKeyDown(KeyCode.Alpha3) && (Time.time - lastTime > 3.0f)  && (Energy >= _attack3Energy))
+            else if (Input.GetKeyDown(KeyCode.Alpha3) && (Time.time - lastTime > 3.0f)  && (Energy >= _attackEnergy[2]))
             {
-                _attack.attackDamage = _attack3Damage;
-                Energy -= _attack3Energy;
+                _attack.attackDamage = _attackDamage[2];
+                Energy -= _attackEnergy[2];
                 lastTime = Time.time;
                 _anim.SetBool("Attack3", true);
             }
-            else if (Input.GetKeyDown(KeyCode.Alpha4) && (Time.time - lastTime > 3.0f)  && (Energy >= _attack4Energy))
+            else if (Input.GetKeyDown(KeyCode.Alpha4) && (Time.time - lastTime > 3.0f)  && (Energy >= _attackEnergy[3]))
             {
-                _attack.attackDamage = _attack4Damage;
-                Energy -= _attack4Energy;
+                _attack.attackDamage = _attackDamage[3];
+                Energy -= _attackEnergy[3];
                 lastTime = Time.time;
                 _anim.SetBool("Attack4", true);
             }
