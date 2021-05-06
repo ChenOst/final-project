@@ -1631,6 +1631,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114524227784271040, guid: 94b9fa7d83136ae42831dbf1f8514d9b, type: 3}
+      propertyPath: animatorController
+      value: 
+      objectReference: {fileID: 9100000, guid: 868b440ada38a0b4bb91fd51f1bdd1ac, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94b9fa7d83136ae42831dbf1f8514d9b, type: 3}
 --- !u!1001 &44388876
@@ -28391,7 +28395,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4092962532915612, guid: 772184166b240504e9329d0fc9b346a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.87
+      value: 4.25
       objectReference: {fileID: 0}
     - target: {fileID: 4092962532915612, guid: 772184166b240504e9329d0fc9b346a1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -28399,7 +28403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4092962532915612, guid: 772184166b240504e9329d0fc9b346a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.75
+      value: 5.64
       objectReference: {fileID: 0}
     - target: {fileID: 4092962532915612, guid: 772184166b240504e9329d0fc9b346a1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -28429,6 +28433,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114362080514651430, guid: 772184166b240504e9329d0fc9b346a1, type: 3}
+      propertyPath: animatorController
+      value: 
+      objectReference: {fileID: 9100000, guid: 5abd621dd32847a42928eb3f9b6f97a6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 772184166b240504e9329d0fc9b346a1, type: 3}
 --- !u!1001 &1009411779
@@ -36617,6 +36625,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114961413795197024, guid: f6ab3f7c5b673184b9c6365e12bf0dee, type: 3}
+      propertyPath: animatorController
+      value: 
+      objectReference: {fileID: 9100000, guid: 868b440ada38a0b4bb91fd51f1bdd1ac, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ab3f7c5b673184b9c6365e12bf0dee, type: 3}
 --- !u!1001 &1303909190
@@ -43158,6 +43170,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114588414463025818, guid: 6901f96634fa4104cb390738a9529adc, type: 3}
+      propertyPath: animatorController
+      value: 
+      objectReference: {fileID: 9100000, guid: 467decfb6ad18c9478989274891e3a10, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6901f96634fa4104cb390738a9529adc, type: 3}
 --- !u!1001 &1538155665
@@ -43289,6 +43305,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114971945643018154, guid: bcb1c8355830ee24a8e1fce57674721d, type: 3}
+      propertyPath: animatorController
+      value: 
+      objectReference: {fileID: 9100000, guid: 868b440ada38a0b4bb91fd51f1bdd1ac, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcb1c8355830ee24a8e1fce57674721d, type: 3}
 --- !u!4 &1541014594 stripped
@@ -56106,7 +56126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4679071152234142, guid: ba226f83cf9bdd0458398232c7f803b0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.799
+      value: 8.338
       objectReference: {fileID: 0}
     - target: {fileID: 4679071152234142, guid: ba226f83cf9bdd0458398232c7f803b0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -56144,6 +56164,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114648755657486136, guid: ba226f83cf9bdd0458398232c7f803b0, type: 3}
+      propertyPath: animatorController
+      value: 
+      objectReference: {fileID: 9100000, guid: 868b440ada38a0b4bb91fd51f1bdd1ac, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba226f83cf9bdd0458398232c7f803b0, type: 3}
 --- !u!1001 &1980608794
