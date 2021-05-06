@@ -20,4 +20,10 @@ public class Message : MonoBehaviour
     {
         _text.text = newText;
     }
+
+    public void UpdateText(string newText, float newFontSize)
+    {
+        _text.text = newText;
+        _text.fontSize = newFontSize;
+    }
 }

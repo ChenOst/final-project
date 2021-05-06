@@ -5,15 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject[] _panels;
-
     public void OnClick()
     {
-        foreach(GameObject panel in _panels)
-        {
-            panel.SetActive(true);
-        }
+        // Enable the keyboard
         DisableKeyboard.IsInputEnabled = true;
         SceneManager.LoadScene("Town");
     }

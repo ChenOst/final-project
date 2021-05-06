@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// This class gives the player information about the attack's he can use.
+/// When the player have enough energy the attack number will be colored in light yellow.
+/// Otherwise, the attack number will be colored in light gray.
+/// This Script is attached to the UI number images, each image responsible on one attack 1-4.
+/// </summary>
 public class CanUseAttack : MonoBehaviour
 {
     [SerializeField]
