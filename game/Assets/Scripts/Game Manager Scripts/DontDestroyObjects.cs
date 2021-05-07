@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class DontDestroyObjects : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject[] _dontDestroyObjects;
     void Start()
     {
-        DontDestroyOnLoad(GameObject.Find(Constants.GameManager));
-        DontDestroyOnLoad(GameObject.Find(Constants.Canvas));
-        DontDestroyOnLoad(GameObject.Find(Constants.Cameras));
-        DontDestroyOnLoad(GameObject.Find(Constants.Player));
+        foreach (GameObject obj in _dontDestroyObjects)
+        {
+            DontDestroyOnLoad(obj);
+        }
     }
 }

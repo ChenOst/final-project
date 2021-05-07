@@ -545,7 +545,7 @@
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "Go to alf's house right here behind the mayor's back.",
+                        "text": "Go to Alf's house right here behind the mayor's back.",
                         "type": "text"
                     },
                     {
@@ -555,6 +555,47 @@
                     {
                         "text": "Search for Alf and return with more details...",
                         "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "set: $mission1Complete to false",
+                        "name": "set",
+                        "text": "(set: $mission1Complete to false)",
+                        "tokens": [
+                            {
+                                "text": "set:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "mission1Complete",
+                                "text": "$mission1Complete",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "to",
+                                "type": "to"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "false",
+                                "type": "boolean"
+                            }
+                        ],
+                        "type": "macro"
                     }
                 ]
             }

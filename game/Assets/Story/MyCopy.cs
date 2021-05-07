@@ -24,8 +24,10 @@ public partial class @MyCopy: Cradle.StoryFormats.Harlowe.HarloweStory
 	{
 		public VarDefs()
 		{
+			VarDef("mission1Complete", () => this.@mission1Complete, val => this.@mission1Complete = val);
 		}
 
+		public StoryVar @mission1Complete;
 	}
 
 	public new VarDefs Vars
@@ -216,9 +218,11 @@ public partial class @MyCopy: Cradle.StoryFormats.Harlowe.HarloweStory
 
 	IStoryThread passage8_Main()
 	{
-		yield return text("Go to alf's house right here behind the mayor's back.");
+		yield return text("Go to Alf's house right here behind the mayor's back.");
 		yield return lineBreak();
 		yield return text("Search for Alf and return with more details...");
+		yield return lineBreak();
+		Vars.mission1Complete  = false;
 		yield break;
 	}
 

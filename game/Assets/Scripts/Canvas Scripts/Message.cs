@@ -13,7 +13,7 @@ public class Message : MonoBehaviour
         _text = this.GetComponent<TextMeshProUGUI>();
 
         // Start Text Message
-        _text.text = "Welcome hero!\nThe wizard of the town was invited u to investigate the weird things that have been happening lately.\n\nGood Luck!";
+        _text.text = "Welcome hero!\nThe wizard of the town was invited you to investigate the weird things that have been happening lately.\n\nGood Luck!";
     }
 
     public void UpdateText(string newText)
