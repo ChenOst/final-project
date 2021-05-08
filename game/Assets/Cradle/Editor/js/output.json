@@ -24,8 +24,45 @@
                         "type": "br"
                     },
                     {
-                        "text": "My friend Alf went missing and the people in the town started to act strange...",
+                        "text": "My friend Alf went missing and the people in the town started to act strange... ",
                         "type": "text"
+                    },
+                    {
+                        "innerText": "set: $confrontTheMayor to false",
+                        "name": "set",
+                        "text": "(set: $confrontTheMayor to false)",
+                        "tokens": [
+                            {
+                                "text": "set:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "confrontTheMayor",
+                                "text": "$confrontTheMayor",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "to",
+                                "type": "to"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "false",
+                                "type": "boolean"
+                            }
+                        ],
+                        "type": "macro"
                     },
                     {
                         "text": "\n",
@@ -596,6 +633,298 @@
                             }
                         ],
                         "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "if: $mission1Complete is true",
+                        "name": "if",
+                        "text": "(if: $mission1Complete is true)",
+                        "tokens": [
+                            {
+                                "text": "if:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "mission1Complete",
+                                "text": "$mission1Complete",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "is",
+                                "type": "is"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "true",
+                                "type": "boolean"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "innerText": "\n\t[[I found Alf... ->Mission 1 Completed]]\n",
+                        "text": "[\n\t[[I found Alf... ->Mission 1 Completed]]\n]",
+                        "tokens": [
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            },
+                            {
+                                "text": "\t",
+                                "type": "text"
+                            },
+                            {
+                                "innerText": "link-goto:\"I found Alf... \",\"Mission 1 Completed\"",
+                                "name": "linkgoto",
+                                "text": "(link-goto:\"I found Alf... \",\"Mission 1 Completed\")",
+                                "tokens": [
+                                    {
+                                        "text": "link-goto:",
+                                        "type": "macroName"
+                                    },
+                                    {
+                                        "innerText": "I found Alf... ",
+                                        "text": "\"I found Alf... \"",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "text": ",",
+                                        "type": "comma"
+                                    },
+                                    {
+                                        "innerText": "Mission 1 Completed",
+                                        "text": "\"Mission 1 Completed\"",
+                                        "type": "string"
+                                    }
+                                ],
+                                "type": "macro"
+                            },
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            }
+                        ],
+                        "type": "hook"
+                    }
+                ]
+            },
+            {
+                "Name": "Mission 1 Completed",
+                "Pid": "9",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Double-click this passage to edit it.",
+                        "type": "text"
+                    }
+                ]
+            },
+            {
+                "Name": "The Mayor",
+                "Pid": "10",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Hello traveler!",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "My name is Granny Iga and I'm the mayor of this beautiful town.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "What brings you here?",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"I heard someone went missing \",\"Mayor Default Answer\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"I heard someone went missing \",\"Mayor Default Answer\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "I heard someone went missing ",
+                                "text": "\"I heard someone went missing \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Mayor Default Answer",
+                                "text": "\"Mayor Default Answer\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Lie \",\"Mayor Default Answer\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Lie \",\"Mayor Default Answer\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Lie ",
+                                "text": "\"Lie \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Mayor Default Answer",
+                                "text": "\"Mayor Default Answer\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "if: $confrontTheMayor is true",
+                        "name": "if",
+                        "text": "(if: $confrontTheMayor is true)",
+                        "tokens": [
+                            {
+                                "text": "if:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "confrontTheMayor",
+                                "text": "$confrontTheMayor",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "is",
+                                "type": "is"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "true",
+                                "type": "boolean"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "innerText": "\n\t[[I know the truth about you! ->Mayor Exposed]]\n",
+                        "text": "[\n\t[[I know the truth about you! ->Mayor Exposed]]\n]",
+                        "tokens": [
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            },
+                            {
+                                "text": "\t",
+                                "type": "text"
+                            },
+                            {
+                                "innerText": "link-goto:\"I know the truth about you! \",\"Mayor Exposed\"",
+                                "name": "linkgoto",
+                                "text": "(link-goto:\"I know the truth about you! \",\"Mayor Exposed\")",
+                                "tokens": [
+                                    {
+                                        "text": "link-goto:",
+                                        "type": "macroName"
+                                    },
+                                    {
+                                        "innerText": "I know the truth about you! ",
+                                        "text": "\"I know the truth about you! \"",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "text": ",",
+                                        "type": "comma"
+                                    },
+                                    {
+                                        "innerText": "Mayor Exposed",
+                                        "text": "\"Mayor Exposed\"",
+                                        "type": "string"
+                                    }
+                                ],
+                                "type": "macro"
+                            },
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            }
+                        ],
+                        "type": "hook"
+                    }
+                ]
+            },
+            {
+                "Name": "Mayor Default Answer",
+                "Pid": "11",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Double-click this passage to edit it.",
+                        "type": "text"
+                    }
+                ]
+            },
+            {
+                "Name": "Mayor Exposed",
+                "Pid": "12",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Double-click this passage to edit it.",
+                        "type": "text"
                     }
                 ]
             }

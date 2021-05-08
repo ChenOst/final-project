@@ -1237,10 +1237,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 287330386}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d74d75798d144149bb5c1359f427cd3, type: 3}
+  m_Script: {fileID: 11500000, guid: d3afe6d393aade44e92e3cbc338501df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AutoPlay: 0
+  AutoPlay: 1
   StartPassage: Claudelius
   AdditionalCues: []
   DebugMode: 0

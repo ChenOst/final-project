@@ -39128,6 +39128,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 3, z: 1.5}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1401212326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401212324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc763d8ac8ab7154693ae7aa4808ddda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPassage: The Mayor
 --- !u!1001 &1401770763
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43708,6 +43721,10 @@ PrefabInstance:
     - target: {fileID: 1788106724142788, guid: bcb1c8355830ee24a8e1fce57674721d, type: 3}
       propertyPath: m_Name
       value: The Mayor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1788106724142788, guid: bcb1c8355830ee24a8e1fce57674721d, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1788106724142788, guid: bcb1c8355830ee24a8e1fce57674721d, type: 3}
       propertyPath: m_TagString
