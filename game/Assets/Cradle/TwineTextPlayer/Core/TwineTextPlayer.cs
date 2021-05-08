@@ -90,6 +90,15 @@ public class TwineTextPlayer : MonoBehaviour {
 		Container.DetachChildren();
 	}
 
+	public void StartOver()
+	{
+		for (int i = 0; i < Container.childCount; i++)
+			GameObject.Destroy(Container.GetChild(i).gameObject);
+		this.Story.OnPassageEnter += Story_OnPassageEnter;
+		//this.Story.OnOutput += Story_OnOutput;
+		//this.Story.OnOutputRemoved += Story_OnOutputRemoved;
+	}
+
 	void Story_OnPassageEnter(StoryPassage passage)
 	{
 		Clear();

@@ -20,11 +20,13 @@ public static class Constants
 
     public const string ItemMessage = "New Item Message";
 
-    public const string TwineCanvas = "TwineTextPlayer";
+    public const string TwineTextPlayer = "TwineTextPlayer";
 
     // ***** Game Objects Tags *****
 
     public const string PlayerTag = "Player";
 
     public const string WallTag = "Wall";
+
+    public const string NPCTag = "NPC";
 }
