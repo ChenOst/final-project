@@ -3377,11 +3377,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71466de4c6cdf5745b377e6087c9cf59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rayLength: 10
+  _twineText: {fileID: 287330386}
+  rayLength: 1.5
   layermask:
     serializedVersion: 2
     m_Bits: 512
-  background: {fileID: 287330386}
 --- !u!1 &1438817193 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1842240698895383984, guid: 5d00e3d3540e2344081711f29fa77cc4, type: 3}

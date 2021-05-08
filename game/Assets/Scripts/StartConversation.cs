@@ -6,59 +6,54 @@ using UnityEngine;
 public class StartConversation : MonoBehaviour
 {
     [SerializeField]
-    private GameObject background;
+    private GameObject _twineText;
 
-    private NPC otherObject;
+    [SerializeField]
+    private float rayLength;
 
-    private bool isEnter = false;
+    [SerializeField]
+    private LayerMask layermask;
 
-    private GameObject _ePanel;
+    private NPC _npc;
 
-    private TextMeshProUGUI _sceneName;
+    private bool _inConversation = false;
 
-    void Start()
-    {
-        _ePanel = GameObject.Find(Constants.Canvas)
-                    .transform.Find(Constants.PressEPanel).gameObject;
-
-        _sceneName = _ePanel.transform.Find(Constants.SceneNameTMP).GetComponent<TextMeshProUGUI>();
-    }
+    float distance;
 
     private void Update()
     {
-        if (isEnter)
+        if (Input.GetMouseButtonDown(0))
         {
-            if (Input.GetKey(KeyCode.E))
+            RaycastHit hit;
+            // Does the ray intersect any objects excluding the player layer
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, rayLength, layermask) && !_inConversation)
             {
-                _ePanel.SetActive(false);
-                background.SetActive(true);
-                otherObject.GoToPassage();
-                otherObject.ActiveStory(true);
+                _npc = hit.collider.gameObject.GetComponent<NPC>();
+                Debug.Log("hit " + _npc.name);
+
+                // Calculate the distance between Player and NPC
+                distance = Vector3.Distance(_npc.transform.position, transform.position);
+
+                //Open conversation
+                _inConversation = true;
+                _twineText.SetActive(true);
+                _npc.GoToPassage();
+                _npc.ActiveStory(true);
+            }
+        }
+
+        if (_inConversation)
+        {
+            distance = Vector3.Distance(_npc.transform.position, transform.position);
+            // If the player is too far away, close conversation
+            if (distance > rayLength)
+            {
+                _twineText.SetActive(false);
+                _npc.ActiveStory(false);
+                _inConversation = false;
             }
         }
     }
 
-    public void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == Constants.NPCTag)
-        {
-            _ePanel.SetActive(true);
-
-            otherObject = other.gameObject.GetComponent<NPC>();
-            isEnter = true;
-            _sceneName.text = "To Talk";
-        }
-    }
-
-    public void OnTriggerExit(Collider other)
-    {
-        if (other.tag == Constants.NPCTag)
-        {
-            _ePanel.SetActive(false);
-            background.SetActive(false);
-            otherObject.ActiveStory(false);
-            isEnter = false;
-        }
-    }
 
 }
