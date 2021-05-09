@@ -18,31 +18,96 @@ My friend Alf went missing and the people in the town started to act strange... 
 [[Do you have a direction to start with? -&gt;First Mission Intro]]
 [[Tell me about Alf -&gt;About Alf]]</tw-passagedata><tw-passagedata pid="2" name="Strange People" tags="" position="1363,811.5" size="100,100">I don&#39;t want to start with accusations...
 [[Ok... I&#39;m ready to start -&gt;First Mission Intro]]
-[[Tell me about Alf -&gt;About Alf]]</tw-passagedata><tw-passagedata pid="3" name="First Mission Intro" tags="" position="1551,824.5" size="100,100">I was looking at Alfs&#39; house and discover a weird passage in his basement.
+[[Tell me about Alf -&gt;About Alf]]</tw-passagedata><tw-passagedata pid="3" name="First Mission Intro" tags="" position="1537,903.5" size="100,100">I was looking at Alfs&#39; house and discover a weird passage in his basement.
 When I went in I discover a whole underground area.
 The shpae... it looked familiar I... I search In the books and found what it means.
 [[Tell me more -&gt;BSP Rooms And RPC]]</tw-passagedata><tw-passagedata pid="4" name="About Alf" tags="" position="1700,825.5" size="100,100">Alf is the chef of the town and a good friend of mine.
 After he didn&#39;t open his shop in the morning I went to look for him but couldn&#39;t find him anywhere.
 [[Ok... I&#39;m ready to start -&gt;First Mission Intro]]
-[[Are there any suspects? -&gt;Strange People]]</tw-passagedata><tw-passagedata pid="5" name="BSP Rooms And RPC" tags="" position="1551,947.5" size="100,100">It looks like Binary Space Partitioning for rooms with Random Point Connect.
-[[Binary Space Partitioning for rooms? -&gt;BSP Rooms]]
-[[Random Point Connect? -&gt;RPC]]</tw-passagedata><tw-passagedata pid="6" name="BSP Rooms" tags="" position="1426,1046.5" size="100,100">It Works by dividing the map into a series of rectangles, and then placing a room in each one on the map. The rectangle can be split either vertically or horizontally, and the minimum size of the split is determined based on the minimum size of the rooms.
-[[Random Point Connect? -&gt;RPC]]
-[[Ok I think I&#39;m raedy -&gt;First Mission]]</tw-passagedata><tw-passagedata pid="7" name="RPC" tags="" position="1674,1048.5" size="100,100">Algorithm that works by first iterating through the list of rooms created by the room generation algorithm.  For each corridor it draws, it selects a random point at the edge of each of the rooms and connects. If the points are parallel, the algorithm will draw a straight corridor in the appropriate vertical or horizontal direction. If the points are not parallel, the algorithm will draw a forked corridor made up of three straight corridors in order to connect the points.
-[[Binary Space Partitioning for rooms? -&gt;BSP Rooms]]
-[[Ok I think I&#39;m raedy -&gt;First Mission]]</tw-passagedata><tw-passagedata pid="8" name="First Mission" tags="" position="1550,1123.5" size="100,100">Go to Alf&#39;s house right here behind the mayor&#39;s back.
+[[Are there any suspects? -&gt;Strange People]]</tw-passagedata><tw-passagedata pid="5" name="BSP Rooms And RPC" tags="" position="1548,1045.5" size="100,100">It looks like Binary Space Partitioning for rooms with Random Point Connect.
+[[Binary Space Partitioning for rooms? -&gt;BSP Rooms mission1]]
+[[Random Point Connect? -&gt;RPC1]]
+(set: $mission1Complete to true)</tw-passagedata><tw-passagedata pid="6" name="BSP Rooms mission1" tags="" position="1394,1181.5" size="100,100">It Works by dividing the map into a series of rectangles, and then placing a room in each one on the map. The rectangle can be split either vertically or horizontally, and the minimum size of the split is determined based on the minimum size of the rooms.
+[[Random Point Connect? -&gt;RPC1]]
+[[Ok I think I&#39;m raedy -&gt;First Mission]]</tw-passagedata><tw-passagedata pid="7" name="RPC1" tags="" position="1699,1170.5" size="100,100">Algorithm that works by first iterating through the list of rooms created by the room generation algorithm.  For each corridor it draws, it selects a random point at the edge of each of the rooms and connects. If the points are parallel, the algorithm will draw a straight corridor in the appropriate vertical or horizontal direction. If the points are not parallel, the algorithm will draw a forked corridor made up of three straight corridors in order to connect the points.
+[[Binary Space Partitioning for rooms? -&gt;BSP Rooms mission1]]
+[[Ok I think I&#39;m raedy -&gt;First Mission]]</tw-passagedata><tw-passagedata pid="8" name="First Mission" tags="" position="1547,1297.5" size="100,100">Go to Alf&#39;s house right here behind the mayor&#39;s back.
 Search for Alf and return with more details...
-(set: $mission1Complete to false)
 (if: $mission1Complete is true)[
-	[[I found Alf... -&gt;Mission 1 Completed]]
-]</tw-passagedata><tw-passagedata pid="9" name="Mission 1 Completed" tags="" position="1550,1273.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="10" name="The Mayor" tags="" position="1983,588.5" size="200,200">Hello traveler!
+[[I found Alf... -&gt;Mission 1 Completed]]
+]</tw-passagedata><tw-passagedata pid="9" name="Mission 1 Completed" tags="" position="1551,1433.5" size="100,100">Ohh no!
+I&#39;m so sad to heat that.. I wanted to belive he will be ok.
+While you were gone I discovered that the problem is bigger then I thought, all the town is built on an undergroung tombs.
+When I entered my basment I discover a hole like at Alfs house.
+The shpae was built by Binary Space Partitioning for Rooms and Binary Space Partitioning for Corridors.
+[[Binary Space Partitioning for rooms? -&gt;BSP Rooms mission2]]
+[[Binary Space Partitioning for corridors? -&gt;BSP Corridors mission2]]
+(set: $mission2Complete to true)</tw-passagedata><tw-passagedata pid="10" name="The Mayor" tags="" position="1976,599.5" size="200,200">Hello traveler!
 My name is Granny Iga and I&#39;m the mayor of this beautiful town.
-What brings you here?
-[[I heard someone went missing -&gt;Mayor Default Answer]]
-[[Lie -&gt;Mayor Default Answer]]
 (if: $confrontTheMayor is true)[
-	[[I know the truth about you! -&gt;Mayor Exposed]]
-]</tw-passagedata><tw-passagedata pid="11" name="Mayor Default Answer" tags="" position="2104,826.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="12" name="Mayor Exposed" tags="" position="1959,826.5" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+[[I know the truth about you! -&gt;Mayor Exposed]]
+]</tw-passagedata><tw-passagedata pid="11" name="Mayor Exposed" tags="" position="2026,827.5" size="100,100">You are smarter then i thought!
+Now I will kill you!
+(set: $enemyTheMayor to true)</tw-passagedata><tw-passagedata pid="12" name="BSP Rooms mission2" tags="" position="1448,1577.5" size="100,100">It Works by dividing the map into a series of rectangles, and then placing a room in each one on the map. The rectangle can be split either vertically or horizontally, and the minimum size of the split is determined based on the minimum size of the rooms.
+[[Binary Space Partitioning for corridors? -&gt;BSP Corridors mission2]]
+[[Ok I think I&#39;m raedy -&gt;Second Mission]]</tw-passagedata><tw-passagedata pid="13" name="BSP Corridors mission2" tags="" position="1647,1572.5" size="100,100">Using the tree structure used by BSP Rooms algorithm. It sorts through the sub leaves, connecting each bottom leaf to its partner that shares a parent. When all sub leafs are paired in connects one out of each pair to another pair, until all sub-leafs containing rooms are connected.
+[[Binary Space Partitioning for rooms? -&gt;BSP Rooms mission2]]
+[[Ok I think I&#39;m raedy -&gt;Second Mission]]</tw-passagedata><tw-passagedata pid="14" name="Second Mission" tags="" position="1553,1701.5" size="100,100">Go to my house to my left (your right).
+Explore the tomb and return with more information.
+(if: $mission2Complete is true)[
+[[I found an open coffin... -&gt;Mission 2 Completed]]
+]</tw-passagedata><tw-passagedata pid="15" name="Mission 2 Completed" tags="" position="1555,1840.5" size="100,100">What? an open coffin? this is worst then I thought.
+While you were gone Everett said she was attacked in her house.
+[[Tell me more -&gt;Third Mission]]
+(set: $mission3Complete to true)</tw-passagedata><tw-passagedata pid="16" name="Everett" tags="" position="2402,600.5" size="200,200">Hi nice to meet you!
+I&#39;m Everett.
+(if: $mission3Started is false)[
+Thank god you are here!
+The Skeletons came and attack me in the middle of the night.
+They hold a big book, I think you should search it out, it looked dangerous.
+]
+(if: $mission3Complete is true)[
+Thanks for the help!
+]</tw-passagedata><tw-passagedata pid="17" name="BSP Rooms mission3" tags="" position="1438,2139.5" size="100,100">It Works by dividing the map into a series of rectangles, and then placing a room in each one on the map. The rectangle can be split either vertically or horizontally, and the minimum size of the split is determined based on the minimum size of the rooms.
+[[Drunkard’s Walk? -&gt;DW mission3]]
+[[Ok I think I&#39;m ready -&gt;Mission 3 Completed]]</tw-passagedata><tw-passagedata pid="18" name="DW mission3" tags="" position="1685,2132.5" size="100,100">Similar to RPC it also selects vertex between the rooms and starts drawing a line the first vertex incrementing a randomly chosen amount of vertices in the direction of the second, When the corridor is being made by DW, the algorithm do it in “steps”. Each step adds a corridor of a random length that goes in the direction of the end point.
+[[Binary Space Partitioning for rooms? -&gt;BSP Rooms mission3]]
+[[Ok I think I&#39;m ready -&gt;Mission 3 Completed]]</tw-passagedata><tw-passagedata pid="19" name="Mission 3 Completed" tags="" position="1562,2258.5" size="100,100">(if: $mission3Complete is false)[
+Go and help Everett.
+]
+(else:)[
+I saw you got the book of the &quot;Algorithm Magic&quot;, it used to belong to a very powerful witch a long time ago. I think she was waking from the coffin you found at my house.
+[[I&#39;m Ready for my next mission -&gt;Firth Mission]]
+]</tw-passagedata><tw-passagedata pid="20" name="Third Mission" tags="" position="1554,1999.5" size="100,100">After the calculations I did I think the next template that will appear is
+Binary Space Partitioning for rooms and Drunkard’s Walk.
+Go check this out.
+[[Binary Space Partitioning for rooms? -&gt;BSP Rooms mission3]]
+[[Drunkard’s Walk? -&gt;DW mission3]]
+(set: $mission3Started to false)</tw-passagedata><tw-passagedata pid="21" name="Firth Mission" tags="" position="1559,2406" size="100,100">While you were gone I went to Irvin house, I saw a huge skeleton walking around. I check in my books, this tomb is build with Random Room Placement and Random Point Connect.
+[[Random Room Placement ? -&gt;RRP4]]
+[[Random Point Connect? -&gt;RPC4]]
+(set: $mission4Complete to true)</tw-passagedata><tw-passagedata pid="22" name="RRP4" tags="" position="1484,2556" size="100,100">Algorithms that starts by randomly generating a room of a random width and length, the randomness of the size of the room is controlled by maximum and minimum allowed lengths.
+[[Random Point Connect? -&gt;RPC4]]
+[[Ok I&#39;m ready -&gt;Mission 4 Completed]]</tw-passagedata><tw-passagedata pid="23" name="RPC4" tags="" position="1634,2556" size="100,100">Algorithm that works by first iterating through the list of rooms created by the room generation algorithm.  For each corridor it draws, it selects a random point at the edge of each of the rooms and connects. If the points are parallel, the algorithm will draw a straight corridor in the appropriate vertical or horizontal direction. If the points are not parallel, the algorithm will draw a forked corridor made up of three straight corridors in order to connect the points.
+[[Ok I&#39;m ready -&gt;Mission 4 Completed]]
+[[Random Room Placement ? -&gt;RRP4]]</tw-passagedata><tw-passagedata pid="24" name="Mission 4 Completed" tags="" position="1564,2694" size="100,100">(if: $mission4Complete is false)[
+Find and kill the skeleton at Irvin house.
+]
+(else:)[
+Good job!
+Now theres only one thing left to do.
+I think the witch has strike now because she gain power over years.
+(set: $mission5Complete to false)
+[[Do you know who is the witch? -&gt;Fifth Mission]]
+]
+</tw-passagedata><tw-passagedata pid="25" name="Fifth Mission" tags="" position="1563,2845" size="100,100">I think the mayor is the evil witch!
+Talk to her and confront her!
+(set: $confrontTheMayor to true)
+(if: $mission5Complete is true)[
+[[I killed the mayor!-&gt;End Game]]
+]</tw-passagedata><tw-passagedata pid="26" name="End Game" tags="" position="1563,2995" size="100,100">Good job! you saved us!
+I wish Alf was here...</tw-passagedata><tw-passagedata pid="27" name="Irvin" tags="" position="2799,602.5" size="200,200">Hi I&#39;m Irvin.
+I live here on you&#39;r right.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.

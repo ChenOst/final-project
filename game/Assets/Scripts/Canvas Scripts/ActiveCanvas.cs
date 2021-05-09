@@ -15,6 +15,7 @@ public class ActiveCanvas : MonoBehaviour
         {
             canvas.transform.GetChild(i).gameObject.SetActive(true);
         }
+
         Destroy(this.gameObject, 3);
     }
 

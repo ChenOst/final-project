@@ -377,9 +377,9 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Binary Space Partitioning for rooms? \",\"BSP Rooms\"",
+                        "innerText": "link-goto:\"Binary Space Partitioning for rooms? \",\"BSP Rooms mission1\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Binary Space Partitioning for rooms? \",\"BSP Rooms\")",
+                        "text": "(link-goto:\"Binary Space Partitioning for rooms? \",\"BSP Rooms mission1\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
@@ -395,8 +395,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": "BSP Rooms",
-                                "text": "\"BSP Rooms\"",
+                                "innerText": "BSP Rooms mission1",
+                                "text": "\"BSP Rooms mission1\"",
                                 "type": "string"
                             }
                         ],
@@ -407,9 +407,9 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Random Point Connect? \",\"RPC\"",
+                        "innerText": "link-goto:\"Random Point Connect? \",\"RPC1\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Random Point Connect? \",\"RPC\")",
+                        "text": "(link-goto:\"Random Point Connect? \",\"RPC1\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
@@ -425,9 +425,50 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": "RPC",
-                                "text": "\"RPC\"",
+                                "innerText": "RPC1",
+                                "text": "\"RPC1\"",
                                 "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "set: $mission1Complete to true",
+                        "name": "set",
+                        "text": "(set: $mission1Complete to true)",
+                        "tokens": [
+                            {
+                                "text": "set:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "mission1Complete",
+                                "text": "$mission1Complete",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "to",
+                                "type": "to"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "true",
+                                "type": "boolean"
                             }
                         ],
                         "type": "macro"
@@ -435,7 +476,7 @@
                 ]
             },
             {
-                "Name": "BSP Rooms",
+                "Name": "BSP Rooms mission1",
                 "Pid": "6",
                 "Tags": "",
                 "Tokens": [
@@ -448,9 +489,9 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Random Point Connect? \",\"RPC\"",
+                        "innerText": "link-goto:\"Random Point Connect? \",\"RPC1\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Random Point Connect? \",\"RPC\")",
+                        "text": "(link-goto:\"Random Point Connect? \",\"RPC1\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
@@ -466,8 +507,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": "RPC",
-                                "text": "\"RPC\"",
+                                "innerText": "RPC1",
+                                "text": "\"RPC1\"",
                                 "type": "string"
                             }
                         ],
@@ -506,7 +547,7 @@
                 ]
             },
             {
-                "Name": "RPC",
+                "Name": "RPC1",
                 "Pid": "7",
                 "Tags": "",
                 "Tokens": [
@@ -519,9 +560,9 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Binary Space Partitioning for rooms? \",\"BSP Rooms\"",
+                        "innerText": "link-goto:\"Binary Space Partitioning for rooms? \",\"BSP Rooms mission1\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Binary Space Partitioning for rooms? \",\"BSP Rooms\")",
+                        "text": "(link-goto:\"Binary Space Partitioning for rooms? \",\"BSP Rooms mission1\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
@@ -537,8 +578,8 @@
                                 "type": "comma"
                             },
                             {
-                                "innerText": "BSP Rooms",
-                                "text": "\"BSP Rooms\"",
+                                "innerText": "BSP Rooms mission1",
+                                "text": "\"BSP Rooms mission1\"",
                                 "type": "string"
                             }
                         ],
@@ -598,47 +639,6 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "set: $mission1Complete to false",
-                        "name": "set",
-                        "text": "(set: $mission1Complete to false)",
-                        "tokens": [
-                            {
-                                "text": "set:",
-                                "type": "macroName"
-                            },
-                            {
-                                "text": " ",
-                                "type": "whitespace"
-                            },
-                            {
-                                "name": "mission1Complete",
-                                "text": "$mission1Complete",
-                                "type": "variable"
-                            },
-                            {
-                                "text": " ",
-                                "type": "whitespace"
-                            },
-                            {
-                                "text": "to",
-                                "type": "to"
-                            },
-                            {
-                                "text": " ",
-                                "type": "whitespace"
-                            },
-                            {
-                                "text": "false",
-                                "type": "boolean"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
                         "innerText": "if: $mission1Complete is true",
                         "name": "if",
                         "text": "(if: $mission1Complete is true)",
@@ -676,16 +676,12 @@
                         "type": "macro"
                     },
                     {
-                        "innerText": "\n\t[[I found Alf... ->Mission 1 Completed]]\n",
-                        "text": "[\n\t[[I found Alf... ->Mission 1 Completed]]\n]",
+                        "innerText": "\n[[I found Alf... ->Mission 1 Completed]]\n",
+                        "text": "[\n[[I found Alf... ->Mission 1 Completed]]\n]",
                         "tokens": [
                             {
                                 "text": "\n",
                                 "type": "br"
-                            },
-                            {
-                                "text": "\t",
-                                "type": "text"
                             },
                             {
                                 "innerText": "link-goto:\"I found Alf... \",\"Mission 1 Completed\"",
@@ -728,8 +724,141 @@
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "Double-click this passage to edit it.",
+                        "text": "Ohh no!",
                         "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "I'm so sad to heat that.. I wanted to belive he will be ok.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "While you were gone I discovered that the problem is bigger then I thought, all the town is built on an undergroung tombs.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "When I entered my basment I discover a hole like at Alfs house.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "The shpae was built by Binary Space Partitioning for Rooms and Binary Space Partitioning for Corridors.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Binary Space Partitioning for rooms? \",\"BSP Rooms mission2\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Binary Space Partitioning for rooms? \",\"BSP Rooms mission2\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Binary Space Partitioning for rooms? ",
+                                "text": "\"Binary Space Partitioning for rooms? \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "BSP Rooms mission2",
+                                "text": "\"BSP Rooms mission2\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Binary Space Partitioning for corridors? \",\"BSP Corridors mission2\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Binary Space Partitioning for corridors? \",\"BSP Corridors mission2\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Binary Space Partitioning for corridors? ",
+                                "text": "\"Binary Space Partitioning for corridors? \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "BSP Corridors mission2",
+                                "text": "\"BSP Corridors mission2\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "set: $mission2Complete to true",
+                        "name": "set",
+                        "text": "(set: $mission2Complete to true)",
+                        "tokens": [
+                            {
+                                "text": "set:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "mission2Complete",
+                                "text": "$mission2Complete",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "to",
+                                "type": "to"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "true",
+                                "type": "boolean"
+                            }
+                        ],
+                        "type": "macro"
                     }
                 ]
             },
@@ -749,74 +878,6 @@
                     {
                         "text": "My name is Granny Iga and I'm the mayor of this beautiful town.",
                         "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "text": "What brings you here?",
-                        "type": "text"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"I heard someone went missing \",\"Mayor Default Answer\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"I heard someone went missing \",\"Mayor Default Answer\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "I heard someone went missing ",
-                                "text": "\"I heard someone went missing \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "Mayor Default Answer",
-                                "text": "\"Mayor Default Answer\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"Lie \",\"Mayor Default Answer\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Lie \",\"Mayor Default Answer\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Lie ",
-                                "text": "\"Lie \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "Mayor Default Answer",
-                                "text": "\"Mayor Default Answer\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
                     },
                     {
                         "text": "\n",
@@ -860,16 +921,12 @@
                         "type": "macro"
                     },
                     {
-                        "innerText": "\n\t[[I know the truth about you! ->Mayor Exposed]]\n",
-                        "text": "[\n\t[[I know the truth about you! ->Mayor Exposed]]\n]",
+                        "innerText": "\n[[I know the truth about you! ->Mayor Exposed]]\n",
+                        "text": "[\n[[I know the truth about you! ->Mayor Exposed]]\n]",
                         "tokens": [
                             {
                                 "text": "\n",
                                 "type": "br"
-                            },
-                            {
-                                "text": "\t",
-                                "type": "text"
                             },
                             {
                                 "innerText": "link-goto:\"I know the truth about you! \",\"Mayor Exposed\"",
@@ -907,23 +964,1570 @@
                 ]
             },
             {
-                "Name": "Mayor Default Answer",
+                "Name": "Mayor Exposed",
                 "Pid": "11",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "Double-click this passage to edit it.",
+                        "text": "You are smarter then i thought!",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Now I will kill you!",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "set: $enemyTheMayor to true",
+                        "name": "set",
+                        "text": "(set: $enemyTheMayor to true)",
+                        "tokens": [
+                            {
+                                "text": "set:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "enemyTheMayor",
+                                "text": "$enemyTheMayor",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "to",
+                                "type": "to"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "true",
+                                "type": "boolean"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "BSP Rooms mission2",
+                "Pid": "12",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "It Works by dividing the map into a series of rectangles, and then placing a room in each one on the map. The rectangle can be split either vertically or horizontally, and the minimum size of the split is determined based on the minimum size of the rooms.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Binary Space Partitioning for corridors? \",\"BSP Corridors mission2\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Binary Space Partitioning for corridors? \",\"BSP Corridors mission2\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Binary Space Partitioning for corridors? ",
+                                "text": "\"Binary Space Partitioning for corridors? \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "BSP Corridors mission2",
+                                "text": "\"BSP Corridors mission2\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Ok I think I'm raedy \",\"Second Mission\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Ok I think I'm raedy \",\"Second Mission\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Ok I think I'm raedy ",
+                                "text": "\"Ok I think I'm raedy \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Second Mission",
+                                "text": "\"Second Mission\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "BSP Corridors mission2",
+                "Pid": "13",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Using the tree structure used by BSP Rooms algorithm. It sorts through the sub leaves, connecting each bottom leaf to its partner that shares a parent. When all sub leafs are paired in connects one out of each pair to another pair, until all sub-leafs containing rooms are connected.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Binary Space Partitioning for rooms? \",\"BSP Rooms mission2\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Binary Space Partitioning for rooms? \",\"BSP Rooms mission2\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Binary Space Partitioning for rooms? ",
+                                "text": "\"Binary Space Partitioning for rooms? \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "BSP Rooms mission2",
+                                "text": "\"BSP Rooms mission2\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Ok I think I'm raedy \",\"Second Mission\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Ok I think I'm raedy \",\"Second Mission\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Ok I think I'm raedy ",
+                                "text": "\"Ok I think I'm raedy \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Second Mission",
+                                "text": "\"Second Mission\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Second Mission",
+                "Pid": "14",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Go to my house to my left (your right).",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Explore the tomb and return with more information.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "if: $mission2Complete is true",
+                        "name": "if",
+                        "text": "(if: $mission2Complete is true)",
+                        "tokens": [
+                            {
+                                "text": "if:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "mission2Complete",
+                                "text": "$mission2Complete",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "is",
+                                "type": "is"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "true",
+                                "type": "boolean"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "innerText": "\n[[I found an open coffin... ->Mission 2 Completed]]\n",
+                        "text": "[\n[[I found an open coffin... ->Mission 2 Completed]]\n]",
+                        "tokens": [
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            },
+                            {
+                                "innerText": "link-goto:\"I found an open coffin... \",\"Mission 2 Completed\"",
+                                "name": "linkgoto",
+                                "text": "(link-goto:\"I found an open coffin... \",\"Mission 2 Completed\")",
+                                "tokens": [
+                                    {
+                                        "text": "link-goto:",
+                                        "type": "macroName"
+                                    },
+                                    {
+                                        "innerText": "I found an open coffin... ",
+                                        "text": "\"I found an open coffin... \"",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "text": ",",
+                                        "type": "comma"
+                                    },
+                                    {
+                                        "innerText": "Mission 2 Completed",
+                                        "text": "\"Mission 2 Completed\"",
+                                        "type": "string"
+                                    }
+                                ],
+                                "type": "macro"
+                            },
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            }
+                        ],
+                        "type": "hook"
+                    }
+                ]
+            },
+            {
+                "Name": "Mission 2 Completed",
+                "Pid": "15",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "What? an open coffin? this is worst then I thought.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "While you were gone Everett said she was attacked in her house.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Tell me more \",\"Third Mission\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Tell me more \",\"Third Mission\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Tell me more ",
+                                "text": "\"Tell me more \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Third Mission",
+                                "text": "\"Third Mission\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "set: $mission3Complete to true",
+                        "name": "set",
+                        "text": "(set: $mission3Complete to true)",
+                        "tokens": [
+                            {
+                                "text": "set:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "mission3Complete",
+                                "text": "$mission3Complete",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "to",
+                                "type": "to"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "true",
+                                "type": "boolean"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Everett",
+                "Pid": "16",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Hi nice to meet you!",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "I'm Everett.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "if: $mission3Started is false",
+                        "name": "if",
+                        "text": "(if: $mission3Started is false)",
+                        "tokens": [
+                            {
+                                "text": "if:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "mission3Started",
+                                "text": "$mission3Started",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "is",
+                                "type": "is"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "false",
+                                "type": "boolean"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "innerText": "\nThank god you are here!\nThe Skeletons came and attack me in the middle of the night.\nThey hold a big book, I think you should search it out, it looked dangerous.\n",
+                        "text": "[\nThank god you are here!\nThe Skeletons came and attack me in the middle of the night.\nThey hold a big book, I think you should search it out, it looked dangerous.\n]",
+                        "tokens": [
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            },
+                            {
+                                "text": "Thank god you are here!",
+                                "type": "text"
+                            },
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            },
+                            {
+                                "text": "The Skeletons came and attack me in the middle of the night.",
+                                "type": "text"
+                            },
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            },
+                            {
+                                "text": "They hold a big book, I think you should search it out, it looked dangerous.",
+                                "type": "text"
+                            },
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            }
+                        ],
+                        "type": "hook"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "if: $mission3Complete is true",
+                        "name": "if",
+                        "text": "(if: $mission3Complete is true)",
+                        "tokens": [
+                            {
+                                "text": "if:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "mission3Complete",
+                                "text": "$mission3Complete",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "is",
+                                "type": "is"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "true",
+                                "type": "boolean"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "innerText": "\nThanks for the help!\n",
+                        "text": "[\nThanks for the help!\n]",
+                        "tokens": [
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            },
+                            {
+                                "text": "Thanks for the help!",
+                                "type": "text"
+                            },
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            }
+                        ],
+                        "type": "hook"
+                    }
+                ]
+            },
+            {
+                "Name": "BSP Rooms mission3",
+                "Pid": "17",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "It Works by dividing the map into a series of rectangles, and then placing a room in each one on the map. The rectangle can be split either vertically or horizontally, and the minimum size of the split is determined based on the minimum size of the rooms.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Drunkard’s Walk? \",\"DW mission3\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Drunkard’s Walk? \",\"DW mission3\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Drunkard’s Walk? ",
+                                "text": "\"Drunkard’s Walk? \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "DW mission3",
+                                "text": "\"DW mission3\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Ok I think I'm ready \",\"Mission 3 Completed\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Ok I think I'm ready \",\"Mission 3 Completed\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Ok I think I'm ready ",
+                                "text": "\"Ok I think I'm ready \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Mission 3 Completed",
+                                "text": "\"Mission 3 Completed\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "DW mission3",
+                "Pid": "18",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Similar to RPC it also selects vertex between the rooms and starts drawing a line the first vertex incrementing a randomly chosen amount of vertices in the direction of the second, When the corridor is being made by DW, the algorithm do it in “steps”. Each step adds a corridor of a random length that goes in the direction of the end point.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Binary Space Partitioning for rooms? \",\"BSP Rooms mission3\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Binary Space Partitioning for rooms? \",\"BSP Rooms mission3\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Binary Space Partitioning for rooms? ",
+                                "text": "\"Binary Space Partitioning for rooms? \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "BSP Rooms mission3",
+                                "text": "\"BSP Rooms mission3\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Ok I think I'm ready \",\"Mission 3 Completed\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Ok I think I'm ready \",\"Mission 3 Completed\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Ok I think I'm ready ",
+                                "text": "\"Ok I think I'm ready \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Mission 3 Completed",
+                                "text": "\"Mission 3 Completed\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Mission 3 Completed",
+                "Pid": "19",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "innerText": "if: $mission3Complete is false",
+                        "name": "if",
+                        "text": "(if: $mission3Complete is false)",
+                        "tokens": [
+                            {
+                                "text": "if:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "mission3Complete",
+                                "text": "$mission3Complete",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "is",
+                                "type": "is"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "false",
+                                "type": "boolean"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "innerText": "\nGo and help Everett.\n",
+                        "text": "[\nGo and help Everett.\n]",
+                        "tokens": [
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            },
+                            {
+                                "text": "Go and help Everett.",
+                                "type": "text"
+                            },
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            }
+                        ],
+                        "type": "hook"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "else:",
+                        "name": "else",
+                        "text": "(else:)",
+                        "tokens": [
+                            {
+                                "text": "else:",
+                                "type": "macroName"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "innerText": "\nI saw you got the book of the \"Algorithm Magic\", it used to belong to a very powerful witch a long time ago. I think she was waking from the coffin you found at my house.\n[[I'm Ready for my next mission ->Firth Mission]]\n",
+                        "text": "[\nI saw you got the book of the \"Algorithm Magic\", it used to belong to a very powerful witch a long time ago. I think she was waking from the coffin you found at my house.\n[[I'm Ready for my next mission ->Firth Mission]]\n]",
+                        "tokens": [
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            },
+                            {
+                                "text": "I saw you got the book of the \"Algorithm Magic\", it used to belong to a very powerful witch a long time ago. I think she was waking from the coffin you found at my house.",
+                                "type": "text"
+                            },
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            },
+                            {
+                                "innerText": "link-goto:\"I'm Ready for my next mission \",\"Firth Mission\"",
+                                "name": "linkgoto",
+                                "text": "(link-goto:\"I'm Ready for my next mission \",\"Firth Mission\")",
+                                "tokens": [
+                                    {
+                                        "text": "link-goto:",
+                                        "type": "macroName"
+                                    },
+                                    {
+                                        "innerText": "I'm Ready for my next mission ",
+                                        "text": "\"I'm Ready for my next mission \"",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "text": ",",
+                                        "type": "comma"
+                                    },
+                                    {
+                                        "innerText": "Firth Mission",
+                                        "text": "\"Firth Mission\"",
+                                        "type": "string"
+                                    }
+                                ],
+                                "type": "macro"
+                            },
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            }
+                        ],
+                        "type": "hook"
+                    }
+                ]
+            },
+            {
+                "Name": "Third Mission",
+                "Pid": "20",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "After the calculations I did I think the next template that will appear is",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Binary Space Partitioning for rooms and Drunkard’s Walk.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Go check this out.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Binary Space Partitioning for rooms? \",\"BSP Rooms mission3\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Binary Space Partitioning for rooms? \",\"BSP Rooms mission3\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Binary Space Partitioning for rooms? ",
+                                "text": "\"Binary Space Partitioning for rooms? \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "BSP Rooms mission3",
+                                "text": "\"BSP Rooms mission3\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Drunkard’s Walk? \",\"DW mission3\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Drunkard’s Walk? \",\"DW mission3\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Drunkard’s Walk? ",
+                                "text": "\"Drunkard’s Walk? \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "DW mission3",
+                                "text": "\"DW mission3\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "set: $mission3Started to false",
+                        "name": "set",
+                        "text": "(set: $mission3Started to false)",
+                        "tokens": [
+                            {
+                                "text": "set:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "mission3Started",
+                                "text": "$mission3Started",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "to",
+                                "type": "to"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "false",
+                                "type": "boolean"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Firth Mission",
+                "Pid": "21",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "While you were gone I went to Irvin house, I saw a huge skeleton walking around. I check in my books, this tomb is build with Random Room Placement and Random Point Connect.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Random Room Placement ? \",\"RRP4\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Random Room Placement ? \",\"RRP4\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Random Room Placement ? ",
+                                "text": "\"Random Room Placement ? \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "RRP4",
+                                "text": "\"RRP4\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Random Point Connect? \",\"RPC4\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Random Point Connect? \",\"RPC4\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Random Point Connect? ",
+                                "text": "\"Random Point Connect? \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "RPC4",
+                                "text": "\"RPC4\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "set: $mission4Complete to true",
+                        "name": "set",
+                        "text": "(set: $mission4Complete to true)",
+                        "tokens": [
+                            {
+                                "text": "set:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "mission4Complete",
+                                "text": "$mission4Complete",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "to",
+                                "type": "to"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "true",
+                                "type": "boolean"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "RRP4",
+                "Pid": "22",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Algorithms that starts by randomly generating a room of a random width and length, the randomness of the size of the room is controlled by maximum and minimum allowed lengths.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Random Point Connect? \",\"RPC4\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Random Point Connect? \",\"RPC4\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Random Point Connect? ",
+                                "text": "\"Random Point Connect? \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "RPC4",
+                                "text": "\"RPC4\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Ok I'm ready \",\"Mission 4 Completed\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Ok I'm ready \",\"Mission 4 Completed\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Ok I'm ready ",
+                                "text": "\"Ok I'm ready \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Mission 4 Completed",
+                                "text": "\"Mission 4 Completed\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "RPC4",
+                "Pid": "23",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Algorithm that works by first iterating through the list of rooms created by the room generation algorithm.  For each corridor it draws, it selects a random point at the edge of each of the rooms and connects. If the points are parallel, the algorithm will draw a straight corridor in the appropriate vertical or horizontal direction. If the points are not parallel, the algorithm will draw a forked corridor made up of three straight corridors in order to connect the points.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Ok I'm ready \",\"Mission 4 Completed\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Ok I'm ready \",\"Mission 4 Completed\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Ok I'm ready ",
+                                "text": "\"Ok I'm ready \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Mission 4 Completed",
+                                "text": "\"Mission 4 Completed\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Random Room Placement ? \",\"RRP4\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Random Room Placement ? \",\"RRP4\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Random Room Placement ? ",
+                                "text": "\"Random Room Placement ? \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "RRP4",
+                                "text": "\"RRP4\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Mission 4 Completed",
+                "Pid": "24",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "innerText": "if: $mission4Complete is false",
+                        "name": "if",
+                        "text": "(if: $mission4Complete is false)",
+                        "tokens": [
+                            {
+                                "text": "if:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "mission4Complete",
+                                "text": "$mission4Complete",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "is",
+                                "type": "is"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "false",
+                                "type": "boolean"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "innerText": "\nFind and kill the skeleton at Irvin house.\n",
+                        "text": "[\nFind and kill the skeleton at Irvin house.\n]",
+                        "tokens": [
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            },
+                            {
+                                "text": "Find and kill the skeleton at Irvin house.",
+                                "type": "text"
+                            },
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            }
+                        ],
+                        "type": "hook"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "else:",
+                        "name": "else",
+                        "text": "(else:)",
+                        "tokens": [
+                            {
+                                "text": "else:",
+                                "type": "macroName"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "innerText": "\nGood job!\nNow theres only one thing left to do.\nI think the witch has strike now because she gain power over years.\n(set: $mission5Complete to false)\n[[Do you know who is the witch? ->Fifth Mission]]\n",
+                        "text": "[\nGood job!\nNow theres only one thing left to do.\nI think the witch has strike now because she gain power over years.\n(set: $mission5Complete to false)\n[[Do you know who is the witch? ->Fifth Mission]]\n]",
+                        "tokens": [
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            },
+                            {
+                                "text": "Good job!",
+                                "type": "text"
+                            },
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            },
+                            {
+                                "text": "Now theres only one thing left to do.",
+                                "type": "text"
+                            },
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            },
+                            {
+                                "text": "I think the witch has strike now because she gain power over years.",
+                                "type": "text"
+                            },
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            },
+                            {
+                                "innerText": "set: $mission5Complete to false",
+                                "name": "set",
+                                "text": "(set: $mission5Complete to false)",
+                                "tokens": [
+                                    {
+                                        "text": "set:",
+                                        "type": "macroName"
+                                    },
+                                    {
+                                        "text": " ",
+                                        "type": "whitespace"
+                                    },
+                                    {
+                                        "name": "mission5Complete",
+                                        "text": "$mission5Complete",
+                                        "type": "variable"
+                                    },
+                                    {
+                                        "text": " ",
+                                        "type": "whitespace"
+                                    },
+                                    {
+                                        "text": "to",
+                                        "type": "to"
+                                    },
+                                    {
+                                        "text": " ",
+                                        "type": "whitespace"
+                                    },
+                                    {
+                                        "text": "false",
+                                        "type": "boolean"
+                                    }
+                                ],
+                                "type": "macro"
+                            },
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            },
+                            {
+                                "innerText": "link-goto:\"Do you know who is the witch? \",\"Fifth Mission\"",
+                                "name": "linkgoto",
+                                "text": "(link-goto:\"Do you know who is the witch? \",\"Fifth Mission\")",
+                                "tokens": [
+                                    {
+                                        "text": "link-goto:",
+                                        "type": "macroName"
+                                    },
+                                    {
+                                        "innerText": "Do you know who is the witch? ",
+                                        "text": "\"Do you know who is the witch? \"",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "text": ",",
+                                        "type": "comma"
+                                    },
+                                    {
+                                        "innerText": "Fifth Mission",
+                                        "text": "\"Fifth Mission\"",
+                                        "type": "string"
+                                    }
+                                ],
+                                "type": "macro"
+                            },
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            }
+                        ],
+                        "type": "hook"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    }
+                ]
+            },
+            {
+                "Name": "Fifth Mission",
+                "Pid": "25",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "I think the mayor is the evil witch!",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Talk to her and confront her!",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "set: $confrontTheMayor to true",
+                        "name": "set",
+                        "text": "(set: $confrontTheMayor to true)",
+                        "tokens": [
+                            {
+                                "text": "set:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "confrontTheMayor",
+                                "text": "$confrontTheMayor",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "to",
+                                "type": "to"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "true",
+                                "type": "boolean"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "if: $mission5Complete is true",
+                        "name": "if",
+                        "text": "(if: $mission5Complete is true)",
+                        "tokens": [
+                            {
+                                "text": "if:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "mission5Complete",
+                                "text": "$mission5Complete",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "is",
+                                "type": "is"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "true",
+                                "type": "boolean"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "innerText": "\n[[I killed the mayor!->End Game]]\n",
+                        "text": "[\n[[I killed the mayor!->End Game]]\n]",
+                        "tokens": [
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            },
+                            {
+                                "innerText": "link-goto:\"I killed the mayor!\",\"End Game\"",
+                                "name": "linkgoto",
+                                "text": "(link-goto:\"I killed the mayor!\",\"End Game\")",
+                                "tokens": [
+                                    {
+                                        "text": "link-goto:",
+                                        "type": "macroName"
+                                    },
+                                    {
+                                        "innerText": "I killed the mayor!",
+                                        "text": "\"I killed the mayor!\"",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "text": ",",
+                                        "type": "comma"
+                                    },
+                                    {
+                                        "innerText": "End Game",
+                                        "text": "\"End Game\"",
+                                        "type": "string"
+                                    }
+                                ],
+                                "type": "macro"
+                            },
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            }
+                        ],
+                        "type": "hook"
+                    }
+                ]
+            },
+            {
+                "Name": "End Game",
+                "Pid": "26",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Good job! you saved us!",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "I wish Alf was here...",
                         "type": "text"
                     }
                 ]
             },
             {
-                "Name": "Mayor Exposed",
-                "Pid": "12",
+                "Name": "Irvin",
+                "Pid": "27",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "Double-click this passage to edit it.",
+                        "text": "Hi I'm Irvin.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "I live here on you'r right.",
                         "type": "text"
                     }
                 ]

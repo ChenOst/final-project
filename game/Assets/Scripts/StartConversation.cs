@@ -16,9 +16,13 @@ public class StartConversation : MonoBehaviour
 
     private NPC _npc;
 
-    private bool _inConversation = false;
+    private string mainNPC = "Claudelius The Wizard";
+
+    public bool InConversation = false;
 
     float distance;
+
+    private bool once = true;
 
     private void Update()
     {
@@ -26,23 +30,28 @@ public class StartConversation : MonoBehaviour
         {
             RaycastHit hit;
             // Does the ray intersect any objects excluding the player layer
-            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, rayLength, layermask) && !_inConversation)
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, rayLength, layermask) && !InConversation)
             {
                 _npc = hit.collider.gameObject.GetComponent<NPC>();
-                Debug.Log("hit " + _npc.name);
 
                 // Calculate the distance between Player and NPC
                 distance = Vector3.Distance(_npc.transform.position, transform.position);
 
                 //Open conversation
-                _inConversation = true;
+                InConversation = true;
                 _twineText.SetActive(true);
                 _npc.GoToPassage();
                 _npc.ActiveStory(true);
+
+                if (_npc.name == mainNPC && once)
+                {
+                    once = false;
+                    hit.collider.gameObject.GetComponent<ActiveNPC>().CanStartConversation();
+                }
             }
         }
 
-        if (_inConversation)
+        if (InConversation)
         {
             distance = Vector3.Distance(_npc.transform.position, transform.position);
             // If the player is too far away, close conversation
@@ -50,7 +59,7 @@ public class StartConversation : MonoBehaviour
             {
                 _twineText.SetActive(false);
                 _npc.ActiveStory(false);
-                _inConversation = false;
+                InConversation = false;
             }
         }
     }

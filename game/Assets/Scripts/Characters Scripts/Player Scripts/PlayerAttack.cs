@@ -25,6 +25,7 @@ public class PlayerAttack : MonoBehaviour
 
     private Animator _anim;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,7 +42,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (DisableKeyboard.IsInputEnabled )
         {
-            if (Input.GetKeyDown(KeyCode.Alpha1) && (Time.time - lastTime > 3.0f)  && (Energy >= _attackEnergy[0]))
+            if (Input.GetKeyDown(KeyCode.Alpha1) && (Time.time - lastTime > 4.0f)  && (Energy >= _attackEnergy[0]))
             {
                 _attack.attackDamage = _attackDamage[0];
                 Energy -= _attackEnergy[0];
@@ -49,21 +50,21 @@ public class PlayerAttack : MonoBehaviour
                 _anim.SetBool("Attack1", true);
 
             }
-            else if (Input.GetKeyDown(KeyCode.Alpha2) && (Time.time - lastTime > 3.0f)  && (Energy >= _attackEnergy[1]))
+            else if (Input.GetKeyDown(KeyCode.Alpha2) && (Time.time - lastTime > 4.0f)  && (Energy >= _attackEnergy[1]))
             {
                 _attack.attackDamage = _attackDamage[1];
                 Energy -= _attackEnergy[1];
                 lastTime = Time.time;
                 _anim.SetBool("Attack2", true);
             }
-            else if (Input.GetKeyDown(KeyCode.Alpha3) && (Time.time - lastTime > 3.0f)  && (Energy >= _attackEnergy[2]))
+            else if (Input.GetKeyDown(KeyCode.Alpha3) && (Time.time - lastTime > 4.0f)  && (Energy >= _attackEnergy[2]))
             {
                 _attack.attackDamage = _attackDamage[2];
                 Energy -= _attackEnergy[2];
                 lastTime = Time.time;
                 _anim.SetBool("Attack3", true);
             }
-            else if (Input.GetKeyDown(KeyCode.Alpha4) && (Time.time - lastTime > 3.0f)  && (Energy >= _attackEnergy[3]))
+            else if (Input.GetKeyDown(KeyCode.Alpha4) && (Time.time - lastTime > 4.0f)  && (Energy >= _attackEnergy[3]))
             {
                 _attack.attackDamage = _attackDamage[3];
                 Energy -= _attackEnergy[3];
