@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using RPGCharacters;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,18 +15,32 @@ public class MoveEnemy : MonoBehaviour
     [SerializeField]
     private float _rotationSpeed = 2f;
 
+    [SerializeField]
+    [Tooltip("For Skeletons enter true, for The Mayor enter false")]
+    private bool _regularEnemy;
+
     Transform target;
 
     private Animator _anim;
 
     private EnemyHP _hp;
 
+
     // Start is called before the first frame update
     void Start()
     {
         target = GameObject.Find(Constants.Player).transform;
-        _anim = GetComponent<Animator>();
         _hp = GetComponent<EnemyHP>();
+
+        // Skeleton enemies 
+        if (_regularEnemy)
+        {
+            _anim = GetComponent<Animator>();
+        } // The Mayor enemy
+        else
+        {
+            _anim = GetComponent<NpcEquipment>().animator;
+        }
     }
 
     // Update is called once per frame

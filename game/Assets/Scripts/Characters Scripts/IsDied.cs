@@ -5,6 +5,7 @@ using static EnumNames;
 
 public class IsDied : MonoBehaviour
 {
+
     [SerializeField]
     private bool _activeSpawner;
 
@@ -16,8 +17,18 @@ public class IsDied : MonoBehaviour
     public void CanDestroy()
     {
         Vector3 posToSpawn = this.gameObject.transform.position;
-        GameObject newItem = Instantiate(_spawnItem, posToSpawn, Quaternion.identity, this.transform.parent);
-        Destroy(this.gameObject);
+        
+        if (this.gameObject.name.Equals("Armature_0(Clone)"))
+        {
+            GameObject newItem = Instantiate(_spawnItem, posToSpawn, Quaternion.identity);
+            Destroy(this.transform.parent.gameObject);
+        }
+        else
+        {
+            GameObject newItem = Instantiate(_spawnItem, posToSpawn, Quaternion.identity, this.transform.parent);
+            Destroy(this.gameObject);
+        }
+
     }
 
     // This function called when the player is died

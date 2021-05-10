@@ -843,6 +843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hP: 100
+  _regularEnemy: 1
 --- !u!114 &5097283953339707158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -858,6 +859,7 @@ MonoBehaviour:
   _lookRadius: 5
   _movementSpeed: 2
   _rotationSpeed: 3
+  _regularEnemy: 1
 --- !u!114 &5097283953339707157
 MonoBehaviour:
   m_ObjectHideFlags: 0

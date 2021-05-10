@@ -28,20 +28,20 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 			VarDef("mission1Complete", () => this.@mission1Complete, val => this.@mission1Complete = val);
 			VarDef("mission2Complete", () => this.@mission2Complete, val => this.@mission2Complete = val);
 			VarDef("enemyTheMayor", () => this.@enemyTheMayor, val => this.@enemyTheMayor = val);
+			VarDef("mission5Complete", () => this.@mission5Complete, val => this.@mission5Complete = val);
 			VarDef("mission3Complete", () => this.@mission3Complete, val => this.@mission3Complete = val);
 			VarDef("mission3Started", () => this.@mission3Started, val => this.@mission3Started = val);
 			VarDef("mission4Complete", () => this.@mission4Complete, val => this.@mission4Complete = val);
-			VarDef("mission5Complete", () => this.@mission5Complete, val => this.@mission5Complete = val);
 		}
 
 		public StoryVar @confrontTheMayor;
 		public StoryVar @mission1Complete;
 		public StoryVar @mission2Complete;
 		public StoryVar @enemyTheMayor;
+		public StoryVar @mission5Complete;
 		public StoryVar @mission3Complete;
 		public StoryVar @mission3Started;
 		public StoryVar @mission4Complete;
-		public StoryVar @mission5Complete;
 	}
 
 	public new VarDefs Vars
@@ -93,6 +93,9 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		passage25_Init();
 		passage26_Init();
 		passage27_Init();
+		passage28_Init();
+		passage29_Init();
+		passage30_Init();
 	}
 
 	// ---------------
@@ -117,9 +120,9 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return link("Who is acting strange? ", "Strange People", null);
 		yield return lineBreak();
-		yield return link("Do you have a direction to start with? ", "First Mission Intro", null);
-		yield return lineBreak();
 		yield return link("Tell me about Alf ", "About Alf", null);
+		yield return lineBreak();
+		yield return link("Do you have a direction to start with? ", "First Mission Intro", null);
 		yield break;
 	}
 
@@ -136,9 +139,9 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 	{
 		yield return text("I don't want to start with accusations...");
 		yield return lineBreak();
-		yield return link("Ok... I'm ready to start ", "First Mission Intro", null);
-		yield return lineBreak();
 		yield return link("Tell me about Alf ", "About Alf", null);
+		yield return lineBreak();
+		yield return link("Ok I'm ready to start ", "First Mission Intro", null);
 		yield break;
 	}
 
@@ -178,9 +181,9 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return text("After he didn't open his shop in the morning I went to look for him but couldn't find him anywhere.");
 		yield return lineBreak();
-		yield return link("Ok... I'm ready to start ", "First Mission Intro", null);
-		yield return lineBreak();
 		yield return link("Are there any suspects? ", "Strange People", null);
+		yield return lineBreak();
+		yield return link("Ok I'm ready to start ", "First Mission Intro", null);
 		yield break;
 	}
 
@@ -201,7 +204,7 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return link("Random Point Connect? ", "RPC1", null);
 		yield return lineBreak();
-		Vars.mission1Complete  = true;
+		Vars.mission1Complete  = false;
 		yield break;
 	}
 
@@ -220,7 +223,7 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return link("Random Point Connect? ", "RPC1", null);
 		yield return lineBreak();
-		yield return link("Ok I think I'm raedy ", "First Mission", null);
+		yield return link("Ok I'm raedy ", "First Mission", null);
 		yield break;
 	}
 
@@ -239,7 +242,7 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return link("Binary Space Partitioning for rooms? ", "BSP Rooms mission1", null);
 		yield return lineBreak();
-		yield return link("Ok I think I'm raedy ", "First Mission", null);
+		yield return link("Ok I'm raedy ", "First Mission", null);
 		yield break;
 	}
 
@@ -291,7 +294,7 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return link("Binary Space Partitioning for corridors? ", "BSP Corridors mission2", null);
 		yield return lineBreak();
-		Vars.mission2Complete  = true;
+		Vars.mission2Complete  = false;
 		yield break;
 	}
 
@@ -334,6 +337,8 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return text("Now I will kill you!");
 		yield return lineBreak();
 		Vars.enemyTheMayor  = true;
+		yield return lineBreak();
+		Vars.mission5Complete  = false;
 		yield break;
 	}
 
@@ -352,7 +357,7 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return link("Binary Space Partitioning for corridors? ", "BSP Corridors mission2", null);
 		yield return lineBreak();
-		yield return link("Ok I think I'm raedy ", "Second Mission", null);
+		yield return link("Ok I'm raedy ", "Second Mission", null);
 		yield break;
 	}
 
@@ -371,7 +376,7 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return link("Binary Space Partitioning for rooms? ", "BSP Rooms mission2", null);
 		yield return lineBreak();
-		yield return link("Ok I think I'm raedy ", "Second Mission", null);
+		yield return link("Ok I'm raedy ", "Second Mission", null);
 		yield break;
 	}
 
@@ -386,7 +391,7 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 
 	IStoryThread passage14_Main()
 	{
-		yield return text("Go to my house to my left (your right).");
+		yield return text("Go to my house to my on your right.");
 		yield return lineBreak();
 		yield return text("Explore the tomb and return with more information.");
 		yield return lineBreak();
@@ -415,7 +420,7 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return link("Tell me more ", "Third Mission", null);
 		yield return lineBreak();
-		Vars.mission3Complete  = true;
+		Vars.mission3Complete  = false;
 		yield break;
 	}
 
@@ -467,7 +472,7 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return link("Drunkard’s Walk? ", "DW mission3", null);
 		yield return lineBreak();
-		yield return link("Ok I think I'm ready ", "Mission 3 Completed", null);
+		yield return link("Ok I'm ready ", "Mission 3 Completed", null);
 		yield break;
 	}
 
@@ -486,7 +491,7 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return link("Binary Space Partitioning for rooms? ", "BSP Rooms mission3", null);
 		yield return lineBreak();
-		yield return link("Ok I think I'm ready ", "Mission 3 Completed", null);
+		yield return link("Ok I'm ready ", "Mission 3 Completed", null);
 		yield break;
 	}
 
@@ -558,7 +563,7 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return link("Random Point Connect? ", "RPC4", null);
 		yield return lineBreak();
-		Vars.mission4Complete  = true;
+		Vars.mission4Complete  = false;
 		yield break;
 	}
 
@@ -594,9 +599,9 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 	{
 		yield return text("Algorithm that works by first iterating through the list of rooms created by the room generation algorithm.  For each corridor it draws, it selects a random point at the edge of each of the rooms and connects. If the points are parallel, the algorithm will draw a straight corridor in the appropriate vertical or horizontal direction. If the points are not parallel, the algorithm will draw a forked corridor made up of three straight corridors in order to connect the points.");
 		yield return lineBreak();
-		yield return link("Ok I'm ready ", "Mission 4 Completed", null);
-		yield return lineBreak();
 		yield return link("Random Room Placement ? ", "RRP4", null);
+		yield return lineBreak();
+		yield return link("Ok I'm ready ", "Mission 4 Completed", null);
 		yield break;
 	}
 
@@ -624,8 +629,6 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 			yield return lineBreak();
 			yield return text("I think the witch has strike now because she gain power over years.");
 			yield return lineBreak();
-			Vars.mission5Complete  = false;
-			yield return lineBreak();
 			yield return link("Do you know who is the witch? ", "Fifth Mission", null);
 			yield return lineBreak();
 		}
@@ -648,13 +651,13 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return text("Talk to her and confront her!");
 		yield return lineBreak();
-		Vars.confrontTheMayor  = true;
-		yield return lineBreak();
-		if(Vars.mission5Complete == true) {
+		if(Vars.enemyTheMayor == true) {
 			yield return lineBreak();
-			yield return link("I killed the mayor!", "End Game", null);
+			yield return link("The mayor is gone!", "Mission 5", null);
 			yield return lineBreak();
 		}
+		yield return lineBreak();
+		Vars.confrontTheMayor  = true;
 		yield break;
 	}
 
@@ -689,6 +692,83 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return text("Hi I'm Irvin.");
 		yield return lineBreak();
 		yield return text("I live here on you'r right.");
+		yield break;
+	}
+
+
+	// .............
+	// #28: Mission 5
+
+	void passage28_Init()
+	{
+		this.Passages[@"Mission 5"] = new StoryPassage(@"Mission 5", new string[]{  }, passage28_Main);
+	}
+
+	IStoryThread passage28_Main()
+	{
+		yield return text("Go and search the mayor at her house!");
+		yield return lineBreak();
+		yield return text("It the last house in the town.");
+		yield return lineBreak();
+		yield return text("The tomb at her house is build with Random Room Placement and Drunkard’s Walk.");
+		yield return lineBreak();
+		yield return text("Go and kill the mayor.");
+		yield return lineBreak();
+		yield return link("Random Room Placement ? ", "RRP5", null);
+		yield return lineBreak();
+		yield return link("Drunkard’s Walk? ", "DW mission5", null);
+		yield return lineBreak();
+		if(Vars.enemyTheMayor == true) {
+			yield return lineBreak();
+			yield return link("I killed the mayor!", "End Game", null);
+			yield return lineBreak();
+		}
+		yield break;
+	}
+
+
+	// .............
+	// #29: RRP5
+
+	void passage29_Init()
+	{
+		this.Passages[@"RRP5"] = new StoryPassage(@"RRP5", new string[]{  }, passage29_Main);
+	}
+
+	IStoryThread passage29_Main()
+	{
+		yield return text("Algorithms that starts by randomly generating a room of a random width and length, the randomness of the size of the room is controlled by maximum and minimum allowed lengths.");
+		yield return lineBreak();
+		yield return link("Drunkard’s Walk? ", "DW mission5", null);
+		yield return lineBreak();
+		if(Vars.enemyTheMayor == true) {
+			yield return lineBreak();
+			yield return link("I killed the mayor!", "End Game", null);
+			yield return lineBreak();
+		}
+		yield break;
+	}
+
+
+	// .............
+	// #30: DW mission5
+
+	void passage30_Init()
+	{
+		this.Passages[@"DW mission5"] = new StoryPassage(@"DW mission5", new string[]{  }, passage30_Main);
+	}
+
+	IStoryThread passage30_Main()
+	{
+		yield return text("Similar to RPC it also selects vertex between the rooms and starts drawing a line the first vertex incrementing a randomly chosen amount of vertices in the direction of the second, When the corridor is being made by DW, the algorithm do it in “steps”. Each step adds a corridor of a random length that goes in the direction of the end point.");
+		yield return lineBreak();
+		yield return link("Random Room Placement ? ", "RRP5", null);
+		yield return lineBreak();
+		if(Vars.enemyTheMayor == true) {
+			yield return lineBreak();
+			yield return link("I killed the mayor!", "End Game", null);
+			yield return lineBreak();
+		}
 		yield break;
 	}
 

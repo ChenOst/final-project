@@ -5,7 +5,6 @@ using Cradle;
 
 public class DeactivateMayor : MonoBehaviour
 {
-
     [SerializeField]
     private GameObject mayor;
 
@@ -19,9 +18,6 @@ public class DeactivateMayor : MonoBehaviour
     {
         story = GameObject.Find(Constants.GameManager).GetComponent<DontDestroyObjects>()
             .GetDontDestroyObject(Constants.TwineTextPlayer).GetComponent<Story>();
-
-        conversation = GameObject.Find(Constants.GameManager).GetComponent<DontDestroyObjects>()
-            .GetDontDestroyObject(Constants.Player).GetComponent<StartConversation>();
     }
     // Update is called once per frame
     void Update()
@@ -31,11 +27,7 @@ public class DeactivateMayor : MonoBehaviour
             if ((bool)story.Vars.GetMember("enemyTheMayor").InnerValue && once)
             {
                 once = false;
-                conversation.InConversation = false;
-                GameObject.Find(Constants.GameManager).GetComponent<DontDestroyObjects>()
-                    .GetDontDestroyObject(Constants.TwineTextPlayer).SetActive(false);
-                mayor.GetComponent<NPC>().ActiveStory(false);
-                Destroy(mayor,3);
+                mayor.GetComponent<MoveObject>().enabled = true;
             }
         }
     }

@@ -407,8 +407,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 064682a6a46aaa64ebfa3c421166fb3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _activeSpawner: 0
-  _spawnItem: {fileID: 0}
+  _activeSpawner: 1
+  _spawnItem: {fileID: 1654736843778140, guid: 78e8b38d431ddef4fa2994a3f2d6e2ff, type: 3}
 --- !u!114 &-5157253467739448486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -714,6 +714,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1

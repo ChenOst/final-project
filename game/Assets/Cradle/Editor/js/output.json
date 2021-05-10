@@ -99,6 +99,36 @@
                         "type": "br"
                     },
                     {
+                        "innerText": "link-goto:\"Tell me about Alf \",\"About Alf\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Tell me about Alf \",\"About Alf\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Tell me about Alf ",
+                                "text": "\"Tell me about Alf \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "About Alf",
+                                "text": "\"About Alf\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
                         "innerText": "link-goto:\"Do you have a direction to start with? \",\"First Mission Intro\"",
                         "name": "linkgoto",
                         "text": "(link-goto:\"Do you have a direction to start with? \",\"First Mission Intro\")",
@@ -123,36 +153,6 @@
                             }
                         ],
                         "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
-                        "innerText": "link-goto:\"Tell me about Alf \",\"About Alf\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Tell me about Alf \",\"About Alf\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Tell me about Alf ",
-                                "text": "\"Tell me about Alf \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "About Alf",
-                                "text": "\"About Alf\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
                     }
                 ]
             },
@@ -170,36 +170,6 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Ok... I'm ready to start \",\"First Mission Intro\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Ok... I'm ready to start \",\"First Mission Intro\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Ok... I'm ready to start ",
-                                "text": "\"Ok... I'm ready to start \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "First Mission Intro",
-                                "text": "\"First Mission Intro\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
                         "innerText": "link-goto:\"Tell me about Alf \",\"About Alf\"",
                         "name": "linkgoto",
                         "text": "(link-goto:\"Tell me about Alf \",\"About Alf\")",
@@ -220,6 +190,36 @@
                             {
                                 "innerText": "About Alf",
                                 "text": "\"About Alf\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Ok I'm ready to start \",\"First Mission Intro\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Ok I'm ready to start \",\"First Mission Intro\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Ok I'm ready to start ",
+                                "text": "\"Ok I'm ready to start \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "First Mission Intro",
+                                "text": "\"First Mission Intro\"",
                                 "type": "string"
                             }
                         ],
@@ -306,36 +306,6 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Ok... I'm ready to start \",\"First Mission Intro\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Ok... I'm ready to start \",\"First Mission Intro\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Ok... I'm ready to start ",
-                                "text": "\"Ok... I'm ready to start \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "First Mission Intro",
-                                "text": "\"First Mission Intro\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
                         "innerText": "link-goto:\"Are there any suspects? \",\"Strange People\"",
                         "name": "linkgoto",
                         "text": "(link-goto:\"Are there any suspects? \",\"Strange People\")",
@@ -356,6 +326,36 @@
                             {
                                 "innerText": "Strange People",
                                 "text": "\"Strange People\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Ok I'm ready to start \",\"First Mission Intro\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Ok I'm ready to start \",\"First Mission Intro\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Ok I'm ready to start ",
+                                "text": "\"Ok I'm ready to start \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "First Mission Intro",
+                                "text": "\"First Mission Intro\"",
                                 "type": "string"
                             }
                         ],
@@ -437,9 +437,9 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "set: $mission1Complete to true",
+                        "innerText": "set: $mission1Complete to false",
                         "name": "set",
-                        "text": "(set: $mission1Complete to true)",
+                        "text": "(set: $mission1Complete to false)",
                         "tokens": [
                             {
                                 "text": "set:",
@@ -467,7 +467,7 @@
                                 "type": "whitespace"
                             },
                             {
-                                "text": "true",
+                                "text": "false",
                                 "type": "boolean"
                             }
                         ],
@@ -519,17 +519,17 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Ok I think I'm raedy \",\"First Mission\"",
+                        "innerText": "link-goto:\"Ok I'm raedy \",\"First Mission\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Ok I think I'm raedy \",\"First Mission\")",
+                        "text": "(link-goto:\"Ok I'm raedy \",\"First Mission\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Ok I think I'm raedy ",
-                                "text": "\"Ok I think I'm raedy \"",
+                                "innerText": "Ok I'm raedy ",
+                                "text": "\"Ok I'm raedy \"",
                                 "type": "string"
                             },
                             {
@@ -590,17 +590,17 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Ok I think I'm raedy \",\"First Mission\"",
+                        "innerText": "link-goto:\"Ok I'm raedy \",\"First Mission\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Ok I think I'm raedy \",\"First Mission\")",
+                        "text": "(link-goto:\"Ok I'm raedy \",\"First Mission\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Ok I think I'm raedy ",
-                                "text": "\"Ok I think I'm raedy \"",
+                                "innerText": "Ok I'm raedy ",
+                                "text": "\"Ok I'm raedy \"",
                                 "type": "string"
                             },
                             {
@@ -824,9 +824,9 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "set: $mission2Complete to true",
+                        "innerText": "set: $mission2Complete to false",
                         "name": "set",
-                        "text": "(set: $mission2Complete to true)",
+                        "text": "(set: $mission2Complete to false)",
                         "tokens": [
                             {
                                 "text": "set:",
@@ -854,7 +854,7 @@
                                 "type": "whitespace"
                             },
                             {
-                                "text": "true",
+                                "text": "false",
                                 "type": "boolean"
                             }
                         ],
@@ -1020,6 +1020,47 @@
                             }
                         ],
                         "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "set: $mission5Complete to false",
+                        "name": "set",
+                        "text": "(set: $mission5Complete to false)",
+                        "tokens": [
+                            {
+                                "text": "set:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "mission5Complete",
+                                "text": "$mission5Complete",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "to",
+                                "type": "to"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "false",
+                                "type": "boolean"
+                            }
+                        ],
+                        "type": "macro"
                     }
                 ]
             },
@@ -1067,17 +1108,17 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Ok I think I'm raedy \",\"Second Mission\"",
+                        "innerText": "link-goto:\"Ok I'm raedy \",\"Second Mission\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Ok I think I'm raedy \",\"Second Mission\")",
+                        "text": "(link-goto:\"Ok I'm raedy \",\"Second Mission\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Ok I think I'm raedy ",
-                                "text": "\"Ok I think I'm raedy \"",
+                                "innerText": "Ok I'm raedy ",
+                                "text": "\"Ok I'm raedy \"",
                                 "type": "string"
                             },
                             {
@@ -1138,17 +1179,17 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Ok I think I'm raedy \",\"Second Mission\"",
+                        "innerText": "link-goto:\"Ok I'm raedy \",\"Second Mission\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Ok I think I'm raedy \",\"Second Mission\")",
+                        "text": "(link-goto:\"Ok I'm raedy \",\"Second Mission\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Ok I think I'm raedy ",
-                                "text": "\"Ok I think I'm raedy \"",
+                                "innerText": "Ok I'm raedy ",
+                                "text": "\"Ok I'm raedy \"",
                                 "type": "string"
                             },
                             {
@@ -1171,7 +1212,7 @@
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "Go to my house to my left (your right).",
+                        "text": "Go to my house to my on your right.",
                         "type": "text"
                     },
                     {
@@ -1318,9 +1359,9 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "set: $mission3Complete to true",
+                        "innerText": "set: $mission3Complete to false",
                         "name": "set",
-                        "text": "(set: $mission3Complete to true)",
+                        "text": "(set: $mission3Complete to false)",
                         "tokens": [
                             {
                                 "text": "set:",
@@ -1348,7 +1389,7 @@
                                 "type": "whitespace"
                             },
                             {
-                                "text": "true",
+                                "text": "false",
                                 "type": "boolean"
                             }
                         ],
@@ -1555,17 +1596,17 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Ok I think I'm ready \",\"Mission 3 Completed\"",
+                        "innerText": "link-goto:\"Ok I'm ready \",\"Mission 3 Completed\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Ok I think I'm ready \",\"Mission 3 Completed\")",
+                        "text": "(link-goto:\"Ok I'm ready \",\"Mission 3 Completed\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Ok I think I'm ready ",
-                                "text": "\"Ok I think I'm ready \"",
+                                "innerText": "Ok I'm ready ",
+                                "text": "\"Ok I'm ready \"",
                                 "type": "string"
                             },
                             {
@@ -1626,17 +1667,17 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Ok I think I'm ready \",\"Mission 3 Completed\"",
+                        "innerText": "link-goto:\"Ok I'm ready \",\"Mission 3 Completed\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Ok I think I'm ready \",\"Mission 3 Completed\")",
+                        "text": "(link-goto:\"Ok I'm ready \",\"Mission 3 Completed\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Ok I think I'm ready ",
-                                "text": "\"Ok I think I'm ready \"",
+                                "innerText": "Ok I'm ready ",
+                                "text": "\"Ok I'm ready \"",
                                 "type": "string"
                             },
                             {
@@ -1983,9 +2024,9 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "set: $mission4Complete to true",
+                        "innerText": "set: $mission4Complete to false",
                         "name": "set",
-                        "text": "(set: $mission4Complete to true)",
+                        "text": "(set: $mission4Complete to false)",
                         "tokens": [
                             {
                                 "text": "set:",
@@ -2013,7 +2054,7 @@
                                 "type": "whitespace"
                             },
                             {
-                                "text": "true",
+                                "text": "false",
                                 "type": "boolean"
                             }
                         ],
@@ -2106,36 +2147,6 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Ok I'm ready \",\"Mission 4 Completed\"",
-                        "name": "linkgoto",
-                        "text": "(link-goto:\"Ok I'm ready \",\"Mission 4 Completed\")",
-                        "tokens": [
-                            {
-                                "text": "link-goto:",
-                                "type": "macroName"
-                            },
-                            {
-                                "innerText": "Ok I'm ready ",
-                                "text": "\"Ok I'm ready \"",
-                                "type": "string"
-                            },
-                            {
-                                "text": ",",
-                                "type": "comma"
-                            },
-                            {
-                                "innerText": "Mission 4 Completed",
-                                "text": "\"Mission 4 Completed\"",
-                                "type": "string"
-                            }
-                        ],
-                        "type": "macro"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
-                    },
-                    {
                         "innerText": "link-goto:\"Random Room Placement ? \",\"RRP4\"",
                         "name": "linkgoto",
                         "text": "(link-goto:\"Random Room Placement ? \",\"RRP4\")",
@@ -2156,6 +2167,36 @@
                             {
                                 "innerText": "RRP4",
                                 "text": "\"RRP4\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Ok I'm ready \",\"Mission 4 Completed\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Ok I'm ready \",\"Mission 4 Completed\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Ok I'm ready ",
+                                "text": "\"Ok I'm ready \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Mission 4 Completed",
+                                "text": "\"Mission 4 Completed\"",
                                 "type": "string"
                             }
                         ],
@@ -2241,8 +2282,8 @@
                         "type": "macro"
                     },
                     {
-                        "innerText": "\nGood job!\nNow theres only one thing left to do.\nI think the witch has strike now because she gain power over years.\n(set: $mission5Complete to false)\n[[Do you know who is the witch? ->Fifth Mission]]\n",
-                        "text": "[\nGood job!\nNow theres only one thing left to do.\nI think the witch has strike now because she gain power over years.\n(set: $mission5Complete to false)\n[[Do you know who is the witch? ->Fifth Mission]]\n]",
+                        "innerText": "\nGood job!\nNow theres only one thing left to do.\nI think the witch has strike now because she gain power over years.\n[[Do you know who is the witch? ->Fifth Mission]]\n",
+                        "text": "[\nGood job!\nNow theres only one thing left to do.\nI think the witch has strike now because she gain power over years.\n[[Do you know who is the witch? ->Fifth Mission]]\n]",
                         "tokens": [
                             {
                                 "text": "\n",
@@ -2267,47 +2308,6 @@
                             {
                                 "text": "I think the witch has strike now because she gain power over years.",
                                 "type": "text"
-                            },
-                            {
-                                "text": "\n",
-                                "type": "br"
-                            },
-                            {
-                                "innerText": "set: $mission5Complete to false",
-                                "name": "set",
-                                "text": "(set: $mission5Complete to false)",
-                                "tokens": [
-                                    {
-                                        "text": "set:",
-                                        "type": "macroName"
-                                    },
-                                    {
-                                        "text": " ",
-                                        "type": "whitespace"
-                                    },
-                                    {
-                                        "name": "mission5Complete",
-                                        "text": "$mission5Complete",
-                                        "type": "variable"
-                                    },
-                                    {
-                                        "text": " ",
-                                        "type": "whitespace"
-                                    },
-                                    {
-                                        "text": "to",
-                                        "type": "to"
-                                    },
-                                    {
-                                        "text": " ",
-                                        "type": "whitespace"
-                                    },
-                                    {
-                                        "text": "false",
-                                        "type": "boolean"
-                                    }
-                                ],
-                                "type": "macro"
                             },
                             {
                                 "text": "\n",
@@ -2374,6 +2374,88 @@
                         "type": "br"
                     },
                     {
+                        "innerText": "if: $enemyTheMayor is true",
+                        "name": "if",
+                        "text": "(if: $enemyTheMayor is true)",
+                        "tokens": [
+                            {
+                                "text": "if:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "enemyTheMayor",
+                                "text": "$enemyTheMayor",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "is",
+                                "type": "is"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "true",
+                                "type": "boolean"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "innerText": "\n[[The mayor is gone!->Mission 5]]\n",
+                        "text": "[\n[[The mayor is gone!->Mission 5]]\n]",
+                        "tokens": [
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            },
+                            {
+                                "innerText": "link-goto:\"The mayor is gone!\",\"Mission 5\"",
+                                "name": "linkgoto",
+                                "text": "(link-goto:\"The mayor is gone!\",\"Mission 5\")",
+                                "tokens": [
+                                    {
+                                        "text": "link-goto:",
+                                        "type": "macroName"
+                                    },
+                                    {
+                                        "innerText": "The mayor is gone!",
+                                        "text": "\"The mayor is gone!\"",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "text": ",",
+                                        "type": "comma"
+                                    },
+                                    {
+                                        "innerText": "Mission 5",
+                                        "text": "\"Mission 5\"",
+                                        "type": "string"
+                                    }
+                                ],
+                                "type": "macro"
+                            },
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            }
+                        ],
+                        "type": "hook"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
                         "innerText": "set: $confrontTheMayor to true",
                         "name": "set",
                         "text": "(set: $confrontTheMayor to true)",
@@ -2409,15 +2491,148 @@
                             }
                         ],
                         "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "End Game",
+                "Pid": "26",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Good job! you saved us!",
+                        "type": "text"
                     },
                     {
                         "text": "\n",
                         "type": "br"
                     },
                     {
-                        "innerText": "if: $mission5Complete is true",
+                        "text": "I wish Alf was here...",
+                        "type": "text"
+                    }
+                ]
+            },
+            {
+                "Name": "Irvin",
+                "Pid": "27",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Hi I'm Irvin.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "I live here on you'r right.",
+                        "type": "text"
+                    }
+                ]
+            },
+            {
+                "Name": "Mission 5",
+                "Pid": "28",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Go and search the mayor at her house!",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "It the last house in the town.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "The tomb at her house is build with Random Room Placement and Drunkard’s Walk.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Go and kill the mayor.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Random Room Placement ? \",\"RRP5\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Random Room Placement ? \",\"RRP5\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Random Room Placement ? ",
+                                "text": "\"Random Room Placement ? \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "RRP5",
+                                "text": "\"RRP5\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Drunkard’s Walk? \",\"DW mission5\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Drunkard’s Walk? \",\"DW mission5\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Drunkard’s Walk? ",
+                                "text": "\"Drunkard’s Walk? \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "DW mission5",
+                                "text": "\"DW mission5\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "if: $enemyTheMayor is true",
                         "name": "if",
-                        "text": "(if: $mission5Complete is true)",
+                        "text": "(if: $enemyTheMayor is true)",
                         "tokens": [
                             {
                                 "text": "if:",
@@ -2428,8 +2643,8 @@
                                 "type": "whitespace"
                             },
                             {
-                                "name": "mission5Complete",
-                                "text": "$mission5Complete",
+                                "name": "enemyTheMayor",
+                                "text": "$enemyTheMayor",
                                 "type": "variable"
                             },
                             {
@@ -2495,12 +2710,12 @@
                 ]
             },
             {
-                "Name": "End Game",
-                "Pid": "26",
+                "Name": "RRP5",
+                "Pid": "29",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "Good job! you saved us!",
+                        "text": "Algorithms that starts by randomly generating a room of a random width and length, the randomness of the size of the room is controlled by maximum and minimum allowed lengths.",
                         "type": "text"
                     },
                     {
@@ -2508,18 +2723,122 @@
                         "type": "br"
                     },
                     {
-                        "text": "I wish Alf was here...",
-                        "type": "text"
+                        "innerText": "link-goto:\"Drunkard’s Walk? \",\"DW mission5\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Drunkard’s Walk? \",\"DW mission5\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Drunkard’s Walk? ",
+                                "text": "\"Drunkard’s Walk? \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "DW mission5",
+                                "text": "\"DW mission5\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "if: $enemyTheMayor is true",
+                        "name": "if",
+                        "text": "(if: $enemyTheMayor is true)",
+                        "tokens": [
+                            {
+                                "text": "if:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "enemyTheMayor",
+                                "text": "$enemyTheMayor",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "is",
+                                "type": "is"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "true",
+                                "type": "boolean"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "innerText": "\n[[I killed the mayor!->End Game]]\n",
+                        "text": "[\n[[I killed the mayor!->End Game]]\n]",
+                        "tokens": [
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            },
+                            {
+                                "innerText": "link-goto:\"I killed the mayor!\",\"End Game\"",
+                                "name": "linkgoto",
+                                "text": "(link-goto:\"I killed the mayor!\",\"End Game\")",
+                                "tokens": [
+                                    {
+                                        "text": "link-goto:",
+                                        "type": "macroName"
+                                    },
+                                    {
+                                        "innerText": "I killed the mayor!",
+                                        "text": "\"I killed the mayor!\"",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "text": ",",
+                                        "type": "comma"
+                                    },
+                                    {
+                                        "innerText": "End Game",
+                                        "text": "\"End Game\"",
+                                        "type": "string"
+                                    }
+                                ],
+                                "type": "macro"
+                            },
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            }
+                        ],
+                        "type": "hook"
                     }
                 ]
             },
             {
-                "Name": "Irvin",
-                "Pid": "27",
+                "Name": "DW mission5",
+                "Pid": "30",
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "Hi I'm Irvin.",
+                        "text": "Similar to RPC it also selects vertex between the rooms and starts drawing a line the first vertex incrementing a randomly chosen amount of vertices in the direction of the second, When the corridor is being made by DW, the algorithm do it in “steps”. Each step adds a corridor of a random length that goes in the direction of the end point.",
                         "type": "text"
                     },
                     {
@@ -2527,8 +2846,112 @@
                         "type": "br"
                     },
                     {
-                        "text": "I live here on you'r right.",
-                        "type": "text"
+                        "innerText": "link-goto:\"Random Room Placement ? \",\"RRP5\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Random Room Placement ? \",\"RRP5\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Random Room Placement ? ",
+                                "text": "\"Random Room Placement ? \"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "RRP5",
+                                "text": "\"RRP5\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "if: $enemyTheMayor is true",
+                        "name": "if",
+                        "text": "(if: $enemyTheMayor is true)",
+                        "tokens": [
+                            {
+                                "text": "if:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "enemyTheMayor",
+                                "text": "$enemyTheMayor",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "is",
+                                "type": "is"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "true",
+                                "type": "boolean"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "innerText": "\n[[I killed the mayor!->End Game]]\n",
+                        "text": "[\n[[I killed the mayor!->End Game]]\n]",
+                        "tokens": [
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            },
+                            {
+                                "innerText": "link-goto:\"I killed the mayor!\",\"End Game\"",
+                                "name": "linkgoto",
+                                "text": "(link-goto:\"I killed the mayor!\",\"End Game\")",
+                                "tokens": [
+                                    {
+                                        "text": "link-goto:",
+                                        "type": "macroName"
+                                    },
+                                    {
+                                        "innerText": "I killed the mayor!",
+                                        "text": "\"I killed the mayor!\"",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "text": ",",
+                                        "type": "comma"
+                                    },
+                                    {
+                                        "innerText": "End Game",
+                                        "text": "\"End Game\"",
+                                        "type": "string"
+                                    }
+                                ],
+                                "type": "macro"
+                            },
+                            {
+                                "text": "\n",
+                                "type": "br"
+                            }
+                        ],
+                        "type": "hook"
                     }
                 ]
             }
