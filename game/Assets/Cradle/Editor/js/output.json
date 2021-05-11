@@ -732,7 +732,7 @@
                         "type": "br"
                     },
                     {
-                        "text": "I'm so sad to heat that.. I wanted to belive he will be ok.",
+                        "text": "I'm so sad to hear that.. I wanted to belive he will be ok.",
                         "type": "text"
                     },
                     {
@@ -969,7 +969,7 @@
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "You are smarter then i thought!",
+                        "text": "You are smarter then I thought!",
                         "type": "text"
                     },
                     {
@@ -2247,13 +2247,9 @@
                         "type": "macro"
                     },
                     {
-                        "innerText": "\nFind and kill the skeleton at Irvin house.\n",
-                        "text": "[\nFind and kill the skeleton at Irvin house.\n]",
+                        "innerText": "Find and kill the skeleton at Irvin house.\n",
+                        "text": "[Find and kill the skeleton at Irvin house.\n]",
                         "tokens": [
-                            {
-                                "text": "\n",
-                                "type": "br"
-                            },
                             {
                                 "text": "Find and kill the skeleton at Irvin house.",
                                 "type": "text"
@@ -2264,10 +2260,6 @@
                             }
                         ],
                         "type": "hook"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
                     },
                     {
                         "innerText": "else:",
@@ -2282,13 +2274,9 @@
                         "type": "macro"
                     },
                     {
-                        "innerText": "\nGood job!\nNow theres only one thing left to do.\nI think the witch has strike now because she gain power over years.\n[[Do you know who is the witch? ->Fifth Mission]]\n",
-                        "text": "[\nGood job!\nNow theres only one thing left to do.\nI think the witch has strike now because she gain power over years.\n[[Do you know who is the witch? ->Fifth Mission]]\n]",
+                        "innerText": "Good job!\nNow theres only one thing left to do.\nI think the witch has strike now because she gain power over years.\n[[Do you know who is the witch? ->Fifth Mission]]\n",
+                        "text": "[Good job!\nNow theres only one thing left to do.\nI think the witch has strike now because she gain power over years.\n[[Do you know who is the witch? ->Fifth Mission]]\n]",
                         "tokens": [
-                            {
-                                "text": "\n",
-                                "type": "br"
-                            },
                             {
                                 "text": "Good job!",
                                 "type": "text"
@@ -2345,10 +2333,6 @@
                             }
                         ],
                         "type": "hook"
-                    },
-                    {
-                        "text": "\n",
-                        "type": "br"
                     }
                 ]
             },
@@ -2630,9 +2614,9 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "if: $enemyTheMayor is true",
+                        "innerText": "if: $mission5Complete is true",
                         "name": "if",
-                        "text": "(if: $enemyTheMayor is true)",
+                        "text": "(if: $mission5Complete is true)",
                         "tokens": [
                             {
                                 "text": "if:",
@@ -2643,8 +2627,8 @@
                                 "type": "whitespace"
                             },
                             {
-                                "name": "enemyTheMayor",
-                                "text": "$enemyTheMayor",
+                                "name": "mission5Complete",
+                                "text": "$mission5Complete",
                                 "type": "variable"
                             },
                             {
@@ -2753,9 +2737,9 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "if: $enemyTheMayor is true",
+                        "innerText": "if: $mission5Complete is true",
                         "name": "if",
-                        "text": "(if: $enemyTheMayor is true)",
+                        "text": "(if: $mission5Complete is true)",
                         "tokens": [
                             {
                                 "text": "if:",
@@ -2766,8 +2750,8 @@
                                 "type": "whitespace"
                             },
                             {
-                                "name": "enemyTheMayor",
-                                "text": "$enemyTheMayor",
+                                "name": "mission5Complete",
+                                "text": "$mission5Complete",
                                 "type": "variable"
                             },
                             {
@@ -2876,9 +2860,9 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "if: $enemyTheMayor is true",
+                        "innerText": "if: $mission5Complete is true",
                         "name": "if",
-                        "text": "(if: $enemyTheMayor is true)",
+                        "text": "(if: $mission5Complete is true)",
                         "tokens": [
                             {
                                 "text": "if:",
@@ -2889,8 +2873,8 @@
                                 "type": "whitespace"
                             },
                             {
-                                "name": "enemyTheMayor",
-                                "text": "$enemyTheMayor",
+                                "name": "mission5Complete",
+                                "text": "$mission5Complete",
                                 "type": "variable"
                             },
                             {

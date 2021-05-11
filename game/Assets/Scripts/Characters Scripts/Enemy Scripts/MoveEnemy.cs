@@ -25,6 +25,8 @@ public class MoveEnemy : MonoBehaviour
 
     private EnemyHP _hp;
 
+    private GameOver _manager;
+
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +43,7 @@ public class MoveEnemy : MonoBehaviour
         {
             _anim = GetComponent<NpcEquipment>().animator;
         }
+        _manager = GameObject.Find(Constants.GameManager).GetComponent<GameOver>();
     }
 
     // Update is called once per frame
@@ -50,7 +53,7 @@ public class MoveEnemy : MonoBehaviour
         Vector3 direction = target.position - transform.position;
         RaycastHit hit;
 
-        if (distance <= _lookRadius && _hp.HP > 0)
+        if (distance <= _lookRadius && _hp.HP > 0 && !_manager.GameIsOver)
         {
             // Rotate enemy body torwards direction 
             if (direction != Vector3.zero)

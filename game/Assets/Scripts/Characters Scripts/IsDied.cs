@@ -30,11 +30,4 @@ public class IsDied : MonoBehaviour
         }
 
     }
-
-    // This function called when the player is died
-    public void GameOver()
-    {
-        DisableKeyboard.IsInputEnabled = false;
-        Debug.Log("Player is died GAME OVER!");
-    }
 }

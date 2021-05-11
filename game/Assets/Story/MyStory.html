@@ -36,7 +36,7 @@ Search for Alf and return with more details...
 (if: $mission1Complete is true)[
 [[I found Alf... -&gt;Mission 1 Completed]]
 ]</tw-passagedata><tw-passagedata pid="9" name="Mission 1 Completed" tags="" position="1535,1436.5" size="100,100">Ohh no!
-I&#39;m so sad to heat that.. I wanted to belive he will be ok.
+I&#39;m so sad to hear that.. I wanted to belive he will be ok.
 While you were gone I discovered that the problem is bigger then I thought, all the town is built on an undergroung tombs.
 When I entered my basment I discover a hole like at Alfs house.
 The shpae was built by Binary Space Partitioning for Rooms and Binary Space Partitioning for Corridors.
@@ -46,7 +46,7 @@ The shpae was built by Binary Space Partitioning for Rooms and Binary Space Part
 My name is Granny Iga and I&#39;m the mayor of this beautiful town.
 (if: $confrontTheMayor is true)[
 [[I know the truth about you! -&gt;Mayor Exposed]]
-]</tw-passagedata><tw-passagedata pid="11" name="Mayor Exposed" tags="" position="2010,830.5" size="100,100">You are smarter then i thought!
+]</tw-passagedata><tw-passagedata pid="11" name="Mayor Exposed" tags="" position="2010,830.5" size="100,100">You are smarter then I thought!
 Now I will kill you!
 (set: $enemyTheMayor to true)
 (set: $mission5Complete to false)</tw-passagedata><tw-passagedata pid="12" name="BSP Rooms mission2" tags="" position="1432,1580.5" size="100,100">It Works by dividing the map into a series of rectangles, and then placing a room in each one on the map. The rectangle can be split either vertically or horizontally, and the minimum size of the split is determined based on the minimum size of the rooms.
@@ -91,16 +91,12 @@ Go check this out.
 [[Random Point Connect? -&gt;RPC4]]
 [[Ok I&#39;m ready -&gt;Mission 4 Completed]]</tw-passagedata><tw-passagedata pid="23" name="RPC4" tags="" position="1634,2556" size="100,100">Algorithm that works by first iterating through the list of rooms created by the room generation algorithm.  For each corridor it draws, it selects a random point at the edge of each of the rooms and connects. If the points are parallel, the algorithm will draw a straight corridor in the appropriate vertical or horizontal direction. If the points are not parallel, the algorithm will draw a forked corridor made up of three straight corridors in order to connect the points.
 [[Random Room Placement ? -&gt;RRP4]]
-[[Ok I&#39;m ready -&gt;Mission 4 Completed]]</tw-passagedata><tw-passagedata pid="24" name="Mission 4 Completed" tags="" position="1548,2718" size="100,100">(if: $mission4Complete is false)[
-Find and kill the skeleton at Irvin house.
-]
-(else:)[
-Good job!
+[[Ok I&#39;m ready -&gt;Mission 4 Completed]]</tw-passagedata><tw-passagedata pid="24" name="Mission 4 Completed" tags="" position="1548,2718" size="100,100">(if: $mission4Complete is false)[Find and kill the skeleton at Irvin house.
+](else:)[Good job!
 Now theres only one thing left to do.
 I think the witch has strike now because she gain power over years.
 [[Do you know who is the witch? -&gt;Fifth Mission]]
-]
-</tw-passagedata><tw-passagedata pid="25" name="Fifth Mission" tags="" position="1547,2848" size="100,100">I think the mayor is the evil witch!
+]</tw-passagedata><tw-passagedata pid="25" name="Fifth Mission" tags="" position="1547,2848" size="100,100">I think the mayor is the evil witch!
 Talk to her and confront her!
 (if: $enemyTheMayor is true)[
 [[The mayor is gone!-&gt;Mission 5]]
@@ -113,15 +109,15 @@ The tomb at her house is build with Random Room Placement and Drunkard’s Walk.
 Go and kill the mayor.
 [[Random Room Placement ? -&gt;RRP5]]
 [[Drunkard’s Walk? -&gt;DW mission5]]
-(if: $enemyTheMayor is true)[
+(if: $mission5Complete is true)[
 [[I killed the mayor!-&gt;End Game]]
 ]</tw-passagedata><tw-passagedata pid="29" name="RRP5" tags="" position="1394,3144" size="100,100">Algorithms that starts by randomly generating a room of a random width and length, the randomness of the size of the room is controlled by maximum and minimum allowed lengths.
 [[Drunkard’s Walk? -&gt;DW mission5]]
-(if: $enemyTheMayor is true)[
+(if: $mission5Complete is true)[
 [[I killed the mayor!-&gt;End Game]]
 ]</tw-passagedata><tw-passagedata pid="30" name="DW mission5" tags="" position="1687,3125" size="100,100">Similar to RPC it also selects vertex between the rooms and starts drawing a line the first vertex incrementing a randomly chosen amount of vertices in the direction of the second, When the corridor is being made by DW, the algorithm do it in “steps”. Each step adds a corridor of a random length that goes in the direction of the end point.
 [[Random Room Placement ? -&gt;RRP5]]
-(if: $enemyTheMayor is true)[
+(if: $mission5Complete is true)[
 [[I killed the mayor!-&gt;End Game]]
 ]</tw-passagedata></tw-storydata>
 

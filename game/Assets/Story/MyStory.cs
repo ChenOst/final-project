@@ -282,7 +282,7 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 	{
 		yield return text("Ohh no!");
 		yield return lineBreak();
-		yield return text("I'm so sad to heat that.. I wanted to belive he will be ok.");
+		yield return text("I'm so sad to hear that.. I wanted to belive he will be ok.");
 		yield return lineBreak();
 		yield return text("While you were gone I discovered that the problem is bigger then I thought, all the town is built on an undergroung tombs.");
 		yield return lineBreak();
@@ -332,7 +332,7 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 
 	IStoryThread passage11_Main()
 	{
-		yield return text("You are smarter then i thought!");
+		yield return text("You are smarter then I thought!");
 		yield return lineBreak();
 		yield return text("Now I will kill you!");
 		yield return lineBreak();
@@ -617,12 +617,10 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 	IStoryThread passage24_Main()
 	{
 		if(Vars.mission4Complete == false) {
-			yield return lineBreak();
 			yield return text("Find and kill the skeleton at Irvin house.");
 			yield return lineBreak();
 		}
 		else {
-			yield return lineBreak();
 			yield return text("Good job!");
 			yield return lineBreak();
 			yield return text("Now theres only one thing left to do.");
@@ -632,7 +630,6 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 			yield return link("Do you know who is the witch? ", "Fifth Mission", null);
 			yield return lineBreak();
 		}
-		yield return lineBreak();
 		yield break;
 	}
 
@@ -718,7 +715,7 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return link("Drunkard’s Walk? ", "DW mission5", null);
 		yield return lineBreak();
-		if(Vars.enemyTheMayor == true) {
+		if(Vars.mission5Complete == true) {
 			yield return lineBreak();
 			yield return link("I killed the mayor!", "End Game", null);
 			yield return lineBreak();
@@ -741,7 +738,7 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return link("Drunkard’s Walk? ", "DW mission5", null);
 		yield return lineBreak();
-		if(Vars.enemyTheMayor == true) {
+		if(Vars.mission5Complete == true) {
 			yield return lineBreak();
 			yield return link("I killed the mayor!", "End Game", null);
 			yield return lineBreak();
@@ -764,7 +761,7 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return link("Random Room Placement ? ", "RRP5", null);
 		yield return lineBreak();
-		if(Vars.enemyTheMayor == true) {
+		if(Vars.mission5Complete == true) {
 			yield return lineBreak();
 			yield return link("I killed the mayor!", "End Game", null);
 			yield return lineBreak();

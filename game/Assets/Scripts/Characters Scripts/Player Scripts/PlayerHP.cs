@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerHP : CharacterHP
 {
+    [SerializeField]
+    private GameOver _manager;
 
     private PlayerCharacter _player;
 
@@ -24,6 +26,7 @@ public class PlayerHP : CharacterHP
         if (HP <= 0)
         {
             _anim.SetBool("Destroy", true);
+            _manager.GetComponent<GameOver>().EndGame();
         }
 
     }

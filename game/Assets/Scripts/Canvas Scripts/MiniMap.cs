@@ -7,6 +7,6 @@ public class MiniMap : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        transform.position = new Vector3(50, 10, 50);
+        transform.position = new Vector3(50, 50, 50);
     }
 }

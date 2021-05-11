@@ -17,30 +17,37 @@ public class Attack : MonoBehaviour
 
     private Animator _anim;
 
+    private GameOver _manager;
+
     // Start is called before the first frame update
     void Start()
     {
         _anim = GetComponent<Animator>();
+        _manager = GameObject.Find(Constants.GameManager).GetComponent<GameOver>();
     }
 
     public void CanAttack()
     {
-        RaycastHit hit;
-
-        // If the target is still close to the attacker remove HP
-        if (Physics.Raycast(transform.position, transform.forward + new Vector3(0, 1, 0), out hit, 2f))
+        if (!_manager.GameIsOver)
         {
 
-            if (hit.collider.gameObject.tag == targetTag)
+            RaycastHit hit;
+
+            // If the target is still close to the attacker remove HP
+            if (Physics.Raycast(transform.position, transform.forward + new Vector3(0, 1, 0), out hit, 2f))
             {
-                CharacterHP hp = hit.collider.gameObject.GetComponent<CharacterHP>();
-                hp.TakeDamage(attackDamage);
-                if (hit.collider.gameObject.tag == "Enemy")
+
+                if (hit.collider.gameObject.tag == targetTag)
                 {
-                    ShowFloatingText(hit.collider.gameObject);
+                    CharacterHP hp = hit.collider.gameObject.GetComponent<CharacterHP>();
+                    hp.TakeDamage(attackDamage);
+                    if (hit.collider.gameObject.tag == "Enemy")
+                    {
+                        ShowFloatingText(hit.collider.gameObject);
+                    }
                 }
+
             }
-            
         }
     }
     public void StopAttack(string attackName)
