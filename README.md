@@ -1,13 +1,20 @@
 # Final-Project
 
-Completed tasks:
+The final project of my bachelor degree.        
+The project is designed to compare the gameplay
+and design differences between five algorithms that
+create video game levels automatically, using Procedural Generation.
+The main goal of the project is to expose the user to levels which are
+a product of the algorithms:
+    
+- Binary Space Partitioning And Random Point Connect.
+- Binary Space Partitioning And Binary Space Partitioning.
+- Binary Space Partitioning And Drunkard’s Walk.
+- Random Room Placement And Random Point Connect.
+- Random Room Placement And Drunkard’s Walk.
 
-- [x] Create Vision statement and upload it to Github. [here](https://github.com/ChenOst/final-project/blob/main/docs/vision-statement.pdf)
-- [x] Connect other private repository to Lambda. [here](https://github.com/ChenOst/procedural-generation-backend)
-- [x] Put all Unity project in one folder.
-- [x] Create new folder for future Documents.
-- [x] AWS-Unity guide (Optional - we need to talk about this)
-
-To do:
-
-- [ ] Find all the other algorithms and upload it to the other repository.
+As a game developer it is vital to deliver an adequate performance for
+the game and avoid overloading the players’ computer.
+Therefore, the game backend was chosen to reside on the cloud 
+[AWS Lambda function](https://github.com/ChenOst/procedural-gen-backend) which does the heavy calculations of all requested
+stages of the game.
