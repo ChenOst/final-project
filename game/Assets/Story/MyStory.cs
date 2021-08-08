@@ -223,7 +223,7 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return link("Random Point Connect? ", "RPC1", null);
 		yield return lineBreak();
-		yield return link("Ok I'm raedy ", "First Mission", null);
+		yield return link("Ok I'm ready ", "First Mission", null);
 		yield break;
 	}
 
@@ -242,7 +242,7 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return link("Binary Space Partitioning for rooms? ", "BSP Rooms mission1", null);
 		yield return lineBreak();
-		yield return link("Ok I'm raedy ", "First Mission", null);
+		yield return link("Ok I'm ready ", "First Mission", null);
 		yield break;
 	}
 
@@ -357,7 +357,7 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return link("Binary Space Partitioning for corridors? ", "BSP Corridors mission2", null);
 		yield return lineBreak();
-		yield return link("Ok I'm raedy ", "Second Mission", null);
+		yield return link("Ok I'm ready ", "Second Mission", null);
 		yield break;
 	}
 
@@ -376,7 +376,7 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return link("Binary Space Partitioning for rooms? ", "BSP Rooms mission2", null);
 		yield return lineBreak();
-		yield return link("Ok I'm raedy ", "Second Mission", null);
+		yield return link("Ok I'm ready ", "Second Mission", null);
 		yield break;
 	}
 
@@ -391,7 +391,7 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 
 	IStoryThread passage14_Main()
 	{
-		yield return text("Go to my house to my on your right.");
+		yield return text("Go to my house to on your right.");
 		yield return lineBreak();
 		yield return text("Explore the tomb and return with more information.");
 		yield return lineBreak();
@@ -515,7 +515,7 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 			yield return lineBreak();
 			yield return text("I saw you got the book of the \"Algorithm Magic\", it used to belong to a very powerful witch a long time ago. I think she was waking from the coffin you found at my house.");
 			yield return lineBreak();
-			yield return link("I'm Ready for my next mission ", "Firth Mission", null);
+			yield return link("I'm ready for my next mission ", "Firth Mission", null);
 			yield return lineBreak();
 		}
 		yield break;
@@ -672,6 +672,8 @@ public partial class @MyStory: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return text("Good job! you saved us!");
 		yield return lineBreak();
 		yield return text("I wish Alf was here...");
+		yield return lineBreak();
+		yield return text("You finished the game! Well done!");
 		yield break;
 	}
 

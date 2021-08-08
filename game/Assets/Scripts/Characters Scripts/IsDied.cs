@@ -10,7 +10,6 @@ public class IsDied : MonoBehaviour
     private bool _activeSpawner;
 
     [SerializeField]
-    [ConditionalHide("_activeSpawner", true)]
     private GameObject _spawnItem;
 
     // This function called when the enemy is died

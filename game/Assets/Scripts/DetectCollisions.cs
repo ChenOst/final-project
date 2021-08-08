@@ -19,7 +19,6 @@ public class DetectCollisions : MonoBehaviour
     [Tooltip("Active the chosen controller")]
     private bool _activeController;
 
-    [ConditionalHide("_activeController", true)]
     public ControllerNames controllerNumber;
 
     private GameObject _ePanel;

@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="MyStory" startnode="1" creator="Twine" creator-version="2.3.13" ifid="C535674F-9747-45DC-A01F-07E02A28305D" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Claudelius" tags="" position="1484,603.5" size="200,200">Hello old friend!
+<tw-storydata name="MyStory" startnode="1" creator="Twine" creator-version="2.3.14" ifid="C535674F-9747-45DC-A01F-07E02A28305D" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Claudelius" tags="" position="1484,603.5" size="200,200">Hello old friend!
 Thanks for coming to help.
 My friend Alf went missing and the people in the town started to act strange... (set: $confrontTheMayor to false)
 [[Who is acting strange? -&gt;Strange People]]
@@ -29,9 +29,9 @@ After he didn&#39;t open his shop in the morning I went to look for him but coul
 [[Random Point Connect? -&gt;RPC1]]
 (set: $mission1Complete to false)</tw-passagedata><tw-passagedata pid="6" name="BSP Rooms mission1" tags="" position="1378,1184.5" size="100,100">It Works by dividing the map into a series of rectangles, and then placing a room in each one on the map. The rectangle can be split either vertically or horizontally, and the minimum size of the split is determined based on the minimum size of the rooms.
 [[Random Point Connect? -&gt;RPC1]]
-[[Ok I&#39;m raedy -&gt;First Mission]]</tw-passagedata><tw-passagedata pid="7" name="RPC1" tags="" position="1683,1173.5" size="100,100">Algorithm that works by first iterating through the list of rooms created by the room generation algorithm.  For each corridor it draws, it selects a random point at the edge of each of the rooms and connects. If the points are parallel, the algorithm will draw a straight corridor in the appropriate vertical or horizontal direction. If the points are not parallel, the algorithm will draw a forked corridor made up of three straight corridors in order to connect the points.
+[[Ok I&#39;m ready -&gt;First Mission]]</tw-passagedata><tw-passagedata pid="7" name="RPC1" tags="" position="1683,1173.5" size="100,100">Algorithm that works by first iterating through the list of rooms created by the room generation algorithm.  For each corridor it draws, it selects a random point at the edge of each of the rooms and connects. If the points are parallel, the algorithm will draw a straight corridor in the appropriate vertical or horizontal direction. If the points are not parallel, the algorithm will draw a forked corridor made up of three straight corridors in order to connect the points.
 [[Binary Space Partitioning for rooms? -&gt;BSP Rooms mission1]]
-[[Ok I&#39;m raedy -&gt;First Mission]]</tw-passagedata><tw-passagedata pid="8" name="First Mission" tags="" position="1531,1300.5" size="100,100">Go to Alf&#39;s house right here behind the mayor&#39;s back.
+[[Ok I&#39;m ready -&gt;First Mission]]</tw-passagedata><tw-passagedata pid="8" name="First Mission" tags="" position="1531,1300.5" size="100,100">Go to Alf&#39;s house right here behind the mayor&#39;s back.
 Search for Alf and return with more details...
 (if: $mission1Complete is true)[
 [[I found Alf... -&gt;Mission 1 Completed]]
@@ -51,9 +51,9 @@ Now I will kill you!
 (set: $enemyTheMayor to true)
 (set: $mission5Complete to false)</tw-passagedata><tw-passagedata pid="12" name="BSP Rooms mission2" tags="" position="1432,1580.5" size="100,100">It Works by dividing the map into a series of rectangles, and then placing a room in each one on the map. The rectangle can be split either vertically or horizontally, and the minimum size of the split is determined based on the minimum size of the rooms.
 [[Binary Space Partitioning for corridors? -&gt;BSP Corridors mission2]]
-[[Ok I&#39;m raedy -&gt;Second Mission]]</tw-passagedata><tw-passagedata pid="13" name="BSP Corridors mission2" tags="" position="1631,1575.5" size="100,100">Using the tree structure used by BSP Rooms algorithm. It sorts through the sub leaves, connecting each bottom leaf to its partner that shares a parent. When all sub leafs are paired in connects one out of each pair to another pair, until all sub-leafs containing rooms are connected.
+[[Ok I&#39;m ready -&gt;Second Mission]]</tw-passagedata><tw-passagedata pid="13" name="BSP Corridors mission2" tags="" position="1631,1575.5" size="100,100">Using the tree structure used by BSP Rooms algorithm. It sorts through the sub leaves, connecting each bottom leaf to its partner that shares a parent. When all sub leafs are paired in connects one out of each pair to another pair, until all sub-leafs containing rooms are connected.
 [[Binary Space Partitioning for rooms? -&gt;BSP Rooms mission2]]
-[[Ok I&#39;m raedy -&gt;Second Mission]]</tw-passagedata><tw-passagedata pid="14" name="Second Mission" tags="" position="1537,1704.5" size="100,100">Go to my house to my on your right.
+[[Ok I&#39;m ready -&gt;Second Mission]]</tw-passagedata><tw-passagedata pid="14" name="Second Mission" tags="" position="1537,1704.5" size="100,100">Go to my house to my on your right.
 Explore the tomb and return with more information.
 (if: $mission2Complete is true)[
 [[I found an open coffin... -&gt;Mission 2 Completed]]
@@ -103,7 +103,7 @@ Talk to her and confront her!
 ]
 (set: $confrontTheMayor to true)</tw-passagedata><tw-passagedata pid="26" name="End Game" tags="" position="1552,3283" size="100,100">Good job! you saved us!
 I wish Alf was here...</tw-passagedata><tw-passagedata pid="27" name="Irvin" tags="" position="2783,605.5" size="200,200">Hi I&#39;m Irvin.
-I live here on you&#39;r right.</tw-passagedata><tw-passagedata pid="28" name="Mission 5" tags="" position="1544,2998" size="100,100">Go and search the mayor at her house!
+I live here on you&#39;r right.</tw-passagedata><tw-passagedata pid="28" name="Mission 5" tags="" position="1544,2999" size="100,100">Go and search the mayor at her house!
 It the last house in the town.
 The tomb at her house is build with Random Room Placement and Drunkard’s Walk.
 Go and kill the mayor.

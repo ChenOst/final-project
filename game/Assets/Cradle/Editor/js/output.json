@@ -519,17 +519,17 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Ok I'm raedy \",\"First Mission\"",
+                        "innerText": "link-goto:\"Ok I'm ready \",\"First Mission\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Ok I'm raedy \",\"First Mission\")",
+                        "text": "(link-goto:\"Ok I'm ready \",\"First Mission\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Ok I'm raedy ",
-                                "text": "\"Ok I'm raedy \"",
+                                "innerText": "Ok I'm ready ",
+                                "text": "\"Ok I'm ready \"",
                                 "type": "string"
                             },
                             {
@@ -590,17 +590,17 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Ok I'm raedy \",\"First Mission\"",
+                        "innerText": "link-goto:\"Ok I'm ready \",\"First Mission\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Ok I'm raedy \",\"First Mission\")",
+                        "text": "(link-goto:\"Ok I'm ready \",\"First Mission\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Ok I'm raedy ",
-                                "text": "\"Ok I'm raedy \"",
+                                "innerText": "Ok I'm ready ",
+                                "text": "\"Ok I'm ready \"",
                                 "type": "string"
                             },
                             {
@@ -1108,17 +1108,17 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Ok I'm raedy \",\"Second Mission\"",
+                        "innerText": "link-goto:\"Ok I'm ready \",\"Second Mission\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Ok I'm raedy \",\"Second Mission\")",
+                        "text": "(link-goto:\"Ok I'm ready \",\"Second Mission\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Ok I'm raedy ",
-                                "text": "\"Ok I'm raedy \"",
+                                "innerText": "Ok I'm ready ",
+                                "text": "\"Ok I'm ready \"",
                                 "type": "string"
                             },
                             {
@@ -1179,17 +1179,17 @@
                         "type": "br"
                     },
                     {
-                        "innerText": "link-goto:\"Ok I'm raedy \",\"Second Mission\"",
+                        "innerText": "link-goto:\"Ok I'm ready \",\"Second Mission\"",
                         "name": "linkgoto",
-                        "text": "(link-goto:\"Ok I'm raedy \",\"Second Mission\")",
+                        "text": "(link-goto:\"Ok I'm ready \",\"Second Mission\")",
                         "tokens": [
                             {
                                 "text": "link-goto:",
                                 "type": "macroName"
                             },
                             {
-                                "innerText": "Ok I'm raedy ",
-                                "text": "\"Ok I'm raedy \"",
+                                "innerText": "Ok I'm ready ",
+                                "text": "\"Ok I'm ready \"",
                                 "type": "string"
                             },
                             {
