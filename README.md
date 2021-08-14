@@ -36,14 +36,14 @@ Go to your Lambda function use the `code` option:
 1. Go to the `Run time setting` use `edit`: change `Handler` into: project.GenerateDungeon::handleRequest.
 Or any other entry point you wish.
 
-<img src="images/uploadjar.png" width=200> 
+<img src="images/uploadjar.png"> 
 
-<img src="images/settings.png" width=200> 
+<img src="images/settings.png"> 
 
 #### Connect Unity to Lambda: 
 Open your API Gateway trigger: 
 
-<img src="images/APIGATEWAY.png" width=200> 
+<img src="images/APIGATEWAY.png"> 
 
 Go to the script: [ConnectToLambda.cs](https://github.com/ChenOst/final-project/blob/main/game/Assets/Scripts/Game%20Manager%20Scripts/Lambda%20Scripts/ConnectToLambda.cs)  
 Copy the full `API endpoint` to the `url` and the `API key` to the `header`, as shown below.
